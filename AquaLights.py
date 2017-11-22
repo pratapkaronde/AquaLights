@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """ Aquarium Ligthing Controller """
 
 import configparser
