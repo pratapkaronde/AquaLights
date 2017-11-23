@@ -8,8 +8,8 @@ import datetime
 
 # Constants for configuration settings
 SETTINGS_FILE_NAME = "settings.ini"
-BLUE_SECTION = "Blue"
-YELLOW_SECTION = "Yellow"
+BLUE_SECTION_NAME = "Blue"
+YELLOW_SECTION_NAME = "Yellow"
 MAX_VALUE = "Max"
 MIN_VALUE = "Min"
 START_TIME = "Start"
@@ -24,8 +24,8 @@ class ColorSetting(object):
     max_limit = 100
     min_limit = 0
 
-    def __init__(self):
-        self.color_name = ""
+    def __init__(self, color_name):
+        self.color_name = color_name
         self.max_limit = 100
         self.min_limit = 0
         return
@@ -156,13 +156,13 @@ def create_default_settings_file():
     """Create a new configuration file with default settings"""
     new_config = configparser.SafeConfigParser()
 
-    new_config[BLUE_SECTION] = {}
-    new_config[BLUE_SECTION][MAX_VALUE] = "90"
-    new_config[BLUE_SECTION][MIN_VALUE] = "10"
+    new_config[BLUE_SECTION_NAME] = {}
+    new_config[BLUE_SECTION_NAME][MAX_VALUE] = "90"
+    new_config[BLUE_SECTION_NAME][MIN_VALUE] = "10"
 
-    new_config[YELLOW_SECTION] = {}
-    new_config[YELLOW_SECTION][MAX_VALUE] = "100"
-    new_config[YELLOW_SECTION][MIN_VALUE] = "1"
+    new_config[YELLOW_SECTION_NAME] = {}
+    new_config[YELLOW_SECTION_NAME][MAX_VALUE] = "100"
+    new_config[YELLOW_SECTION_NAME][MIN_VALUE] = "1"
 
     new_config["Program_1"] = {}
     new_config["Program_1"][START_TIME] = "06:00"
@@ -193,6 +193,7 @@ def get_setting_file_name():
             default values in current directory"""
         return create_default_settings_file()
 
+# Read Configuration File from SETTINGS.INI
 def read_config(yellow, blue):
     """ Read Configuration """
     config = configparser.SafeConfigParser()
@@ -205,7 +206,7 @@ def read_config(yellow, blue):
     for section in config.sections():
         print(section)
 
-        if section == YELLOW_SECTION:
+        if section == YELLOW_SECTION_NAME:
             # processing yellow settings
             if config[section][MAX_VALUE]:
                 yellow.set_max_limit(int(config[section][MAX_VALUE]))
@@ -213,7 +214,7 @@ def read_config(yellow, blue):
             if config[section][MIN_VALUE]:
                 yellow.set_min_limit(int(config[section][MIN_VALUE]))
 
-        elif section == BLUE_SECTION:
+        elif section == BLUE_SECTION_NAME:
             # processing blue settings
             if config[section][MAX_VALUE]:
                 blue.set_max_limit(int(config[section][MAX_VALUE]))
@@ -229,43 +230,47 @@ def read_config(yellow, blue):
         print("")
 
 if __name__ == "__main__":
-    YELLOW = ColorSetting()
-    BLUE = ColorSetting()
-
-    YELLOW.set_color(YELLOW_SECTION)
-    BLUE.set_color(BLUE_SECTION)
+    YELLOW = ColorSetting(YELLOW_SECTION_NAME)
+    BLUE = ColorSetting(BLUE_SECTION_NAME)
 
     read_config(YELLOW, BLUE)
 
-    prog1 = LightProgram()
-    prog1.sunrise = 15
-    prog1.sunset = 20
-    prog1.set_start_hour(16)
-    prog1.set_start_minute(15)
-    prog1.set_end_hour(17)
-    prog1.set_end_minute(45)
+    morningProgram = LightProgram()
+    morningProgram.sunrise = 15
+    morningProgram.sunset = 0
+    morningProgram.set_start_hour(7)
+    morningProgram.set_start_minute(15)
+    morningProgram.set_end_hour(10)
+    morningProgram.set_end_minute(00)
 
+    eveningProgram = LightProgram()
+    eveningProgram.sunrise = 15
+    eveningProgram.sunset = 45
+    eveningProgram.set_start_hour(4)
+    eveningProgram.set_start_minute(30)
+    eveningProgram.set_end_hour(21)
+    eveningProgram.set_end_minute(00)
     
     now = datetime.datetime(2017,9,20,13,00,00)
-    print("Value at " + str(now) + " is " + str(prog1.get_blue_value(now)))
+    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
 
     now = datetime.datetime(2017,9,20,16,00,00)
-    print("Value at " + str(now) + " is " + str(prog1.get_blue_value(now)))
+    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
 
     now = datetime.datetime(2017,9,20,16,15,00)
-    print("Value at " + str(now) + " is " + str(prog1.get_blue_value(now)))
+    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
 
     now = datetime.datetime(2017,9,20,16,50,00)
-    print("Value at " + str(now) + " is " + str(prog1.get_blue_value(now)))
+    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
 
     now = datetime.datetime(2017,9,20,17,1,00)
-    print("Value at " + str(now) + " is " + str(prog1.get_blue_value(now)))
+    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
 
     now = datetime.datetime(2017,9,20,17,17,00)
-    print("Value at " + str(now) + " is " + str(prog1.get_blue_value(now)))
+    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
 
     now = datetime.datetime(2017,9,20,17,46,00)
-    print("Value at " + str(now) + " is " + str(prog1.get_blue_value(now)))
+    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
 
     now = datetime.datetime(2017,9,20,18,15,00)
-    print("Value at " + str(now) + " is " + str(prog1.get_blue_value(now)))
+    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
