@@ -201,94 +201,34 @@ class LightProgram(object):
     sunrise = 0
     sunset = 0
 
-    def __init__(self):
+    start_time = datetime.time(0,0,0)
+    end_time   = datetime.time(0,0,0)
+
+    def __init__(self, start_hour, start_min, end_hour, end_min, sunrise_min, sunset_min):
+        self.start_time = datetime.time (start_hour, start_min, 0)
+        self.end_time   = datetime.time (end_hour, end_min, 0)
+        self.sunrise = sunrise_min
+        self.sunset  = sunset_min
         return
-
-    def set_start_hour(self, hour):
-        """ Program starts at this hour """
-        self.start_hour = hour
-
-        if self.start_hour < 0:
-            self.start_hour = 0
-        elif self.start_hour > 23:
-            self.start_hour = 23
-
-
-    def set_start_minute(self, minute):
-        """ Program starts at this minute """
-        self.start_minute = minute
-
-        if self.start_minute < 0:
-            self.start_minute = 0
-        elif self.start_minute > 59:
-            self.start_minute = 59
-
-    def set_end_hour(self, hour):
-        """ Program ends at this hour  """
-
-        self.end_hour = hour
-
-        if self.end_hour < 0:
-            self.end_hour = 0
-        elif self.end_hour > 23:
-            self.end_hour = 23
-
-    def set_end_minute(self, minute):
-        """ Program ends at this minute """
-        self.end_minute = minute
-
-        if self.end_minute < 0:
-            self.end_minute = 0
-        elif self.end_minute > 59:
-            self.end_minute = 59
 
     def get_blue_value(self, local_time):
         """ Determine the value of blue color at this time """
 
         blue_val = BLUE.min_limit # assume that we start with zero
 
-        #local_time = datetime.datetime.now()
+        # What i present date and time? 
+        timeNow = datetime.datetime.today()
 
-        if self.start_hour <= self.end_hour:
-            #normal day time program
-            if local_time.hour >= self.start_hour and local_time.hour <= self.end_hour:
-                if local_time.hour == self.start_hour:
-                    #in first hour, check start minute
-                    if local_time.minute >= self.start_minute:
-                        blue_val = BLUE.max_limit
-                elif local_time.hour == self.end_hour:
-                    #in last hour, check end minute
-                    if local_time.minute <= self.end_minute:
-                        blue_val = BLUE.max_limit
-                else:
-                    #for all other hours, lights stay on between start hour and end hour
-                    blue_val = BLUE.max_limit
-        else:
-            #night time program
-            if self.start_hour == local_time.hour:
-                # first hour, check start minute
-                if self.start_minute >= local_time.minute:
-                    blue_val = BLUE.max_limit
-            elif self.start_hour < local_time.hour:
-                # program started previous hour, no need to check minutes
+        # Determine start and end times for today 
+        startDateTime = datetime.datetime.combine (timeNow, self.start_time)
+        endDateTime = datetime.datetime.combine (timeNow, self.end_time)
+
+        if endDateTime <= startDateTime:
+            endDateTime += datetime.timedelta(1) # End time is after midnight 
+
+        if timeNow >= startDateTime:
+            if timeNow <= endDateTime:
                 blue_val = BLUE.max_limit
-            elif self.start_hour > local_time.hour:
-                #past midnight
-                if local_time.hour == self.end_hour:
-                    #last hour, check minutes
-                    if local_time.minutes <= self.end_minute:
-                        blue_val = BLUE.max_limit
-                elif local_time.hour < self.end_hour:
-                    # not the last hour and not the first hour
-                    blue_val = BLUE.max_limit
-            else:
-                assert "What happned here " + self + " @ " + local_time
-
-        #if self.sunrise > 0:
-        #    start_time = datetime.datetime(0, 0, 0, self.start_hour, self.start_minute)
-        #    delta = local_time - start_time
-        #    print(delta)
-
         return blue_val
 
 def create_default_settings_file():
@@ -383,21 +323,8 @@ if __name__ == "__main__":
 
     read_config(YELLOW, BLUE)
 
-    morningProgram = LightProgram()
-    morningProgram.sunrise = 15
-    morningProgram.sunset = 0
-    morningProgram.set_start_hour(7)
-    morningProgram.set_start_minute(15)
-    morningProgram.set_end_hour(10)
-    morningProgram.set_end_minute(00)
-
-    eveningProgram = LightProgram()
-    eveningProgram.sunrise = 15
-    eveningProgram.sunset = 45
-    eveningProgram.set_start_hour(4)
-    eveningProgram.set_start_minute(30)
-    eveningProgram.set_end_hour(21)
-    eveningProgram.set_end_minute(00)
+    morningProgram = LightProgram(7, 15, 23, 0, 15, 0)
+    eveningProgram = LightProgram(4,30,21,0,15,45)
 
     # Start background thread to control light intensity 
     pwmThread = Thread (target = threaded_pwm, args=(10,))
@@ -423,7 +350,7 @@ if __name__ == "__main__":
     now = datetime.datetime(2017,9,20,17,46,00)
     print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
 
-    now = datetime.datetime(2017,9,20,18,15,00)
+    now = datetime.datetime(2017,9,20,22,15,00)
     print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
 
     pwmThread.start()
@@ -454,7 +381,7 @@ if __name__ == "__main__":
         except KeyboardInterrupt:
             pass
 
-        finally:
-            stop_thread = 1
-            pwmThread.join()
+        #finally:
+        #    stop_thread = 1
+         #   pwmThread.join()
             #SPI.close()
