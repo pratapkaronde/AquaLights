@@ -120,15 +120,41 @@ def lcd_string(message,line):
         lcd_byte(ord(message[i]),LCD_CHR)
 
 # Run Background thread to control intensity 
-def threaded_pwm (args):
+def threaded_pwm (programList):
     print ("Thread started")
 
+    old_blue_val = 0
+    old_yellow_val = 0
+
     while 1:
+
+        nowTime = datetime.datetime.now()
+
+        blue_val = 0
+        yellow_val = 0
+
+        for program in programList:
+            b = program.get_blue_value(nowTime)
+            if blue_val < b:
+                blue_val = b
+
+            y = program.get_yellow_value (nowTime)
+            if yellow_val < y:
+                yellow_val = y
+
+
+        if old_blue_val != blue_val:
+            print ("Blue value changed from " + str(old_blue_val) + " to " + str(blue_val) + " at " + str(nowTime))
+            old_blue_val = blue_val
+
+        if old_yellow_val != yellow_val:
+            print ("Yellow value changed from " + str(old_yellow_val) + " to " + str(yellow_val) + " at " + str(nowTime))
+            old_yellow_val = yellow_val
 
         if stop_thread:
             return
 
-        time.sleep(0.01)
+        time.sleep(0.1)
 
 # Get Hostname of the Rasperry Pi
 def get_host_info():
@@ -231,6 +257,26 @@ class LightProgram(object):
                 blue_val = BLUE.max_limit
         return blue_val
 
+    def get_yellow_value(self, local_time):
+        """ Determine the value of blue color at this time """
+
+        yellow_val = BLUE.min_limit # assume that we start with zero
+
+        # What i present date and time? 
+        timeNow = datetime.datetime.today()
+
+        # Determine start and end times for today 
+        startDateTime = datetime.datetime.combine (timeNow, self.start_time)
+        endDateTime = datetime.datetime.combine (timeNow, self.end_time)
+
+        if endDateTime <= startDateTime:
+            endDateTime += datetime.timedelta(1) # End time is after midnight 
+
+        if timeNow >= startDateTime:
+            if timeNow <= endDateTime:
+                yellow_val = YELLOW.max_limit
+        return yellow_val
+
 def create_default_settings_file():
     """Create a new configuration file with default settings"""
     new_config = configparser.SafeConfigParser()
@@ -323,36 +369,13 @@ if __name__ == "__main__":
 
     read_config(YELLOW, BLUE)
 
-    morningProgram = LightProgram(7, 15, 23, 0, 15, 0)
-    eveningProgram = LightProgram(4,30,21,0,15,45)
+    morningProgram = LightProgram(16, 37,16, 38, 15, 0)
+    eveningProgram = LightProgram(16,39,16,40,15,45)
+
+    programList = [morningProgram, eveningProgram]
 
     # Start background thread to control light intensity 
-    pwmThread = Thread (target = threaded_pwm, args=(10,))
-    
-    now = datetime.datetime(2017,9,20,13,00,00)
-    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
-
-    now = datetime.datetime(2017,9,20,16,00,00)
-    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
-
-    now = datetime.datetime(2017,9,20,16,15,00)
-    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
-
-    now = datetime.datetime(2017,9,20,16,50,00)
-    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
-
-    now = datetime.datetime(2017,9,20,17,1,00)
-    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
-
-    now = datetime.datetime(2017,9,20,17,17,00)
-    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
-
-    now = datetime.datetime(2017,9,20,17,46,00)
-    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
-
-    now = datetime.datetime(2017,9,20,22,15,00)
-    print("Value at " + str(now) + " is " + str(morningProgram.get_blue_value(now)))
-
+    pwmThread = Thread (target = threaded_pwm, args=(programList,))
     pwmThread.start()
 
     while True:
