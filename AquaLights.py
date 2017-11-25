@@ -16,24 +16,6 @@ from threading import Thread
 HOSTNAME = ""
 IPADDRESS = ""
 
-# Define some device parameters
-I2C_ADDR  = 0x27 # I2C device address
-LCD_WIDTH = 20   # Maximum characters per line
-
-# Define some device constants
-LCD_CHR = 1 # Mode - Sending data
-LCD_CMD = 0 # Mode - Sending command
-
-LCD_LINE_1 = 0x80 # LCD RAM address for the 1st line
-LCD_LINE_2 = 0xC0 # LCD RAM address for the 2nd line
-LCD_LINE_3 = 0x94 # LCD RAM address for the 3rd line
-LCD_LINE_4 = 0xD4 # LCD RAM address for the 4th line
-
-LCD_BACKLIGHT  = 0x08  # On
-#LCD_BACKLIGHT = 0x00  # Off
-
-ENABLE = 0b00000100 # Enable bit
-
 # Timing constants
 E_PULSE = 0.0005
 E_DELAY = 0.0005
@@ -48,7 +30,6 @@ START_TIME = "Start"
 STOP_TIME = "Stop"
 SUNRISE_DURATION = "Sunrise"
 SUNSET_DURATION = "Sunset"
-LCD_AVAILABLE = False
 
 #Open I2C interface
 #bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
@@ -60,64 +41,6 @@ LCD_AVAILABLE = False
 #intensity = 0
 #percent = int(0xffff/100)
 stop_thread = 0
-
-def lcd_init():
-    if LCD_AVAILABLE == False:
-        return
-
-    # Initialise display
-    lcd_byte(0x33,LCD_CMD) # 110011 Initialise
-    lcd_byte(0x32,LCD_CMD) # 110010 Initialise
-    lcd_byte(0x06,LCD_CMD) # 000110 Cursor move direction
-    lcd_byte(0x0C,LCD_CMD) # 001100 Display On,Cursor Off, Blink Off 
-    lcd_byte(0x28,LCD_CMD) # 101000 Data length, number of lines, font size
-    lcd_byte(0x01,LCD_CMD) # 000001 Clear display
-    time.sleep(E_DELAY)
-
-# Send byte to data pins
-# bits = the data
-# mode = 1 for data
-#        0 for command
-def lcd_byte(bits, mode):
-
-    if LCD_AVAILABLE == False:
-        return
-
-    bits_high = mode | (bits & 0xF0) | LCD_BACKLIGHT
-    bits_low = mode | ((bits<<4) & 0xF0) | LCD_BACKLIGHT
-
-    # High bits
-    bus.write_byte(I2C_ADDR, bits_high)
-    lcd_toggle_enable(bits_high)
-
-    # Low bits
-    bus.write_byte(I2C_ADDR, bits_low)
-    lcd_toggle_enable(bits_low)
-
-# Toggle enable
-def lcd_toggle_enable(bits):
-
-    if LCD_AVAILABLE == False:
-        return 
-
-    time.sleep(E_DELAY)
-    bus.write_byte(I2C_ADDR, (bits | ENABLE))
-    time.sleep(E_PULSE)
-    bus.write_byte(I2C_ADDR,(bits & ~ENABLE))
-    time.sleep(E_DELAY)
-
-# Send string to display
-def lcd_string(message,line):
-
-    if LCD_AVAILABLE == False:
-        return 
-
-    message = message.ljust(LCD_WIDTH," ")
-
-    lcd_byte(line, LCD_CMD)
-
-    for i in range(LCD_WIDTH):
-        lcd_byte(ord(message[i]),LCD_CHR)
 
 # Run Background thread to control intensity 
 def threaded_pwm (programList):
@@ -141,7 +64,6 @@ def threaded_pwm (programList):
             y = program.get_yellow_value (nowTime)
             if yellow_val < y:
                 yellow_val = y
-
 
         if old_blue_val != blue_val:
             print ("Blue value changed from " + str(old_blue_val) + " to " + str(blue_val) + " at " + str(nowTime))
@@ -180,6 +102,94 @@ def get_host_info():
     IPADDRESS =  next ( ( x for x in if_ipv4 if x != '127.0.0.1'))
 
     return
+
+class LCDManager(object):
+
+    # Define some device parameters
+    I2C_ADDR  = 0x27 # I2C device address
+    LCD_WIDTH = 20   # Maximum characters per line
+
+    # Define some device constants
+    LCD_CHR = 1 # Mode - Sending data
+    LCD_CMD = 0 # Mode - Sending command
+
+    LCD_LINE_1 = 0x80 # LCD RAM address for the 1st line
+    LCD_LINE_2 = 0xC0 # LCD RAM address for the 2nd line
+    LCD_LINE_3 = 0x94 # LCD RAM address for the 3rd line
+    LCD_LINE_4 = 0xD4 # LCD RAM address for the 4th line
+
+    LCD_BACKLIGHT  = 0x08  # On
+    #LCD_BACKLIGHT = 0x00  # Off
+
+    ENABLE = 0b00000100 # Enable bit
+
+    lcd_available = False
+
+    def __init__(self, lcd_available):
+        self.lcd_available = lcd_available
+        self.lcd_init()
+        return
+
+    def lcd_init(self):
+
+        if self.lcd_available == False:
+            return
+
+        # Initialise display
+        lcd_byte(0x33,LCD_CMD) # 110011 Initialise
+        lcd_byte(0x32,LCD_CMD) # 110010 Initialise
+        lcd_byte(0x06,LCD_CMD) # 000110 Cursor move direction
+        lcd_byte(0x0C,LCD_CMD) # 001100 Display On,Cursor Off, Blink Off 
+        lcd_byte(0x28,LCD_CMD) # 101000 Data length, number of lines, font size
+        lcd_byte(0x01,LCD_CMD) # 000001 Clear display
+        time.sleep(E_DELAY)
+
+        print ("LCD Initialized")
+
+    # Send byte to data pins
+    # bits = the data
+    # mode = 1 for data
+    #        0 for command
+    def lcd_byte(self, bits, mode):
+
+        if self.lcd_available == False:
+            return
+
+        bits_high = mode | (bits & 0xF0) | LCD_BACKLIGHT
+        bits_low = mode | ((bits<<4) & 0xF0) | LCD_BACKLIGHT
+
+        # High bits
+        bus.write_byte(I2C_ADDR, bits_high)
+        lcd_toggle_enable(bits_high)
+
+        # Low bits
+        bus.write_byte(I2C_ADDR, bits_low)
+        lcd_toggle_enable(bits_low)
+
+    # Toggle enable
+    def lcd_toggle_enable(self,bits):
+
+        if self.lcd_available == False:
+            return 
+
+        time.sleep(E_DELAY)
+        bus.write_byte(I2C_ADDR, (bits | ENABLE))
+        time.sleep(E_PULSE)
+        bus.write_byte(I2C_ADDR,(bits & ~ENABLE))
+        time.sleep(E_DELAY)
+
+    # Send string to display
+    def lcd_string(self, message,line):
+
+        if self.lcd_available == False:
+            return 
+
+        message = message.ljust(LCD_WIDTH," ")
+
+        lcd_byte(line, LCD_CMD)
+
+        for i in range(LCD_WIDTH):
+            lcd_byte(ord(message[i]),LCD_CHR)
 
 
 class ColorSetting(object):
@@ -220,40 +230,44 @@ class ColorSetting(object):
 class LightProgram(object):
     """ Class to store light settings """
 
-    start_hour = 0
-    start_minute = 0
-    end_hour = 0
-    end_minute = 0
     sunrise = 0
     sunset = 0
 
     start_time = datetime.time(0,0,0)
     end_time   = datetime.time(0,0,0)
 
+    startDateTime = datetime.datetime.now()
+    endDateTime = startDateTime
+
     def __init__(self, start_hour, start_min, end_hour, end_min, sunrise_min, sunset_min):
         self.start_time = datetime.time (start_hour, start_min, 0)
         self.end_time   = datetime.time (end_hour, end_min, 0)
         self.sunrise = sunrise_min
         self.sunset  = sunset_min
+        self.calculate_start_end_date_time_for_the_day()
         return
+
+    def calculate_start_end_date_time_for_the_day (self):
+        # What is currennt date and time? 
+        timeNow = datetime.datetime.today()
+
+        # Determine start and end times for today 
+        self.startDateTime = datetime.datetime.combine (timeNow, self.start_time)
+        self.endDateTime = datetime.datetime.combine (timeNow, self.end_time)
+
+        if self.endDateTime <= self.startDateTime:
+            self.endDateTime += datetime.timedelta(1) # End time is after midnight 
 
     def get_blue_value(self, local_time):
         """ Determine the value of blue color at this time """
 
         blue_val = BLUE.min_limit # assume that we start with zero
 
-        # What i present date and time? 
+        # What is currennt date and time? 
         timeNow = datetime.datetime.today()
 
-        # Determine start and end times for today 
-        startDateTime = datetime.datetime.combine (timeNow, self.start_time)
-        endDateTime = datetime.datetime.combine (timeNow, self.end_time)
-
-        if endDateTime <= startDateTime:
-            endDateTime += datetime.timedelta(1) # End time is after midnight 
-
-        if timeNow >= startDateTime:
-            if timeNow <= endDateTime:
+        if timeNow >= self.startDateTime:
+            if timeNow <= self.endDateTime:
                 blue_val = BLUE.max_limit
         return blue_val
 
@@ -262,18 +276,12 @@ class LightProgram(object):
 
         yellow_val = BLUE.min_limit # assume that we start with zero
 
-        # What i present date and time? 
+        # What is current date and time? 
         timeNow = datetime.datetime.today()
 
-        # Determine start and end times for today 
-        startDateTime = datetime.datetime.combine (timeNow, self.start_time)
-        endDateTime = datetime.datetime.combine (timeNow, self.end_time)
 
-        if endDateTime <= startDateTime:
-            endDateTime += datetime.timedelta(1) # End time is after midnight 
-
-        if timeNow >= startDateTime:
-            if timeNow <= endDateTime:
+        if timeNow >= self.startDateTime:
+            if timeNow <= self.endDateTime:
                 yellow_val = YELLOW.max_limit
         return yellow_val
 
@@ -358,7 +366,9 @@ def read_config(yellow, blue):
 # Main Program Entry Point 
 if __name__ == "__main__":
     # Initialise display
-    lcd_init()
+    lcdManager = LCDManager (False)
+
+    #lcd_init()
     print ("LCD Initialized")
     star = "*"
 
@@ -388,10 +398,10 @@ if __name__ == "__main__":
             rev_star = " " * (20-len(star)) + star
 
             # Send some test
-            lcd_string(HOSTNAME + " (" + IPADDRESS + ")", LCD_LINE_1)
-            lcd_string(time_str + " " + date_str, LCD_LINE_2)    
-            lcd_string(star, LCD_LINE_3)
-            lcd_string(rev_star, LCD_LINE_4)
+            lcdManager.lcd_string(HOSTNAME + " (" + IPADDRESS + ")", lcdManager.LCD_LINE_1)
+            lcdManager.lcd_string(time_str + " " + date_str, lcdManager.LCD_LINE_2)    
+            lcdManager.lcd_string(star, lcdManager.LCD_LINE_3)
+            lcdManager.lcd_string(rev_star, lcdManager.LCD_LINE_4)
 
             time.sleep(0.5)
 
