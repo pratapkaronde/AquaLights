@@ -6,12 +6,13 @@ import os
 import datetime
 #import smbus
 import time
-import datetime 
 import socket
 import platform
+from threading import Thread
+
 import netifaces
 #import spidev
-from threading import Thread
+
 
 HOSTNAME = ""
 IPADDRESS = ""
@@ -31,20 +32,22 @@ STOP_TIME = "Stop"
 SUNRISE_DURATION = "Sunrise"
 SUNSET_DURATION = "Sunset"
 
-#Open I2C interface
-#bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
-#bus = smbus.SMBus(1) # Rev 2 Pi uses 1
+# Open I2C interface
+# bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
+# bus = smbus.SMBus(1) # Rev 2 Pi uses 1
 
-# SPI interface for PWM 
+# SPI interface for PWM
 #SPI = spidev.SpiDev()
 #SPI.open (0,0)
 #intensity = 0
 #percent = int(0xffff/100)
 stop_thread = 0
 
-# Run Background thread to control intensity 
-def threaded_pwm (programList):
-    print ("Thread started")
+# Run Background thread to control intensity
+
+
+def threaded_pwm(programList):
+    print("Thread started")
 
     old_blue_val = 0
     old_yellow_val = 0
@@ -61,16 +64,18 @@ def threaded_pwm (programList):
             if blue_val < b:
                 blue_val = b
 
-            y = program.get_yellow_value (nowTime)
+            y = program.get_yellow_value(nowTime)
             if yellow_val < y:
                 yellow_val = y
 
         if old_blue_val != blue_val:
-            print ("Blue value changed from " + str(old_blue_val) + " to " + str(blue_val) + " at " + str(nowTime))
+            print("Blue value changed from " + str(old_blue_val) +
+                  " to " + str(blue_val) + " at " + str(nowTime))
             old_blue_val = blue_val
 
         if old_yellow_val != yellow_val:
-            print ("Yellow value changed from " + str(old_yellow_val) + " to " + str(yellow_val) + " at " + str(nowTime))
+            print("Yellow value changed from " + str(old_yellow_val) +
+                  " to " + str(yellow_val) + " at " + str(nowTime))
             old_yellow_val = yellow_val
 
         if stop_thread:
@@ -78,50 +83,53 @@ def threaded_pwm (programList):
 
         time.sleep(0.1)
 
-# Get Hostname of the Rasperry Pi
+
 def get_host_info():
+# Get Hostname of the Rasperry Pi
+
     global HOSTNAME
     global IPADDRESS
-    
+
     HOSTNAME = socket.getfqdn()
 
-    PROTO = netifaces.AF_INET # Interested in IPv4 for now
+    PROTO = netifaces.AF_INET  # Interested in IPv4 for now
 
-    # Get list of all interfaces 
+    # Get list of all interfaces
     interfaces = netifaces.interfaces()
 
-    # Get addresses for all interfaces 
+    # Get addresses for all interfaces
     if_addresses = [netifaces.ifaddresses(iface) for iface in interfaces]
 
-    # find all interfaces with IPv4 addresses 
+    # find all interfaces with IPv4 addresses
     if_inet_addresses = [addr[PROTO] for addr in if_addresses if PROTO in addr]
 
-    # get list of all IPv4 addresses 
-    if_ipv4 = [ s['addr'] for a in if_inet_addresses for s in a if 'addr' in s]
+    # get list of all IPv4 addresses
+    if_ipv4 = [s['addr'] for a in if_inet_addresses for s in a if 'addr' in s]
 
-    IPADDRESS =  next ( ( x for x in if_ipv4 if x != '127.0.0.1'))
+    IPADDRESS = next((x for x in if_ipv4 if x != '127.0.0.1'))
 
     return
+
 
 class LCDManager(object):
 
     # Define some device parameters
-    I2C_ADDR  = 0x27 # I2C device address
+    I2C_ADDR = 0x27  # I2C device address
     LCD_WIDTH = 20   # Maximum characters per line
 
     # Define some device constants
-    LCD_CHR = 1 # Mode - Sending data
-    LCD_CMD = 0 # Mode - Sending command
+    LCD_CHR = 1  # Mode - Sending data
+    LCD_CMD = 0  # Mode - Sending command
 
-    LCD_LINE_1 = 0x80 # LCD RAM address for the 1st line
-    LCD_LINE_2 = 0xC0 # LCD RAM address for the 2nd line
-    LCD_LINE_3 = 0x94 # LCD RAM address for the 3rd line
-    LCD_LINE_4 = 0xD4 # LCD RAM address for the 4th line
+    LCD_LINE_1 = 0x80  # LCD RAM address for the 1st line
+    LCD_LINE_2 = 0xC0  # LCD RAM address for the 2nd line
+    LCD_LINE_3 = 0x94  # LCD RAM address for the 3rd line
+    LCD_LINE_4 = 0xD4  # LCD RAM address for the 4th line
 
-    LCD_BACKLIGHT  = 0x08  # On
-    #LCD_BACKLIGHT = 0x00  # Off
+    LCD_BACKLIGHT = 0x08  # On
+    # LCD_BACKLIGHT = 0x00  # Off
 
-    ENABLE = 0b00000100 # Enable bit
+    ENABLE = 0b00000100  # Enable bit
 
     lcd_available = False
 
@@ -136,15 +144,16 @@ class LCDManager(object):
             return
 
         # Initialise display
-        lcd_byte(0x33,LCD_CMD) # 110011 Initialise
-        lcd_byte(0x32,LCD_CMD) # 110010 Initialise
-        lcd_byte(0x06,LCD_CMD) # 000110 Cursor move direction
-        lcd_byte(0x0C,LCD_CMD) # 001100 Display On,Cursor Off, Blink Off 
-        lcd_byte(0x28,LCD_CMD) # 101000 Data length, number of lines, font size
-        lcd_byte(0x01,LCD_CMD) # 000001 Clear display
+        lcd_byte(0x33, LCD_CMD)  # 110011 Initialise
+        lcd_byte(0x32, LCD_CMD)  # 110010 Initialise
+        lcd_byte(0x06, LCD_CMD)  # 000110 Cursor move direction
+        lcd_byte(0x0C, LCD_CMD)  # 001100 Display On,Cursor Off, Blink Off
+        # 101000 Data length, number of lines, font size
+        lcd_byte(0x28, LCD_CMD)
+        lcd_byte(0x01, LCD_CMD)  # 000001 Clear display
         time.sleep(E_DELAY)
 
-        print ("LCD Initialized")
+        print("LCD Initialized")
 
     # Send byte to data pins
     # bits = the data
@@ -156,7 +165,7 @@ class LCDManager(object):
             return
 
         bits_high = mode | (bits & 0xF0) | LCD_BACKLIGHT
-        bits_low = mode | ((bits<<4) & 0xF0) | LCD_BACKLIGHT
+        bits_low = mode | ((bits << 4) & 0xF0) | LCD_BACKLIGHT
 
         # High bits
         bus.write_byte(I2C_ADDR, bits_high)
@@ -167,29 +176,29 @@ class LCDManager(object):
         lcd_toggle_enable(bits_low)
 
     # Toggle enable
-    def lcd_toggle_enable(self,bits):
+    def lcd_toggle_enable(self, bits):
 
         if self.lcd_available == False:
-            return 
+            return
 
         time.sleep(E_DELAY)
         bus.write_byte(I2C_ADDR, (bits | ENABLE))
         time.sleep(E_PULSE)
-        bus.write_byte(I2C_ADDR,(bits & ~ENABLE))
+        bus.write_byte(I2C_ADDR, (bits & ~ENABLE))
         time.sleep(E_DELAY)
 
     # Send string to display
-    def lcd_string(self, message,line):
+    def lcd_string(self, message, line):
 
         if self.lcd_available == False:
-            return 
+            return
 
-        message = message.ljust(LCD_WIDTH," ")
+        message = message.ljust(LCD_WIDTH, " ")
 
         lcd_byte(line, LCD_CMD)
 
         for i in range(LCD_WIDTH):
-            lcd_byte(ord(message[i]),LCD_CHR)
+            lcd_byte(ord(message[i]), LCD_CHR)
 
 
 class ColorSetting(object):
@@ -227,43 +236,46 @@ class ColorSetting(object):
         elif self.min_limit > 100:
             self.min_limit = 100
 
+
 class LightProgram(object):
     """ Class to store light settings """
 
     sunrise = 0
     sunset = 0
 
-    start_time = datetime.time(0,0,0)
-    end_time   = datetime.time(0,0,0)
+    start_time = datetime.time(0, 0, 0)
+    end_time = datetime.time(0, 0, 0)
 
     startDateTime = datetime.datetime.now()
     endDateTime = startDateTime
 
     def __init__(self, start_hour, start_min, end_hour, end_min, sunrise_min, sunset_min):
-        self.start_time = datetime.time (start_hour, start_min, 0)
-        self.end_time   = datetime.time (end_hour, end_min, 0)
+        self.start_time = datetime.time(start_hour, start_min, 0)
+        self.end_time = datetime.time(end_hour, end_min, 0)
         self.sunrise = sunrise_min
-        self.sunset  = sunset_min
+        self.sunset = sunset_min
         self.calculate_start_end_date_time_for_the_day()
         return
 
-    def calculate_start_end_date_time_for_the_day (self):
-        # What is currennt date and time? 
+    def calculate_start_end_date_time_for_the_day(self):
+        # What is currennt date and time?
         timeNow = datetime.datetime.today()
 
-        # Determine start and end times for today 
-        self.startDateTime = datetime.datetime.combine (timeNow, self.start_time)
-        self.endDateTime = datetime.datetime.combine (timeNow, self.end_time)
+        # Determine start and end times for today
+        self.startDateTime = datetime.datetime.combine(
+            timeNow, self.start_time)
+        self.endDateTime = datetime.datetime.combine(timeNow, self.end_time)
 
         if self.endDateTime <= self.startDateTime:
-            self.endDateTime += datetime.timedelta(1) # End time is after midnight 
+            # End time is after midnight
+            self.endDateTime += datetime.timedelta(1)
 
     def get_blue_value(self, local_time):
         """ Determine the value of blue color at this time """
 
-        blue_val = BLUE.min_limit # assume that we start with zero
+        blue_val = BLUE.min_limit  # assume that we start with zero
 
-        # What is currennt date and time? 
+        # What is currennt date and time?
         timeNow = datetime.datetime.today()
 
         if timeNow >= self.startDateTime:
@@ -274,16 +286,16 @@ class LightProgram(object):
     def get_yellow_value(self, local_time):
         """ Determine the value of blue color at this time """
 
-        yellow_val = BLUE.min_limit # assume that we start with zero
+        yellow_val = BLUE.min_limit  # assume that we start with zero
 
-        # What is current date and time? 
+        # What is current date and time?
         timeNow = datetime.datetime.today()
-
 
         if timeNow >= self.startDateTime:
             if timeNow <= self.endDateTime:
                 yellow_val = YELLOW.max_limit
         return yellow_val
+
 
 def create_default_settings_file():
     """Create a new configuration file with default settings"""
@@ -314,6 +326,7 @@ def create_default_settings_file():
 
     return SETTINGS_FILE_NAME
 
+
 def get_setting_file_name():
     """ Determine location of configuration file"""
 
@@ -327,6 +340,8 @@ def get_setting_file_name():
         return create_default_settings_file()
 
 # Read Configuration File from SETTINGS.INI
+
+
 def read_config(yellow, blue):
     """ Read Configuration """
     config = configparser.SafeConfigParser()
@@ -362,14 +377,15 @@ def read_config(yellow, blue):
 
         print("")
 
+
 #
-# Main Program Entry Point 
+# Main Program Entry Point
 if __name__ == "__main__":
     # Initialise display
-    lcdManager = LCDManager (False)
+    lcdManager = LCDManager(False)
 
-    #lcd_init()
-    print ("LCD Initialized")
+    # lcd_init()
+    print("LCD Initialized")
     star = "*"
 
     get_host_info()
@@ -379,42 +395,44 @@ if __name__ == "__main__":
 
     read_config(YELLOW, BLUE)
 
-    morningProgram = LightProgram(16, 37,16, 38, 15, 0)
-    eveningProgram = LightProgram(16,39,16,40,15,45)
+    morningProgram = LightProgram(16, 37, 16, 38, 15, 0)
+    eveningProgram = LightProgram(16, 39, 16, 40, 15, 45)
 
     programList = [morningProgram, eveningProgram]
 
-    # Start background thread to control light intensity 
-    pwmThread = Thread (target = threaded_pwm, args=(programList,))
+    # Start background thread to control light intensity
+    pwmThread = Thread(target=threaded_pwm, args=(programList,))
     pwmThread.start()
 
     while True:
         try:
             now = datetime.datetime.now()
-            time_str = now.strftime ("%X")
-            date_str = now.strftime ("%x")
+            time_str = now.strftime("%X")
+            date_str = now.strftime("%x")
 
-            star = "*" * ((now.second % 20)+1)
-            rev_star = " " * (20-len(star)) + star
+            star = "*" * ((now.second % 20) + 1)
+            rev_star = " " * (20 - len(star)) + star
 
             # Send some test
-            lcdManager.lcd_string(HOSTNAME + " (" + IPADDRESS + ")", lcdManager.LCD_LINE_1)
-            lcdManager.lcd_string(time_str + " " + date_str, lcdManager.LCD_LINE_2)    
+            lcdManager.lcd_string(
+                HOSTNAME + " (" + IPADDRESS + ")", lcdManager.LCD_LINE_1)
+            lcdManager.lcd_string(
+                time_str + " " + date_str, lcdManager.LCD_LINE_2)
             lcdManager.lcd_string(star, lcdManager.LCD_LINE_3)
             lcdManager.lcd_string(rev_star, lcdManager.LCD_LINE_4)
 
             time.sleep(0.5)
 
         except IOError:
-            print ("I/O Error at " + time_str + " on " + date_str)
-            print ("retrying in 5 seconds")
+            print("I/O Error at " + time_str + " on " + date_str)
+            print("retrying in 5 seconds")
             time.sleep(5)
             lcd_init()
 
         except KeyboardInterrupt:
             pass
 
-        #finally:
+        # finally:
         #    stop_thread = 1
          #   pwmThread.join()
-            #SPI.close()
+            # SPI.close()
