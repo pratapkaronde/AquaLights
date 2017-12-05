@@ -30,7 +30,10 @@ MIN_VALUE = "Min"
 START_TIME = "Start"
 STOP_TIME = "Stop"
 SUNRISE_DURATION = "Sunrise"
-SUNSET_DURATION = "Sunset"
+SUNSET_DURATION  = "Sunset"
+
+BLUE_VALUE = 0
+RED_VALUE = 0
 
 # Open I2C interface
 # bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
@@ -42,47 +45,6 @@ SUNSET_DURATION = "Sunset"
 #intensity = 0
 #percent = int(0xffff/100)
 stop_thread = 0
-
-# Run Background thread to control intensity
-
-
-def threaded_pwm(programList):
-    print("Thread started")
-
-    old_blue_val = 0
-    old_yellow_val = 0
-
-    while 1:
-
-        nowTime = datetime.datetime.now()
-
-        blue_val = 0
-        yellow_val = 0
-
-        for program in programList:
-            b = program.get_blue_value(nowTime)
-            if blue_val < b:
-                blue_val = b
-
-            y = program.get_yellow_value(nowTime)
-            if yellow_val < y:
-                yellow_val = y
-
-        if old_blue_val != blue_val:
-            print("Blue value changed from " + str(old_blue_val) +
-                  " to " + str(blue_val) + " at " + str(nowTime))
-            old_blue_val = blue_val
-
-        if old_yellow_val != yellow_val:
-            print("Yellow value changed from " + str(old_yellow_val) +
-                  " to " + str(yellow_val) + " at " + str(nowTime))
-            old_yellow_val = yellow_val
-
-        if stop_thread:
-            return
-
-        time.sleep(0.1)
-
 
 def get_host_info():
 # Get Hostname of the Rasperry Pi
@@ -286,7 +248,7 @@ class LightProgram(object):
     def get_yellow_value(self, local_time):
         """ Determine the value of blue color at this time """
 
-        yellow_val = BLUE.min_limit  # assume that we start with zero
+        yellow_val = YELLOW.min_limit  # assume that we start with zero
 
         # What is current date and time?
         timeNow = datetime.datetime.today()
@@ -302,12 +264,12 @@ def create_default_settings_file():
     new_config = configparser.SafeConfigParser()
 
     new_config[BLUE_SECTION_NAME] = {}
-    new_config[BLUE_SECTION_NAME][MAX_VALUE] = "90"
+    new_config[BLUE_SECTION_NAME][MAX_VALUE] = "100"
     new_config[BLUE_SECTION_NAME][MIN_VALUE] = "10"
 
     new_config[YELLOW_SECTION_NAME] = {}
-    new_config[YELLOW_SECTION_NAME][MAX_VALUE] = "100"
-    new_config[YELLOW_SECTION_NAME][MIN_VALUE] = "1"
+    new_config[YELLOW_SECTION_NAME][MAX_VALUE] = "70"
+    new_config[YELLOW_SECTION_NAME][MIN_VALUE] = "0"
 
     new_config["Program_1"] = {}
     new_config["Program_1"][START_TIME] = "06:00"
@@ -377,7 +339,90 @@ def read_config(yellow, blue):
 
         print("")
 
+# Run Background thread to control intensity
+def threaded_pwm(programList):
+    print("PW< Thread started")
 
+    old_blue_val = 0
+    old_yellow_val = 0
+
+    global BLUE_VALUE
+    global RED_VALUE
+
+    while 1:
+
+        nowTime = datetime.datetime.now()
+
+        blue_val = 0
+        yellow_val = 0
+
+        for program in programList:
+            b = program.get_blue_value(nowTime)
+            if blue_val < b:
+                blue_val = b
+
+            y = program.get_yellow_value(nowTime)
+            if yellow_val < y:
+                yellow_val = y
+
+        if old_blue_val != blue_val:
+            print("Blue value changed from " + str(old_blue_val) +
+                  " to " + str(blue_val) + " at " + str(nowTime))
+            old_blue_val = blue_val
+            BLUE_VALUE = blue_val
+
+        if old_yellow_val != yellow_val:
+            print("Yellow value changed from " + str(old_yellow_val) +
+                  " to " + str(yellow_val) + " at " + str(nowTime))
+            old_yellow_val = yellow_val
+            RED_VALUE = yellow_val
+
+        if stop_thread:
+            return
+
+        time.sleep(0.1)
+
+# Background thread for LCD Updates 
+def threaded_lcd_update():
+    print ("LCD Thread started")
+
+    count = 0
+    while 1:
+        try:
+            now = datetime.datetime.now()
+            time_str = now.strftime("%X")
+            date_str = now.strftime("%x")
+
+            star = "*" * ((now.second % 20) + 1)
+            rev_star = " " * (20 - len(star)) + star
+
+            color_str = "B:" + str(BLUE_VALUE) + ", Y: " + str(RED_VALUE)
+            color_str = color_str + " " * (20 - len(color_str))
+
+            # Send some test
+            lcdManager.lcd_string(
+                HOSTNAME + " (" + IPADDRESS + ")", lcdManager.LCD_LINE_1)
+            lcdManager.lcd_string(
+                time_str + " " + date_str, lcdManager.LCD_LINE_2)
+            lcdManager.lcd_string(star, lcdManager.LCD_LINE_3)
+            lcdManager.lcd_string(color_str, lcdManager.LCD_LINE_4)
+           
+            time.sleep(0.5)
+            count = count + 1
+            if count == 10:
+                print ( time_str + " " + date_str)
+                count = 0
+                print (color_str)
+
+        except IOError:
+            print("I/O Error at " + time_str + " on " + date_str)
+            print("retrying in 5 seconds")
+            time.sleep(5)
+            lcd_init()
+
+        # Exit thread on thread stop signal 
+        if stop_thread:
+            return 
 #
 # Main Program Entry Point
 if __name__ == "__main__":
@@ -395,8 +440,8 @@ if __name__ == "__main__":
 
     read_config(YELLOW, BLUE)
 
-    morningProgram = LightProgram(16, 37, 16, 38, 15, 0)
-    eveningProgram = LightProgram(16, 39, 16, 40, 15, 45)
+    morningProgram = LightProgram(7, 30, 9, 30, 15, 0)
+    eveningProgram = LightProgram(16, 30, 21, 45, 15, 45)
 
     programList = [morningProgram, eveningProgram]
 
@@ -404,33 +449,17 @@ if __name__ == "__main__":
     pwmThread = Thread(target=threaded_pwm, args=(programList,))
     pwmThread.start()
 
+    lcdThread = Thread (target=threaded_lcd_update, args=())
+    lcdThread.start()
+
     while True:
         try:
-            now = datetime.datetime.now()
-            time_str = now.strftime("%X")
-            date_str = now.strftime("%x")
-
-            star = "*" * ((now.second % 20) + 1)
-            rev_star = " " * (20 - len(star)) + star
-
-            # Send some test
-            lcdManager.lcd_string(
-                HOSTNAME + " (" + IPADDRESS + ")", lcdManager.LCD_LINE_1)
-            lcdManager.lcd_string(
-                time_str + " " + date_str, lcdManager.LCD_LINE_2)
-            lcdManager.lcd_string(star, lcdManager.LCD_LINE_3)
-            lcdManager.lcd_string(rev_star, lcdManager.LCD_LINE_4)
-
-            time.sleep(0.5)
-
-        except IOError:
-            print("I/O Error at " + time_str + " on " + date_str)
-            print("retrying in 5 seconds")
-            time.sleep(5)
-            lcd_init()
+            time.sleep(1)
 
         except KeyboardInterrupt:
-            pass
+            stop_thread = 1
+            lcdThread.join()
+            pwmThread.join()
 
         # finally:
         #    stop_thread = 1
