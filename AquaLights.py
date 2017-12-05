@@ -4,7 +4,7 @@
 import configparser
 import os
 import datetime
-#import smbus
+
 import time
 import socket
 import platform
@@ -17,9 +17,7 @@ import netifaces
 HOSTNAME = ""
 IPADDRESS = ""
 
-# Timing constants
-E_PULSE = 0.0005
-E_DELAY = 0.0005
+
 
 # Constants for configuration settings
 SETTINGS_FILE_NAME = "settings.ini"
@@ -33,11 +31,8 @@ SUNRISE_DURATION = "Sunrise"
 SUNSET_DURATION  = "Sunset"
 
 BLUE_VALUE = 0
-RED_VALUE = 0
+YELLOW_VALUE = 0
 
-# Open I2C interface
-# bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
-# bus = smbus.SMBus(1) # Rev 2 Pi uses 1
 
 # SPI interface for PWM
 #SPI = spidev.SpiDev()
@@ -93,29 +88,34 @@ class LCDManager(object):
 
     ENABLE = 0b00000100  # Enable bit
 
-    lcd_available = False
+    # Timing constants
+    E_PULSE = 0.0005
+    E_DELAY = 0.0005
+
+    lcd_available = True
+    bus = 0
 
     def __init__(self, lcd_available):
         self.lcd_available = lcd_available
+        if self.lcd_available:
+            import smbus
+            # Open I2C interface
+            self.bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
+            self.bus = smbus.SMBus(1)  # Rev 2 Pi uses 1
         self.lcd_init()
         return
 
-    def lcd_init(self):
+    # Toggle enable
+    def lcd_toggle_enable(self, bits):
 
         if self.lcd_available == False:
             return
 
-        # Initialise display
-        lcd_byte(0x33, LCD_CMD)  # 110011 Initialise
-        lcd_byte(0x32, LCD_CMD)  # 110010 Initialise
-        lcd_byte(0x06, LCD_CMD)  # 000110 Cursor move direction
-        lcd_byte(0x0C, LCD_CMD)  # 001100 Display On,Cursor Off, Blink Off
-        # 101000 Data length, number of lines, font size
-        lcd_byte(0x28, LCD_CMD)
-        lcd_byte(0x01, LCD_CMD)  # 000001 Clear display
-        time.sleep(E_DELAY)
-
-        print("LCD Initialized")
+        time.sleep(self.E_DELAY)
+        self.bus.write_byte(self.I2C_ADDR, (bits | self.ENABLE))
+        time.sleep(self.E_PULSE)
+        self.bus.write_byte(self.I2C_ADDR, (bits & ~self.ENABLE))
+        time.sleep(self.E_DELAY)
 
     # Send byte to data pins
     # bits = the data
@@ -126,28 +126,33 @@ class LCDManager(object):
         if self.lcd_available == False:
             return
 
-        bits_high = mode | (bits & 0xF0) | LCD_BACKLIGHT
-        bits_low = mode | ((bits << 4) & 0xF0) | LCD_BACKLIGHT
+        bits_high = mode | (bits & 0xF0) | self.LCD_BACKLIGHT
+        bits_low = mode | ((bits << 4) & 0xF0) | self.LCD_BACKLIGHT
 
         # High bits
-        bus.write_byte(I2C_ADDR, bits_high)
-        lcd_toggle_enable(bits_high)
+        self.bus.write_byte(self.I2C_ADDR, bits_high)
+        self.lcd_toggle_enable(bits_high)
 
         # Low bits
-        bus.write_byte(I2C_ADDR, bits_low)
-        lcd_toggle_enable(bits_low)
+        self.bus.write_byte(self.I2C_ADDR, bits_low)
+        self.lcd_toggle_enable(bits_low)
 
-    # Toggle enable
-    def lcd_toggle_enable(self, bits):
+    def lcd_init(self):
 
         if self.lcd_available == False:
             return
 
-        time.sleep(E_DELAY)
-        bus.write_byte(I2C_ADDR, (bits | ENABLE))
-        time.sleep(E_PULSE)
-        bus.write_byte(I2C_ADDR, (bits & ~ENABLE))
-        time.sleep(E_DELAY)
+        # Initialise display
+        self.lcd_byte(0x33, self.LCD_CMD)  # 110011 Initialise
+        self.lcd_byte(0x32, self.LCD_CMD)  # 110010 Initialise
+        self.lcd_byte(0x06, self.LCD_CMD)  # 000110 Cursor move direction
+        self.lcd_byte(0x0C, self.LCD_CMD)  # 001100 Display On,Cursor Off, Blink Off
+        # 101000 Data length, number of lines, font size
+        self.lcd_byte(0x28, self.LCD_CMD)
+        self.lcd_byte(0x01, self.LCD_CMD)  # 000001 Clear display
+        time.sleep(self.E_DELAY)
+
+        print("LCD Initialized")
 
     # Send string to display
     def lcd_string(self, message, line):
@@ -155,12 +160,12 @@ class LCDManager(object):
         if self.lcd_available == False:
             return
 
-        message = message.ljust(LCD_WIDTH, " ")
+        message = message.ljust(self.LCD_WIDTH, " ")
 
-        lcd_byte(line, LCD_CMD)
+        self.lcd_byte(line, self.LCD_CMD)
 
-        for i in range(LCD_WIDTH):
-            lcd_byte(ord(message[i]), LCD_CHR)
+        for i in range(self.LCD_WIDTH):
+            self.lcd_byte(ord(message[i]), self.LCD_CHR)
 
 
 class ColorSetting(object):
@@ -341,13 +346,13 @@ def read_config(yellow, blue):
 
 # Run Background thread to control intensity
 def threaded_pwm(programList):
-    print("PW< Thread started")
+    print("PWM Thread started")
 
     old_blue_val = 0
     old_yellow_val = 0
 
     global BLUE_VALUE
-    global RED_VALUE
+    global YELLOW_VALUE
 
     while 1:
 
@@ -375,7 +380,7 @@ def threaded_pwm(programList):
             print("Yellow value changed from " + str(old_yellow_val) +
                   " to " + str(yellow_val) + " at " + str(nowTime))
             old_yellow_val = yellow_val
-            RED_VALUE = yellow_val
+            YELLOW_VALUE = yellow_val
 
         if stop_thread:
             return
@@ -386,7 +391,17 @@ def threaded_pwm(programList):
 def threaded_lcd_update():
     print ("LCD Thread started")
 
+    # Initialise display
+    lcdManager = LCDManager(True)
+
+    lcdManager.lcd_init()
+    print("LCD Initialized")
+    star = "*"
+
+    get_host_info()
+
     count = 0
+    
     while 1:
         try:
             now = datetime.datetime.now()
@@ -396,7 +411,7 @@ def threaded_lcd_update():
             star = "*" * ((now.second % 20) + 1)
             rev_star = " " * (20 - len(star)) + star
 
-            color_str = "B:" + str(BLUE_VALUE) + ", Y: " + str(RED_VALUE)
+            color_str = "B:" + str(BLUE_VALUE) + ", Y: " + str(YELLOW_VALUE)
             color_str = color_str + " " * (20 - len(color_str))
 
             # Send some test
@@ -418,7 +433,7 @@ def threaded_lcd_update():
             print("I/O Error at " + time_str + " on " + date_str)
             print("retrying in 5 seconds")
             time.sleep(5)
-            lcd_init()
+            lcdManager.lcd_init()
 
         # Exit thread on thread stop signal 
         if stop_thread:
@@ -426,14 +441,6 @@ def threaded_lcd_update():
 #
 # Main Program Entry Point
 if __name__ == "__main__":
-    # Initialise display
-    lcdManager = LCDManager(False)
-
-    # lcd_init()
-    print("LCD Initialized")
-    star = "*"
-
-    get_host_info()
 
     YELLOW = ColorSetting(YELLOW_SECTION_NAME)
     BLUE = ColorSetting(BLUE_SECTION_NAME)
@@ -453,15 +460,11 @@ if __name__ == "__main__":
     lcdThread.start()
 
     while True:
-        try:
+ #       try:
             time.sleep(1)
 
-        except KeyboardInterrupt:
-            stop_thread = 1
-            lcdThread.join()
-            pwmThread.join()
-
-        # finally:
-        #    stop_thread = 1
-         #   pwmThread.join()
-            # SPI.close()
+#        except KeyboardInterrupt:
+#            print ("Stopping threads")
+#            stop_thread = 1
+#            lcdThread.join()
+#            pwmThread.join()
