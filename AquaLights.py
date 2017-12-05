@@ -4,7 +4,6 @@
 import configparser
 import os
 import datetime
-
 import time
 import socket
 import platform
@@ -18,7 +17,6 @@ HOSTNAME = ""
 IPADDRESS = ""
 
 
-
 # Constants for configuration settings
 SETTINGS_FILE_NAME = "settings.ini"
 BLUE_SECTION_NAME = "Blue"
@@ -28,7 +26,7 @@ MIN_VALUE = "Min"
 START_TIME = "Start"
 STOP_TIME = "Stop"
 SUNRISE_DURATION = "Sunrise"
-SUNSET_DURATION  = "Sunset"
+SUNSET_DURATION = "Sunset"
 
 BLUE_VALUE = 0
 YELLOW_VALUE = 0
@@ -41,8 +39,9 @@ YELLOW_VALUE = 0
 #percent = int(0xffff/100)
 stop_thread = 0
 
+
 def get_host_info():
-# Get Hostname of the Rasperry Pi
+    # Get Hostname of the Rasperry Pi
 
     global HOSTNAME
     global IPADDRESS
@@ -66,6 +65,17 @@ def get_host_info():
     IPADDRESS = next((x for x in if_ipv4 if x != '127.0.0.1'))
 
     return
+
+
+def IsRaspberryPi():
+    import sys
+    if sys.platform == "linux":
+        if os.uname()[4].startswith("arm"):
+            return True
+        else:
+            return False
+    else:
+        return False
 
 
 class LCDManager(object):
@@ -100,7 +110,7 @@ class LCDManager(object):
         if self.lcd_available:
             import smbus
             # Open I2C interface
-            #self.bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
+            # self.bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
             self.bus = smbus.SMBus(1)  # Rev 2 Pi uses 1
         self.lcd_init()
         return
@@ -146,7 +156,8 @@ class LCDManager(object):
         self.lcd_byte(0x33, self.LCD_CMD)  # 110011 Initialise
         self.lcd_byte(0x32, self.LCD_CMD)  # 110010 Initialise
         self.lcd_byte(0x06, self.LCD_CMD)  # 000110 Cursor move direction
-        self.lcd_byte(0x0C, self.LCD_CMD)  # 001100 Display On,Cursor Off, Blink Off
+        # 001100 Display On,Cursor Off, Blink Off
+        self.lcd_byte(0x0C, self.LCD_CMD)
         # 101000 Data length, number of lines, font size
         self.lcd_byte(0x28, self.LCD_CMD)
         self.lcd_byte(0x01, self.LCD_CMD)  # 000001 Clear display
@@ -344,6 +355,7 @@ def read_config(yellow, blue):
 
         print("")
 
+
 # Run Background thread to control intensity
 def threaded_pwm(programList):
     print("PWM Thread started")
@@ -353,6 +365,22 @@ def threaded_pwm(programList):
 
     global BLUE_VALUE
     global YELLOW_VALUE
+
+    if IsRaspberryPi():
+
+        import RPi.GPIO as GPIO
+
+        GPIO.setmode(GPIO.BOARD)
+        GPIO.setup(11, GPIO.OUT)
+        GPIO.setup(13, GPIO.OUT)
+
+        channel_b = GPIO.PWM(11, 300)
+        channel_y = GPIO.PWM(13, 300)
+
+        # Start with 100% to shut down MOSFETs
+        channel_b.ChangeDutyCycle(100)
+        channel_y.ChangeDutyCycle(100)
+        print("GPIO Ready")
 
     while stop_thread == 0:
 
@@ -375,24 +403,32 @@ def threaded_pwm(programList):
                   " to " + str(blue_val) + " at " + str(nowTime))
             old_blue_val = blue_val
             BLUE_VALUE = blue_val
+            if IsRaspberryPi():
+                channel_b.ChangeDutyCycle(100 - BLUE_VALUE)
 
         if old_yellow_val != yellow_val:
             print("Yellow value changed from " + str(old_yellow_val) +
                   " to " + str(yellow_val) + " at " + str(nowTime))
             old_yellow_val = yellow_val
             YELLOW_VALUE = yellow_val
+            if IsRaspberryPi():
+                channel_y.ChangeDutyCycle(100 - YELLOW_VALUE)
 
         if stop_thread:
+            channel_b.ChangeDutyCycle(100)
+            channel_y.ChangeDutyCycle(100)
             return
 
         time.sleep(0.1)
 
-# Background thread for LCD Updates 
+# Background thread for LCD Updates
+
+
 def threaded_lcd_update():
-    print ("LCD Thread started")
+    print("LCD Thread started")
 
     # Initialise display
-    lcdManager = LCDManager(True)
+    lcdManager = LCDManager(IsRaspberryPi())
 
     lcdManager.lcd_init()
     star = "*"
@@ -400,7 +436,7 @@ def threaded_lcd_update():
     get_host_info()
 
     count = 0
-    
+
     while stop_thread == 0:
         try:
             now = datetime.datetime.now()
@@ -420,13 +456,13 @@ def threaded_lcd_update():
                 time_str + " " + date_str, lcdManager.LCD_LINE_2)
             lcdManager.lcd_string(star, lcdManager.LCD_LINE_3)
             lcdManager.lcd_string(color_str, lcdManager.LCD_LINE_4)
-           
+
             time.sleep(0.5)
             count = count + 1
             if count == 10:
-                print ( time_str + " " + date_str + " " + str(stop_thread))
+                print(time_str + " " + date_str + " " + str(stop_thread))
                 count = 0
-                print (color_str)
+                print(color_str)
 
         except IOError:
             print("I/O Error at " + time_str + " on " + date_str)
@@ -434,9 +470,11 @@ def threaded_lcd_update():
             time.sleep(5)
             lcdManager.lcd_init()
 
-        # Exit thread on thread stop signal 
+        # Exit thread on thread stop signal
         if stop_thread:
-            return 
+            return
+
+
 #
 # Main Program Entry Point
 if __name__ == "__main__":
@@ -455,7 +493,7 @@ if __name__ == "__main__":
     pwmThread = Thread(target=threaded_pwm, args=(programList,))
     pwmThread.start()
 
-    lcdThread = Thread (target=threaded_lcd_update, args=())
+    lcdThread = Thread(target=threaded_lcd_update, args=())
     lcdThread.start()
 
     while stop_thread == 0:
@@ -463,7 +501,7 @@ if __name__ == "__main__":
             time.sleep(1)
 
         except KeyboardInterrupt:
-            print ("Stopping threads")
+            print("Stopping threads")
             stop_thread = 1
             lcdThread.join()
             pwmThread.join()
