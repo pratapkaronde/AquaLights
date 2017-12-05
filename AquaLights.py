@@ -100,7 +100,7 @@ class LCDManager(object):
         if self.lcd_available:
             import smbus
             # Open I2C interface
-            self.bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
+            #self.bus = smbus.SMBus(0)  # Rev 1 Pi uses 0
             self.bus = smbus.SMBus(1)  # Rev 2 Pi uses 1
         self.lcd_init()
         return
@@ -354,7 +354,7 @@ def threaded_pwm(programList):
     global BLUE_VALUE
     global YELLOW_VALUE
 
-    while 1:
+    while stop_thread == 0:
 
         nowTime = datetime.datetime.now()
 
@@ -395,14 +395,13 @@ def threaded_lcd_update():
     lcdManager = LCDManager(True)
 
     lcdManager.lcd_init()
-    print("LCD Initialized")
     star = "*"
 
     get_host_info()
 
     count = 0
     
-    while 1:
+    while stop_thread == 0:
         try:
             now = datetime.datetime.now()
             time_str = now.strftime("%X")
@@ -425,7 +424,7 @@ def threaded_lcd_update():
             time.sleep(0.5)
             count = count + 1
             if count == 10:
-                print ( time_str + " " + date_str)
+                print ( time_str + " " + date_str + " " + str(stop_thread))
                 count = 0
                 print (color_str)
 
@@ -459,12 +458,12 @@ if __name__ == "__main__":
     lcdThread = Thread (target=threaded_lcd_update, args=())
     lcdThread.start()
 
-    while True:
- #       try:
+    while stop_thread == 0:
+        try:
             time.sleep(1)
 
-#        except KeyboardInterrupt:
-#            print ("Stopping threads")
-#            stop_thread = 1
-#            lcdThread.join()
-#            pwmThread.join()
+        except KeyboardInterrupt:
+            print ("Stopping threads")
+            stop_thread = 1
+            lcdThread.join()
+            pwmThread.join()
