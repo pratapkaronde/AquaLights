@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-
+#!/usr/bin/python3.5
 """ Aquarium Ligthing Controller """
 import configparser
 import os
@@ -281,7 +280,7 @@ def create_default_settings_file():
 
     new_config[BLUE_SECTION_NAME] = {}
     new_config[BLUE_SECTION_NAME][MAX_VALUE] = "100"
-    new_config[BLUE_SECTION_NAME][MIN_VALUE] = "10"
+    new_config[BLUE_SECTION_NAME][MIN_VALUE] = "20"
 
     new_config[YELLOW_SECTION_NAME] = {}
     new_config[YELLOW_SECTION_NAME][MAX_VALUE] = "70"
@@ -374,12 +373,14 @@ def threaded_pwm(programList):
         GPIO.setup(11, GPIO.OUT)
         GPIO.setup(13, GPIO.OUT)
 
-        channel_b = GPIO.PWM(11, 300)
-        channel_y = GPIO.PWM(13, 300)
+        channel_b = GPIO.PWM(11, 500)
+        channel_y = GPIO.PWM(13, 500)
 
         # Start with 100% to shut down MOSFETs
-        channel_b.ChangeDutyCycle(100)
-        channel_y.ChangeDutyCycle(100)
+        channel_b.start(100)
+        channel_y.start(100)
+        
+
         print("GPIO Ready")
 
     while stop_thread == 0:
@@ -417,9 +418,10 @@ def threaded_pwm(programList):
         if stop_thread:
             channel_b.ChangeDutyCycle(100)
             channel_y.ChangeDutyCycle(100)
+            GPIO.cleanup()
             return
 
-        time.sleep(0.1)
+        time.sleep(1)
 
 # Background thread for LCD Updates
 
@@ -485,7 +487,7 @@ if __name__ == "__main__":
     read_config(YELLOW, BLUE)
 
     morningProgram = LightProgram(7, 30, 9, 30, 15, 0)
-    eveningProgram = LightProgram(16, 30, 21, 45, 15, 45)
+    eveningProgram = LightProgram(16, 30, 17, 15, 15, 45)
 
     programList = [morningProgram, eveningProgram]
 
