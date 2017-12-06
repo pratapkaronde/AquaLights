@@ -366,7 +366,6 @@ def threaded_pwm(programList):
     global YELLOW_VALUE
 
     if IsRaspberryPi():
-
         import RPi.GPIO as GPIO
 
         GPIO.setmode(GPIO.BOARD)
@@ -379,7 +378,6 @@ def threaded_pwm(programList):
         # Start with 100% to shut down MOSFETs
         channel_b.start(100)
         channel_y.start(100)
-        
 
         print("GPIO Ready")
 
@@ -487,7 +485,7 @@ if __name__ == "__main__":
     read_config(YELLOW, BLUE)
 
     morningProgram = LightProgram(7, 30, 9, 30, 15, 0)
-    eveningProgram = LightProgram(16, 30, 17, 15, 15, 45)
+    eveningProgram = LightProgram(16, 30, 21, 45, 15, 45)
 
     programList = [morningProgram, eveningProgram]
 
