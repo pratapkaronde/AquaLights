@@ -221,7 +221,7 @@ class LightProgram(object):
     start_time = datetime.time(0, 0, 0)
     end_time = datetime.time(0, 0, 0)
 
-    startDateTime = 0
+    startDateTime = datetime.datetime.today()
     endDateTime = startDateTime
 
     def __init__(self, start_hour, start_min, end_hour, end_min, sunrise_min, sunset_min):
@@ -254,8 +254,9 @@ class LightProgram(object):
         timeNow = datetime.datetime.today()
 
         if timeNow.date().day != self.startDateTime.date().day:
-            print ("Todays Date Changed to " + str(self.startDateTime))
-            calculate_start_end_date_time_for_the_day()
+            self.calculate_start_end_date_time_for_the_day()
+            print ("Today's date set to " + str(self.startDateTime))
+            
 
         if timeNow >= self.startDateTime:
             if timeNow <= self.endDateTime:
@@ -271,8 +272,8 @@ class LightProgram(object):
         timeNow = datetime.datetime.today()
 
         if timeNow.date().day != self.startDateTime.date().day:
-            print ("Todays Date Changed to " + str(self.startDateTime))
-            calculate_start_end_date_time_for_the_day()
+            self.calculate_start_end_date_time_for_the_day()
+            print ("Todays date set to " + str(self.startDateTime))
 
         if timeNow >= self.startDateTime:
             if timeNow <= self.endDateTime:
