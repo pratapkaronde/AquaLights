@@ -11,10 +11,8 @@ from threading import Thread
 import netifaces
 #import spidev
 
-
 HOSTNAME = ""
 IPADDRESS = ""
-
 
 # Constants for configuration settings
 SETTINGS_FILE_NAME = "settings.ini"
