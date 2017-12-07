@@ -221,7 +221,7 @@ class LightProgram(object):
     start_time = datetime.time(0, 0, 0)
     end_time = datetime.time(0, 0, 0)
 
-    startDateTime = datetime.datetime.now()
+    startDateTime = 0
     endDateTime = startDateTime
 
     def __init__(self, start_hour, start_min, end_hour, end_min, sunrise_min, sunset_min):
@@ -253,6 +253,10 @@ class LightProgram(object):
         # What is currennt date and time?
         timeNow = datetime.datetime.today()
 
+        if timeNow.date().day != self.startDateTime.date().day:
+            print ("Todays Date Changed to " + str(self.startDateTime))
+            calculate_start_end_date_time_for_the_day()
+
         if timeNow >= self.startDateTime:
             if timeNow <= self.endDateTime:
                 blue_val = BLUE.max_limit
@@ -265,6 +269,10 @@ class LightProgram(object):
 
         # What is current date and time?
         timeNow = datetime.datetime.today()
+
+        if timeNow.date().day != self.startDateTime.date().day:
+            print ("Todays Date Changed to " + str(self.startDateTime))
+            calculate_start_end_date_time_for_the_day()
 
         if timeNow >= self.startDateTime:
             if timeNow <= self.endDateTime:
@@ -367,6 +375,8 @@ def threaded_pwm(programList):
         import RPi.GPIO as GPIO
 
         GPIO.setmode(GPIO.BOARD)
+        GPIO.setwarnings(False)
+
         GPIO.setup(11, GPIO.OUT)
         GPIO.setup(13, GPIO.OUT)
 
