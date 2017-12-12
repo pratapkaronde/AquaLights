@@ -323,7 +323,7 @@ class StoredSettings(object):
 
         dirname, filename = os.path.split(os.path.abspath(__file__))
 
-        filename = dirname + "\\" + self.SETTINGS_FILE_NAME
+        filename = dirname + "/" + self.SETTINGS_FILE_NAME
 
         # Make sure the file exists 
         if os.path.isfile(filename) != True:
