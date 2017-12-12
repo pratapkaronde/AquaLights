@@ -14,20 +14,8 @@ import netifaces
 HOSTNAME = ""
 IPADDRESS = ""
 
-# Constants for configuration settings
-SETTINGS_FILE_NAME = "settings.ini"
-BLUE_SECTION_NAME = "Blue"
-YELLOW_SECTION_NAME = "Yellow"
-MAX_VALUE = "Max"
-MIN_VALUE = "Min"
-START_TIME = "Start"
-STOP_TIME = "Stop"
-SUNRISE_DURATION = "Sunrise"
-SUNSET_DURATION = "Sunset"
-
 BLUE_VALUE = 0
 YELLOW_VALUE = 0
-
 
 # SPI interface for PWM
 #SPI = spidev.SpiDev()
@@ -189,10 +177,6 @@ class ColorSetting(object):
         self.min_limit = 0
         return
 
-    def set_color(self, color_name):
-        """ Set color name """
-        self.color_name = color_name
-
     def set_max_limit(self, max_value):
         """ Set max limit for color """
         self.max_limit = max_value
@@ -223,16 +207,20 @@ class LightProgram(object):
 
     startDateTime = datetime.datetime.today()
     endDateTime = startDateTime
+    parent_setting = None
 
-    def __init__(self, start_hour, start_min, end_hour, end_min, sunrise_min, sunset_min):
+    def __init__(self, start_hour, start_min, end_hour, end_min, sunrise_min, sunset_min, parent_setting):
         self.start_time = datetime.time(start_hour, start_min, 0)
         self.end_time = datetime.time(end_hour, end_min, 0)
         self.sunrise = sunrise_min
         self.sunset = sunset_min
         self.calculate_start_end_date_time_for_the_day()
+        self.parent_setting = parent_setting
         return
 
     def calculate_start_end_date_time_for_the_day(self):
+        """ Create start and end date object for the day """
+
         # What is currennt date and time?
         timeNow = datetime.datetime.today()
 
@@ -248,131 +236,160 @@ class LightProgram(object):
     def get_blue_value(self, local_time):
         """ Determine the value of blue color at this time """
 
-        blue_val = BLUE.min_limit  # assume that we start with zero
+        # assume that we start with zero
+        blue_val = self.parent_setting.blue_settings.min_limit
 
         # What is currennt date and time?
         timeNow = datetime.datetime.today()
 
         if timeNow.date().day != self.startDateTime.date().day:
             self.calculate_start_end_date_time_for_the_day()
-            print ("Today's date set to " + str(self.startDateTime))
-            
+            print("Today's date set to " + str(self.startDateTime))
 
         if timeNow >= self.startDateTime:
             if timeNow <= self.endDateTime:
-                blue_val = BLUE.max_limit
+                blue_val = self.parent_setting.blue_settings.max_limit
+
         return blue_val
 
     def get_yellow_value(self, local_time):
         """ Determine the value of blue color at this time """
 
-        yellow_val = YELLOW.min_limit  # assume that we start with zero
+        # assume that we start with zero
+        yellow_val = self.parent_setting.yellow_settings.min_limit
 
         # What is current date and time?
         timeNow = datetime.datetime.today()
 
         if timeNow.date().day != self.startDateTime.date().day:
             self.calculate_start_end_date_time_for_the_day()
-            print ("Todays date set to " + str(self.startDateTime))
+            print("Todays date set to " + str(self.startDateTime))
 
         if timeNow >= self.startDateTime:
             if timeNow <= self.endDateTime:
-                yellow_val = YELLOW.max_limit
+                yellow_val = self.parent_setting.yellow_settings.max_limit
         return yellow_val
 
 
-def create_default_settings_file():
-    """Create a new configuration file with default settings"""
-    new_config = configparser.SafeConfigParser()
+class StoredSettings(object):
+    # Constants for configuration settings
+    SETTINGS_FILE_NAME = "settings.ini"
+    BLUE_SECTION_NAME = "Blue"
+    YELLOW_SECTION_NAME = "Yellow"
+    MAX_VALUE_NAME = "Max"
+    MIN_VALUE_NAME = "Min"
+    START_TIME_NAME = "Start"
+    STOP_TIME_NAME = "Stop"
+    SUNRISE_DURATION = "Sunrise"
+    SUNSET_DURATION = "Sunset"
 
-    new_config[BLUE_SECTION_NAME] = {}
-    new_config[BLUE_SECTION_NAME][MAX_VALUE] = "100"
-    new_config[BLUE_SECTION_NAME][MIN_VALUE] = "20"
+    yellow_settings = ColorSetting(YELLOW_SECTION_NAME)
+    blue_settings = ColorSetting(BLUE_SECTION_NAME)
+    programList = []
 
-    new_config[YELLOW_SECTION_NAME] = {}
-    new_config[YELLOW_SECTION_NAME][MAX_VALUE] = "70"
-    new_config[YELLOW_SECTION_NAME][MIN_VALUE] = "0"
+    def create_default_settings_file(self):
+        """Create a new configuration file with default settings"""
+        new_config = configparser.SafeConfigParser()
 
-    new_config["Program_1"] = {}
-    new_config["Program_1"][START_TIME] = "06:00"
-    new_config["Program_1"][STOP_TIME] = "09:00"
-    new_config["Program_1"][SUNRISE_DURATION] = "15"
-    new_config["Program_1"][SUNSET_DURATION] = "0"
+        new_config[self.BLUE_SECTION_NAME] = {}
+        new_config[self.BLUE_SECTION_NAME][self.MAX_VALUE_NAME] = "50"
+        new_config[self.BLUE_SECTION_NAME][self.MIN_VALUE_NAME] = "20"
 
-    new_config["Program_2"] = {}
-    new_config["Program_2"][START_TIME] = "16:00"
-    new_config["Program_2"][STOP_TIME] = "21:30"
-    new_config["Program_2"][SUNRISE_DURATION] = "0"
-    new_config["Program_2"][SUNSET_DURATION] = "30"
+        new_config[self.YELLOW_SECTION_NAME] = {}
+        new_config[self.YELLOW_SECTION_NAME][self.MAX_VALUE_NAME] = "70"
+        new_config[self.YELLOW_SECTION_NAME][self.MIN_VALUE_NAME] = "0"
 
-    with open(SETTINGS_FILE_NAME, "w") as configfile:
-        new_config.write(configfile)
+        new_config["Program_1"] = {}
+        new_config["Program_1"][self.START_TIME_NAME] = "7:30"
+        new_config["Program_1"][self.STOP_TIME_NAME] = "9:00"
+        new_config["Program_1"][self.SUNRISE_DURATION] = "15"
+        new_config["Program_1"][self.SUNSET_DURATION] = "0"
 
-    return SETTINGS_FILE_NAME
+        new_config["Program_2"] = {}
+        new_config["Program_2"][self.START_TIME_NAME] = "16:30"
+        new_config["Program_2"][self.STOP_TIME_NAME] = "21:30"
+        new_config["Program_2"][self.SUNRISE_DURATION] = "0"
+        new_config["Program_2"][self.SUNSET_DURATION] = "30"
 
+        with open(self.SETTINGS_FILE_NAME, "w") as configfile:
+            new_config.write(configfile)
 
-def get_setting_file_name():
-    """ Determine location of configuration file"""
+        print("Default Configuration File created at " + configfile)
 
-    if os.path.isfile(SETTINGS_FILE_NAME):
-        return SETTINGS_FILE_NAME
-    elif os.path.isfile("..\\settings.ini"):
-        return "..\\settings.ini"
-    else:
-        """File does not exist in known paths, create a new file with
-            default values in current directory"""
-        return create_default_settings_file()
+        return self.SETTINGS_FILE_NAME
 
-# Read Configuration File from SETTINGS.INI
+    def get_setting_file_name(self):
+        """ Determine location of configuration file"""
 
-
-def read_config(yellow, blue):
-    """ Read Configuration """
-    config = configparser.SafeConfigParser()
-
-    config_file_name = get_setting_file_name()
-
-    print(config_file_name)
-    config.read(config_file_name)
-
-    for section in config.sections():
-        print(section)
-
-        if section == YELLOW_SECTION_NAME:
-            # processing yellow settings
-            if config[section][MAX_VALUE]:
-                yellow.set_max_limit(int(config[section][MAX_VALUE]))
-
-            if config[section][MIN_VALUE]:
-                yellow.set_min_limit(int(config[section][MIN_VALUE]))
-
-        elif section == BLUE_SECTION_NAME:
-            # processing blue settings
-            if config[section][MAX_VALUE]:
-                blue.set_max_limit(int(config[section][MAX_VALUE]))
-
-            if config[section][MIN_VALUE]:
-                blue.set_min_limit(int(config[section][MIN_VALUE]))
-
+        if os.path.isfile(self.SETTINGS_FILE_NAME):
+            return self.SETTINGS_FILE_NAME
+        elif os.path.isfile("..\\settings.ini"):
+            return "..\\settings.ini"
         else:
-            # processing programs
-            for setting in config[section]:
-                print(setting + " = " + config[section][setting])
+            """File does not exist in known paths, create a new file with
+                default values in current directory"""
+            return self.create_default_settings_file()
 
-        print("")
+    # Read Configuration File from SETTINGS.INI
+    def read_config(self):
+        """ Read Configuration """
+        config = configparser.SafeConfigParser()
+
+        config_file_name = self.get_setting_file_name()
+
+        print("Reading Configuration File " + config_file_name)
+        config.read(config_file_name)
+
+        self.programList = []
+
+        # Hard coded programs for now
+        morningProgram = LightProgram(7, 30, 9, 30, 15, 0, self)
+        self.programList.append (morningProgram)
+
+        eveningProgram = LightProgram(16, 30, 21, 45, 15, 45, self)
+        self.programList.append (eveningProgram)
+
+        for section in config.sections():
+
+            if section == self.YELLOW_SECTION_NAME:
+                # processing yellow settings
+                if config[section][self.MAX_VALUE_NAME]:
+                    self.yellow_settings.set_max_limit(
+                        int(config[section][self.MAX_VALUE_NAME]))
+
+                if config[section][self.MIN_VALUE_NAME]:
+                    self.yellow_settings.set_min_limit(
+                        int(config[section][self.MIN_VALUE_NAME]))
+
+            elif section == self.BLUE_SECTION_NAME:
+                # processing blue settings
+                if config[section][self.MAX_VALUE_NAME]:
+                    self.blue_settings.set_max_limit(
+                        int(config[section][self.MAX_VALUE_NAME]))
+
+                if config[section][self.MIN_VALUE_NAME]:
+                    self.blue_settings.set_min_limit(
+                        int(config[section][self.MIN_VALUE_NAME]))
+
+            else:
+                # processing programs
+                for setting in config[section]:
+                    print(setting + " = " + config[section][setting])
 
 
-# Run Background thread to control intensity
-def threaded_pwm(programList):
+def threaded_pwm(settings):
+    """ Thread to control LCD intensity """
+
     print("PWM Thread started")
-
-    old_blue_val = 0
-    old_yellow_val = 0
 
     global BLUE_VALUE
     global YELLOW_VALUE
 
+    old_blue_val = 0
+    old_yellow_val = 0
+
     if IsRaspberryPi():
+        """ Determine if we are running on Raspberry Pi or not """
         import RPi.GPIO as GPIO
 
         GPIO.setmode(GPIO.BOARD)
@@ -397,7 +414,7 @@ def threaded_pwm(programList):
         blue_val = 0
         yellow_val = 0
 
-        for program in programList:
+        for program in settings.programList:
             b = program.get_blue_value(nowTime)
             if blue_val < b:
                 blue_val = b
@@ -430,10 +447,10 @@ def threaded_pwm(programList):
 
         time.sleep(1)
 
-# Background thread for LCD Updates
-
 
 def threaded_lcd_update():
+    """ Thread to paint LCD """
+
     print("LCD Thread started")
 
     # Initialise display
@@ -466,9 +483,9 @@ def threaded_lcd_update():
             lcdManager.lcd_string(star, lcdManager.LCD_LINE_3)
             lcdManager.lcd_string(color_str, lcdManager.LCD_LINE_4)
 
-            time.sleep(0.5)
+            time.sleep(1)
             count = count + 1
-            if count == 10:
+            if count == 100:
                 print(time_str + " " + date_str + " " + str(stop_thread))
                 count = 0
                 print(color_str)
@@ -488,18 +505,11 @@ def threaded_lcd_update():
 # Main Program Entry Point
 if __name__ == "__main__":
 
-    YELLOW = ColorSetting(YELLOW_SECTION_NAME)
-    BLUE = ColorSetting(BLUE_SECTION_NAME)
-
-    read_config(YELLOW, BLUE)
-
-    morningProgram = LightProgram(7, 30, 9, 30, 15, 0)
-    eveningProgram = LightProgram(16, 30, 21, 45, 15, 45)
-
-    programList = [morningProgram, eveningProgram]
+    settings = StoredSettings()
+    settings.read_config()
 
     # Start background thread to control light intensity
-    pwmThread = Thread(target=threaded_pwm, args=(programList,))
+    pwmThread = Thread(target=threaded_pwm, args=(settings,))
     pwmThread.start()
 
     lcdThread = Thread(target=threaded_lcd_update, args=())
