@@ -401,6 +401,12 @@ class StoredSettings(object):
                 for setting in config[section]:
                     print(setting + " = " + config[section][setting])
 
+def select_button_handler(channel):
+    global stop_thread
+
+    print("Select button pressed. Exiting");
+    print(channel)
+    stop_thread = 1
 
 def threaded_pwm(settings):
     """ Thread to control LCD intensity """
@@ -422,6 +428,11 @@ def threaded_pwm(settings):
 
         GPIO.setup(11, GPIO.OUT)
         GPIO.setup(13, GPIO.OUT)
+
+        # Select button 
+        GPIO.setup(31, GPIO.IN) 
+
+        GPIO.add_event_detect (31, GPIO.RISING, callback=select_button_handler, bouncetime=300)
 
         channel_b = GPIO.PWM(11, 500)
         channel_y = GPIO.PWM(13, 500)
