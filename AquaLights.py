@@ -6,6 +6,10 @@ import datetime
 import time
 import socket
 import platform
+
+import logging
+from logging.handlers import RotatingFileHandler
+
 from threading import Thread
 
 import netifaces
@@ -24,6 +28,18 @@ YELLOW_VALUE = 0
 #percent = int(0xffff/100)
 stop_thread = 0
 
+
+filePath, fileName  = os.path.split(os.path.abspath(__file__))
+logFileName = filePath + "/" + "AquaLights.log"
+
+myLogger = logging.getLogger ("AqauLogger")
+formatter = logging.Formatter ("%(asctime)s - %(name)-12s - %(levelname)-8s -%(message)s")
+handler = RotatingFileHandler (logFileName, mode='a',maxBytes=2*1024*1024,backupCount=2)
+handler.setFormatter (formatter)
+myLogger.addHandler (handler)
+streamHandler = logging.StreamHandler ()
+myLogger.addHandler(streamHandler)
+myLogger.setLevel(logging.DEBUG)
 
 def get_host_info():
     # Get Hostname of the Rasperry Pi
@@ -148,7 +164,7 @@ class LCDManager(object):
         self.lcd_byte(0x01, self.LCD_CMD)  # 000001 Clear display
         time.sleep(self.E_DELAY)
 
-        print("LCD Initialized")
+        myLogger.debug("LCD Initialized")
 
     # Send string to display
     def lcd_string(self, message, line):
@@ -244,7 +260,7 @@ class LightProgram(object):
 
         if timeNow.date().day != self.startDateTime.date().day:
             self.calculate_start_end_date_time_for_the_day()
-            print("Today's date set to " + str(self.startDateTime))
+            myLogger.info ("Today's date set to " + str(self.startDateTime))
 
         if timeNow >= self.startDateTime:
             if timeNow <= self.endDateTime:
@@ -263,7 +279,7 @@ class LightProgram(object):
 
         if timeNow.date().day != self.startDateTime.date().day:
             self.calculate_start_end_date_time_for_the_day()
-            print("Todays date set to " + str(self.startDateTime))
+            myLogger.info ("Todays date set to " + str(self.startDateTime))
 
         if timeNow >= self.startDateTime:
             if timeNow <= self.endDateTime:
@@ -314,7 +330,7 @@ class StoredSettings(object):
         with open(filename, "w") as configfile:
             new_config.write(configfile)
 
-        print("Default Configuration File created at " + filename)
+        myLogger.info ("Default Configuration File created at " + filename)
 
         return filename
 
@@ -327,7 +343,7 @@ class StoredSettings(object):
 
         # Make sure the file exists 
         if os.path.isfile(filename) != True:
-            print ("Settings file name not found. Creating new one with default settings at " + filename)
+            myLogger.warn ("Settings file name not found. Creating new one with default settings at " + filename)
             self.create_default_settings_file ( filename )
 
         return filename
@@ -339,7 +355,7 @@ class StoredSettings(object):
 
         config_file_name = self.get_setting_file_name()
 
-        print("Reading Configuration File " + config_file_name)
+        myLogger.info ("Reading Configuration File " + config_file_name)
         config.read(config_file_name)
 
         self.programList = []
@@ -393,25 +409,24 @@ class StoredSettings(object):
                     self.programList.append(newProgram)
 
                 except: 
-                    print ("Error Processing Section " + section)
+                    myLogger.error  ("Error Processing Section " + section)
 
                 
             else:
                 # processing programs
                 for setting in config[section]:
-                    print(setting + " = " + config[section][setting])
+                    myLogger.debug (setting + " = " + config[section][setting])
 
 def select_button_handler(channel):
     global stop_thread
 
-    print("Select button pressed. Exiting");
-    print(channel)
+    myLogger.debug ("Select button pressed. Exiting");
+    myLogger.debug (channel)
     stop_thread = 1
 
 def threaded_pwm(settings):
     """ Thread to control LCD intensity """
-
-    print("PWM Thread started")
+    myLogger.info ("PWM Thread started")
 
     global BLUE_VALUE
     global YELLOW_VALUE
@@ -440,8 +455,7 @@ def threaded_pwm(settings):
         # Start with 100% to shut down MOSFETs
         channel_b.start(100)
         channel_y.start(100)
-
-        print("GPIO Ready")
+        myLogger.info ("GPIO Ready")
 
     while stop_thread == 0:
 
@@ -460,7 +474,7 @@ def threaded_pwm(settings):
                 yellow_val = y
 
         if old_blue_val != blue_val:
-            print("Blue value changed from " + str(old_blue_val) +
+            myLogger.info ("Blue value changed from " + str(old_blue_val) +
                   " to " + str(blue_val) + " at " + str(nowTime))
             old_blue_val = blue_val
             BLUE_VALUE = blue_val
@@ -468,7 +482,7 @@ def threaded_pwm(settings):
                 channel_b.ChangeDutyCycle(100 - BLUE_VALUE)
 
         if old_yellow_val != yellow_val:
-            print("Yellow value changed from " + str(old_yellow_val) +
+            myLogger.info("Yellow value changed from " + str(old_yellow_val) +
                   " to " + str(yellow_val) + " at " + str(nowTime))
             old_yellow_val = yellow_val
             YELLOW_VALUE = yellow_val
@@ -476,6 +490,7 @@ def threaded_pwm(settings):
                 channel_y.ChangeDutyCycle(100 - YELLOW_VALUE)
 
         if stop_thread:
+            myLogger.debug ("Stopping PWM Thread")
             channel_b.ChangeDutyCycle(100)
             channel_y.ChangeDutyCycle(100)
             GPIO.cleanup()
@@ -486,8 +501,7 @@ def threaded_pwm(settings):
 
 def threaded_lcd_update():
     """ Thread to paint LCD """
-
-    print("LCD Thread started")
+    myLogger.info ("LCD Thread started")
 
     # Initialise display
     lcdManager = LCDManager(IsRaspberryPi())
@@ -522,18 +536,19 @@ def threaded_lcd_update():
             time.sleep(1)
             count = count + 1
             if count == 100:
-                print(time_str + " " + date_str + " " + str(stop_thread))
+                myLogger.debug (time_str + " " + date_str + " " + str(stop_thread))
                 count = 0
-                print(color_str)
+                myLogger.debug (color_str)
 
         except IOError:
-            print("I/O Error at " + time_str + " on " + date_str)
-            print("retrying in 5 seconds")
+            myLogger.error ("I/O Error at " + time_str + " on " + date_str)
+            myLogger.info  ("retrying in 5 seconds")
             time.sleep(5)
             lcdManager.lcd_init()
 
         # Exit thread on thread stop signal
         if stop_thread:
+            myLogger.debug("Stopping LCD Update Thread")
             return
 
 
@@ -541,6 +556,7 @@ def threaded_lcd_update():
 # Main Program Entry Point
 if __name__ == "__main__":
 
+    myLogger.info ("Program Started")
     settings = StoredSettings()
     settings.read_config()
 
@@ -556,7 +572,8 @@ if __name__ == "__main__":
             time.sleep(1)
 
         except KeyboardInterrupt:
-            print("Stopping threads")
+            myLogger.info ("Stopping threads")
             stop_thread = 1
             lcdThread.join()
             pwmThread.join()
+            myLogger.info ("Exiting ... ")
