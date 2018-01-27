@@ -168,7 +168,7 @@ def threaded_lcd_update():
     myLogger.info ("LCD Thread started")
 
     # Initialise display
-    lcdManager = LCDManager(IsRaspberryPi())
+    lcdManager = LCDManager(IsRaspberryPi(), myLogger)
 
     lcdManager.lcd_init()
     star = "*"

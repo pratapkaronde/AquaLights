@@ -1,0 +1,29 @@
+2018-01-26 18:41:35,744 - AqauLogger   - INFO     -Program Started
+2018-01-26 18:41:35,747 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-01-26 18:41:35,756 - AqauLogger   - INFO     -PWM Thread started
+2018-01-26 18:41:35,758 - AqauLogger   - INFO     -LCD Thread started
+2018-01-26 18:41:35,759 - AqauLogger   - INFO     -Blue value changed from 0 to 50 at 2018-01-26 18:41:35.759490
+2018-01-26 18:41:35,762 - AqauLogger   - INFO     -Yellow value changed from 0 to 70 at 2018-01-26 18:41:35.759490
+2018-01-26 18:46:54,696 - AqauLogger   - INFO     -Program Started
+2018-01-26 18:54:31,999 - AqauLogger   - INFO     -Program Started
+2018-01-26 18:55:32,693 - AqauLogger   - INFO     -Program Started
+2018-01-26 18:55:35,148 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-01-26 18:55:38,742 - AqauLogger   - INFO     -PWM Thread started
+2018-01-26 18:56:05,601 - AqauLogger   - INFO     -Program Started
+2018-01-26 18:56:05,604 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-01-26 18:56:05,613 - AqauLogger   - INFO     -PWM Thread started
+2018-01-26 18:56:05,616 - AqauLogger   - INFO     -Blue value changed from 0 to 50 at 2018-01-26 18:56:05.615600
+2018-01-26 18:56:05,617 - AqauLogger   - INFO     -LCD Thread started
+2018-01-26 18:56:05,618 - AqauLogger   - INFO     -Yellow value changed from 0 to 70 at 2018-01-26 18:56:05.615600
+2018-01-26 19:05:08,450 - AqauLogger   - INFO     -Program Started
+2018-01-26 19:05:08,453 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-01-26 19:05:08,462 - AqauLogger   - INFO     -PWM Thread started
+2018-01-26 19:05:08,463 - AqauLogger   - INFO     -LCD Thread started
+2018-01-26 19:05:08,465 - AqauLogger   - INFO     -Blue value changed from 0 to 50 at 2018-01-26 19:05:08.465193
+2018-01-26 19:05:08,467 - AqauLogger   - INFO     -Yellow value changed from 0 to 70 at 2018-01-26 19:05:08.465193
+2018-01-26 19:06:10,157 - AqauLogger   - INFO     -Program Started
+2018-01-26 19:06:10,160 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-01-26 19:06:10,169 - AqauLogger   - INFO     -PWM Thread started
+2018-01-26 19:06:10,171 - AqauLogger   - INFO     -LCD Thread started
+2018-01-26 19:06:10,173 - AqauLogger   - INFO     -Blue value changed from 0 to 50 at 2018-01-26 19:06:10.173040
+2018-01-26 19:06:10,177 - AqauLogger   - INFO     -Yellow value changed from 0 to 70 at 2018-01-26 19:06:10.173040
