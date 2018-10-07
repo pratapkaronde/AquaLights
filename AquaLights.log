@@ -1,0 +1,1568 @@
+2018-01-27 15:51:21,111 - AqauLogger   - INFO     -Program Started
+2018-01-27 15:51:21,113 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-01-27 15:51:21,123 - AqauLogger   - INFO     -PWM Thread started
+2018-01-27 15:51:21,125 - AqauLogger   - INFO     -LCD Thread started
+2018-01-27 15:51:21,126 - AqauLogger   - INFO     -Blue value changed from 0 to 10 at 2018-01-27 15:51:21.126585
+2018-01-27 15:53:02,173 - AqauLogger   - DEBUG    -15:53:01 01/27/18 0
+2018-01-27 15:53:02,175 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 15:54:42,233 - AqauLogger   - DEBUG    -15:54:41 01/27/18 0
+2018-01-27 15:54:42,237 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 15:56:22,298 - AqauLogger   - DEBUG    -15:56:21 01/27/18 0
+2018-01-27 15:56:22,302 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 15:58:02,354 - AqauLogger   - DEBUG    -15:58:01 01/27/18 0
+2018-01-27 15:58:02,358 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 15:59:42,419 - AqauLogger   - DEBUG    -15:59:41 01/27/18 0
+2018-01-27 15:59:42,422 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:01:22,483 - AqauLogger   - DEBUG    -16:01:21 01/27/18 0
+2018-01-27 16:01:22,486 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:03:02,554 - AqauLogger   - DEBUG    -16:03:01 01/27/18 0
+2018-01-27 16:03:02,557 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:04:40,148 - AqauLogger   - DEBUG    -16:04:39 01/27/18 0
+2018-01-27 16:04:40,152 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:06:20,219 - AqauLogger   - DEBUG    -16:06:19 01/27/18 0
+2018-01-27 16:06:20,222 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:08:00,284 - AqauLogger   - DEBUG    -16:07:59 01/27/18 0
+2018-01-27 16:08:00,287 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:09:40,349 - AqauLogger   - DEBUG    -16:09:39 01/27/18 0
+2018-01-27 16:09:40,352 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:11:20,413 - AqauLogger   - DEBUG    -16:11:19 01/27/18 0
+2018-01-27 16:11:20,416 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:13:00,481 - AqauLogger   - DEBUG    -16:12:59 01/27/18 0
+2018-01-27 16:13:00,484 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:14:40,547 - AqauLogger   - DEBUG    -16:14:39 01/27/18 0
+2018-01-27 16:14:40,548 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:16:20,605 - AqauLogger   - DEBUG    -16:16:19 01/27/18 0
+2018-01-27 16:16:20,608 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:18:00,671 - AqauLogger   - DEBUG    -16:17:59 01/27/18 0
+2018-01-27 16:18:00,674 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:19:40,741 - AqauLogger   - DEBUG    -16:19:39 01/27/18 0
+2018-01-27 16:19:40,746 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:21:20,799 - AqauLogger   - DEBUG    -16:21:19 01/27/18 0
+2018-01-27 16:21:20,803 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:23:00,865 - AqauLogger   - DEBUG    -16:22:59 01/27/18 0
+2018-01-27 16:23:00,869 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:24:40,928 - AqauLogger   - DEBUG    -16:24:39 01/27/18 0
+2018-01-27 16:24:40,931 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:26:20,991 - AqauLogger   - DEBUG    -16:26:19 01/27/18 0
+2018-01-27 16:26:20,995 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:28:01,054 - AqauLogger   - DEBUG    -16:28:00 01/27/18 0
+2018-01-27 16:28:01,058 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:29:41,120 - AqauLogger   - DEBUG    -16:29:40 01/27/18 0
+2018-01-27 16:29:41,123 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-27 16:30:00,132 - AqauLogger   - INFO     -Blue value changed from 10 to 50 at 2018-01-27 16:30:00.132446
+2018-01-27 16:30:00,133 - AqauLogger   - INFO     -Yellow value changed from 0 to 70 at 2018-01-27 16:30:00.132446
+2018-01-27 16:31:21,185 - AqauLogger   - DEBUG    -16:31:20 01/27/18 0
+2018-01-27 16:31:21,189 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:33:01,252 - AqauLogger   - DEBUG    -16:33:00 01/27/18 0
+2018-01-27 16:33:01,255 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:34:41,312 - AqauLogger   - DEBUG    -16:34:40 01/27/18 0
+2018-01-27 16:34:41,313 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:36:21,367 - AqauLogger   - DEBUG    -16:36:20 01/27/18 0
+2018-01-27 16:36:21,370 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:38:01,437 - AqauLogger   - DEBUG    -16:38:00 01/27/18 0
+2018-01-27 16:38:01,440 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:39:41,502 - AqauLogger   - DEBUG    -16:39:40 01/27/18 0
+2018-01-27 16:39:41,506 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:41:21,564 - AqauLogger   - DEBUG    -16:41:20 01/27/18 0
+2018-01-27 16:41:21,567 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:43:01,627 - AqauLogger   - DEBUG    -16:43:00 01/27/18 0
+2018-01-27 16:43:01,630 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:44:41,692 - AqauLogger   - DEBUG    -16:44:40 01/27/18 0
+2018-01-27 16:44:41,695 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:46:21,754 - AqauLogger   - DEBUG    -16:46:20 01/27/18 0
+2018-01-27 16:46:21,757 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:48:01,815 - AqauLogger   - DEBUG    -16:48:00 01/27/18 0
+2018-01-27 16:48:01,818 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:49:41,881 - AqauLogger   - DEBUG    -16:49:40 01/27/18 0
+2018-01-27 16:49:41,885 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:51:21,947 - AqauLogger   - DEBUG    -16:51:20 01/27/18 0
+2018-01-27 16:51:21,951 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:53:02,013 - AqauLogger   - DEBUG    -16:53:01 01/27/18 0
+2018-01-27 16:53:02,016 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:54:42,073 - AqauLogger   - DEBUG    -16:54:41 01/27/18 0
+2018-01-27 16:54:42,077 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:56:22,134 - AqauLogger   - DEBUG    -16:56:21 01/27/18 0
+2018-01-27 16:56:22,138 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:58:02,191 - AqauLogger   - DEBUG    -16:58:01 01/27/18 0
+2018-01-27 16:58:02,192 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 16:59:42,244 - AqauLogger   - DEBUG    -16:59:41 01/27/18 0
+2018-01-27 16:59:42,248 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:01:22,312 - AqauLogger   - DEBUG    -17:01:21 01/27/18 0
+2018-01-27 17:01:22,316 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:03:02,379 - AqauLogger   - DEBUG    -17:03:01 01/27/18 0
+2018-01-27 17:03:02,383 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:04:42,446 - AqauLogger   - DEBUG    -17:04:41 01/27/18 0
+2018-01-27 17:04:42,449 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:06:22,515 - AqauLogger   - DEBUG    -17:06:21 01/27/18 0
+2018-01-27 17:06:22,518 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:08:02,580 - AqauLogger   - DEBUG    -17:08:01 01/27/18 0
+2018-01-27 17:08:02,583 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:09:42,645 - AqauLogger   - DEBUG    -17:09:41 01/27/18 0
+2018-01-27 17:09:42,648 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:11:22,706 - AqauLogger   - DEBUG    -17:11:21 01/27/18 0
+2018-01-27 17:11:22,709 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:13:02,764 - AqauLogger   - DEBUG    -17:13:01 01/27/18 0
+2018-01-27 17:13:02,767 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:14:42,822 - AqauLogger   - DEBUG    -17:14:41 01/27/18 0
+2018-01-27 17:14:42,825 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:16:22,884 - AqauLogger   - DEBUG    -17:16:21 01/27/18 0
+2018-01-27 17:16:22,888 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:18:02,946 - AqauLogger   - DEBUG    -17:18:01 01/27/18 0
+2018-01-27 17:18:02,950 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:19:43,007 - AqauLogger   - DEBUG    -17:19:42 01/27/18 0
+2018-01-27 17:19:43,008 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:21:23,060 - AqauLogger   - DEBUG    -17:21:22 01/27/18 0
+2018-01-27 17:21:23,063 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:23:03,119 - AqauLogger   - DEBUG    -17:23:02 01/27/18 0
+2018-01-27 17:23:03,122 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:24:43,177 - AqauLogger   - DEBUG    -17:24:42 01/27/18 0
+2018-01-27 17:24:43,180 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:26:23,235 - AqauLogger   - DEBUG    -17:26:22 01/27/18 0
+2018-01-27 17:26:23,239 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:28:03,297 - AqauLogger   - DEBUG    -17:28:02 01/27/18 0
+2018-01-27 17:28:03,300 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:29:43,359 - AqauLogger   - DEBUG    -17:29:42 01/27/18 0
+2018-01-27 17:29:43,362 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:31:23,424 - AqauLogger   - DEBUG    -17:31:22 01/27/18 0
+2018-01-27 17:31:23,427 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:33:03,485 - AqauLogger   - DEBUG    -17:33:02 01/27/18 0
+2018-01-27 17:33:03,489 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:34:43,547 - AqauLogger   - DEBUG    -17:34:42 01/27/18 0
+2018-01-27 17:34:43,550 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:36:23,605 - AqauLogger   - DEBUG    -17:36:22 01/27/18 0
+2018-01-27 17:36:23,608 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:38:03,670 - AqauLogger   - DEBUG    -17:38:02 01/27/18 0
+2018-01-27 17:38:03,674 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:39:43,729 - AqauLogger   - DEBUG    -17:39:42 01/27/18 0
+2018-01-27 17:39:43,733 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:41:23,792 - AqauLogger   - DEBUG    -17:41:22 01/27/18 0
+2018-01-27 17:41:23,795 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:43:03,851 - AqauLogger   - DEBUG    -17:43:02 01/27/18 0
+2018-01-27 17:43:03,854 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:44:43,913 - AqauLogger   - DEBUG    -17:44:42 01/27/18 0
+2018-01-27 17:44:43,917 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:46:23,975 - AqauLogger   - DEBUG    -17:46:22 01/27/18 0
+2018-01-27 17:46:23,976 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:48:04,030 - AqauLogger   - DEBUG    -17:48:03 01/27/18 0
+2018-01-27 17:48:04,033 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:49:44,091 - AqauLogger   - DEBUG    -17:49:43 01/27/18 0
+2018-01-27 17:49:44,094 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:51:24,147 - AqauLogger   - DEBUG    -17:51:23 01/27/18 0
+2018-01-27 17:51:24,151 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:53:04,205 - AqauLogger   - DEBUG    -17:53:03 01/27/18 0
+2018-01-27 17:53:04,208 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:54:44,268 - AqauLogger   - DEBUG    -17:54:43 01/27/18 0
+2018-01-27 17:54:44,271 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:56:24,324 - AqauLogger   - DEBUG    -17:56:23 01/27/18 0
+2018-01-27 17:56:24,327 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:58:04,391 - AqauLogger   - DEBUG    -17:58:03 01/27/18 0
+2018-01-27 17:58:04,394 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 17:59:44,454 - AqauLogger   - DEBUG    -17:59:43 01/27/18 0
+2018-01-27 17:59:44,457 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:01:24,517 - AqauLogger   - DEBUG    -18:01:23 01/27/18 0
+2018-01-27 18:01:24,520 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:03:04,578 - AqauLogger   - DEBUG    -18:03:03 01/27/18 0
+2018-01-27 18:03:04,581 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:04:44,644 - AqauLogger   - DEBUG    -18:04:43 01/27/18 0
+2018-01-27 18:04:44,647 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:06:24,702 - AqauLogger   - DEBUG    -18:06:23 01/27/18 0
+2018-01-27 18:06:24,706 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:08:04,765 - AqauLogger   - DEBUG    -18:08:03 01/27/18 0
+2018-01-27 18:08:04,769 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:09:44,827 - AqauLogger   - DEBUG    -18:09:43 01/27/18 0
+2018-01-27 18:09:44,830 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:11:24,890 - AqauLogger   - DEBUG    -18:11:23 01/27/18 0
+2018-01-27 18:11:24,893 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:13:04,955 - AqauLogger   - DEBUG    -18:13:03 01/27/18 0
+2018-01-27 18:13:04,958 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:14:45,015 - AqauLogger   - DEBUG    -18:14:44 01/27/18 0
+2018-01-27 18:14:45,019 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:16:25,078 - AqauLogger   - DEBUG    -18:16:24 01/27/18 0
+2018-01-27 18:16:25,081 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:18:05,147 - AqauLogger   - DEBUG    -18:18:04 01/27/18 0
+2018-01-27 18:18:05,151 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:19:45,209 - AqauLogger   - DEBUG    -18:19:44 01/27/18 0
+2018-01-27 18:19:45,212 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:21:25,266 - AqauLogger   - DEBUG    -18:21:24 01/27/18 0
+2018-01-27 18:21:25,270 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:23:05,327 - AqauLogger   - DEBUG    -18:23:04 01/27/18 0
+2018-01-27 18:23:05,331 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:24:45,392 - AqauLogger   - DEBUG    -18:24:44 01/27/18 0
+2018-01-27 18:24:45,395 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:26:25,453 - AqauLogger   - DEBUG    -18:26:24 01/27/18 0
+2018-01-27 18:26:25,457 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:28:05,514 - AqauLogger   - DEBUG    -18:28:04 01/27/18 0
+2018-01-27 18:28:05,517 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:29:45,582 - AqauLogger   - DEBUG    -18:29:44 01/27/18 0
+2018-01-27 18:29:45,586 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:31:25,648 - AqauLogger   - DEBUG    -18:31:24 01/27/18 0
+2018-01-27 18:31:25,651 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:33:05,722 - AqauLogger   - DEBUG    -18:33:04 01/27/18 0
+2018-01-27 18:33:05,725 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:34:45,789 - AqauLogger   - DEBUG    -18:34:44 01/27/18 0
+2018-01-27 18:34:45,793 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:36:25,847 - AqauLogger   - DEBUG    -18:36:24 01/27/18 0
+2018-01-27 18:36:25,850 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:38:05,908 - AqauLogger   - DEBUG    -18:38:04 01/27/18 0
+2018-01-27 18:38:05,911 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:39:45,973 - AqauLogger   - DEBUG    -18:39:44 01/27/18 0
+2018-01-27 18:39:45,976 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:41:26,035 - AqauLogger   - DEBUG    -18:41:25 01/27/18 0
+2018-01-27 18:41:26,038 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:43:06,097 - AqauLogger   - DEBUG    -18:43:05 01/27/18 0
+2018-01-27 18:43:06,100 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:44:46,161 - AqauLogger   - DEBUG    -18:44:45 01/27/18 0
+2018-01-27 18:44:46,164 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:46:26,225 - AqauLogger   - DEBUG    -18:46:25 01/27/18 0
+2018-01-27 18:46:26,228 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:48:06,287 - AqauLogger   - DEBUG    -18:48:05 01/27/18 0
+2018-01-27 18:48:06,290 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:49:46,351 - AqauLogger   - DEBUG    -18:49:45 01/27/18 0
+2018-01-27 18:49:46,355 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:51:26,416 - AqauLogger   - DEBUG    -18:51:25 01/27/18 0
+2018-01-27 18:51:26,419 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:53:06,481 - AqauLogger   - DEBUG    -18:53:05 01/27/18 0
+2018-01-27 18:53:06,484 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:54:46,537 - AqauLogger   - DEBUG    -18:54:45 01/27/18 0
+2018-01-27 18:54:46,541 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:56:26,596 - AqauLogger   - DEBUG    -18:56:25 01/27/18 0
+2018-01-27 18:56:26,600 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:58:06,657 - AqauLogger   - DEBUG    -18:58:05 01/27/18 0
+2018-01-27 18:58:06,660 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 18:59:46,718 - AqauLogger   - DEBUG    -18:59:45 01/27/18 0
+2018-01-27 18:59:46,721 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:01:26,777 - AqauLogger   - DEBUG    -19:01:25 01/27/18 0
+2018-01-27 19:01:26,780 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:03:06,838 - AqauLogger   - DEBUG    -19:03:05 01/27/18 0
+2018-01-27 19:03:06,842 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:04:46,896 - AqauLogger   - DEBUG    -19:04:45 01/27/18 0
+2018-01-27 19:04:46,899 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:06:26,956 - AqauLogger   - DEBUG    -19:06:25 01/27/18 0
+2018-01-27 19:06:26,959 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:08:07,019 - AqauLogger   - DEBUG    -19:08:06 01/27/18 0
+2018-01-27 19:08:07,022 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:09:47,102 - AqauLogger   - DEBUG    -19:09:46 01/27/18 0
+2018-01-27 19:09:47,105 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:11:27,179 - AqauLogger   - DEBUG    -19:11:26 01/27/18 0
+2018-01-27 19:11:27,182 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:13:07,266 - AqauLogger   - DEBUG    -19:13:06 01/27/18 0
+2018-01-27 19:13:07,269 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:14:47,353 - AqauLogger   - DEBUG    -19:14:46 01/27/18 0
+2018-01-27 19:14:47,356 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:16:27,436 - AqauLogger   - DEBUG    -19:16:26 01/27/18 0
+2018-01-27 19:16:27,439 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:18:07,516 - AqauLogger   - DEBUG    -19:18:06 01/27/18 0
+2018-01-27 19:18:07,519 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:19:47,598 - AqauLogger   - DEBUG    -19:19:46 01/27/18 0
+2018-01-27 19:19:47,601 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:21:27,682 - AqauLogger   - DEBUG    -19:21:26 01/27/18 0
+2018-01-27 19:21:27,685 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:23:07,768 - AqauLogger   - DEBUG    -19:23:06 01/27/18 0
+2018-01-27 19:23:07,771 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:24:47,848 - AqauLogger   - DEBUG    -19:24:46 01/27/18 0
+2018-01-27 19:24:47,851 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:26:27,930 - AqauLogger   - DEBUG    -19:26:26 01/27/18 0
+2018-01-27 19:26:27,933 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:28:08,010 - AqauLogger   - DEBUG    -19:28:07 01/27/18 0
+2018-01-27 19:28:08,013 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:29:48,095 - AqauLogger   - DEBUG    -19:29:47 01/27/18 0
+2018-01-27 19:29:48,098 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:31:28,172 - AqauLogger   - DEBUG    -19:31:27 01/27/18 0
+2018-01-27 19:31:28,175 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:33:08,257 - AqauLogger   - DEBUG    -19:33:07 01/27/18 0
+2018-01-27 19:33:08,260 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:34:48,336 - AqauLogger   - DEBUG    -19:34:47 01/27/18 0
+2018-01-27 19:34:48,339 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:36:28,419 - AqauLogger   - DEBUG    -19:36:27 01/27/18 0
+2018-01-27 19:36:28,422 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:38:08,498 - AqauLogger   - DEBUG    -19:38:07 01/27/18 0
+2018-01-27 19:38:08,501 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:39:48,580 - AqauLogger   - DEBUG    -19:39:47 01/27/18 0
+2018-01-27 19:39:48,583 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:41:28,664 - AqauLogger   - DEBUG    -19:41:27 01/27/18 0
+2018-01-27 19:41:28,667 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:43:08,741 - AqauLogger   - DEBUG    -19:43:07 01/27/18 0
+2018-01-27 19:43:08,744 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:44:48,820 - AqauLogger   - DEBUG    -19:44:47 01/27/18 0
+2018-01-27 19:44:48,823 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:46:28,898 - AqauLogger   - DEBUG    -19:46:27 01/27/18 0
+2018-01-27 19:46:28,901 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:48:08,979 - AqauLogger   - DEBUG    -19:48:07 01/27/18 0
+2018-01-27 19:48:08,982 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:49:49,052 - AqauLogger   - DEBUG    -19:49:48 01/27/18 0
+2018-01-27 19:49:49,055 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:51:29,133 - AqauLogger   - DEBUG    -19:51:28 01/27/18 0
+2018-01-27 19:51:29,136 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:53:09,221 - AqauLogger   - DEBUG    -19:53:08 01/27/18 0
+2018-01-27 19:53:09,224 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:54:49,303 - AqauLogger   - DEBUG    -19:54:48 01/27/18 0
+2018-01-27 19:54:49,306 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:56:29,389 - AqauLogger   - DEBUG    -19:56:28 01/27/18 0
+2018-01-27 19:56:29,392 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:58:09,473 - AqauLogger   - DEBUG    -19:58:08 01/27/18 0
+2018-01-27 19:58:09,476 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 19:59:49,553 - AqauLogger   - DEBUG    -19:59:48 01/27/18 0
+2018-01-27 19:59:49,556 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:01:29,634 - AqauLogger   - DEBUG    -20:01:28 01/27/18 0
+2018-01-27 20:01:29,637 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:03:09,710 - AqauLogger   - DEBUG    -20:03:08 01/27/18 0
+2018-01-27 20:03:09,713 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:04:49,786 - AqauLogger   - DEBUG    -20:04:48 01/27/18 0
+2018-01-27 20:04:49,789 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:06:29,866 - AqauLogger   - DEBUG    -20:06:28 01/27/18 0
+2018-01-27 20:06:29,869 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:08:09,946 - AqauLogger   - DEBUG    -20:08:08 01/27/18 0
+2018-01-27 20:08:09,949 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:09:50,035 - AqauLogger   - DEBUG    -20:09:49 01/27/18 0
+2018-01-27 20:09:50,038 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:11:30,118 - AqauLogger   - DEBUG    -20:11:29 01/27/18 0
+2018-01-27 20:11:30,121 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:13:10,203 - AqauLogger   - DEBUG    -20:13:09 01/27/18 0
+2018-01-27 20:13:10,206 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:14:50,285 - AqauLogger   - DEBUG    -20:14:49 01/27/18 0
+2018-01-27 20:14:50,288 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:16:30,364 - AqauLogger   - DEBUG    -20:16:29 01/27/18 0
+2018-01-27 20:16:30,367 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:18:10,451 - AqauLogger   - DEBUG    -20:18:09 01/27/18 0
+2018-01-27 20:18:10,454 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:19:50,529 - AqauLogger   - DEBUG    -20:19:49 01/27/18 0
+2018-01-27 20:19:50,532 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:21:30,616 - AqauLogger   - DEBUG    -20:21:29 01/27/18 0
+2018-01-27 20:21:30,619 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:23:10,693 - AqauLogger   - DEBUG    -20:23:09 01/27/18 0
+2018-01-27 20:23:10,696 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:24:50,769 - AqauLogger   - DEBUG    -20:24:49 01/27/18 0
+2018-01-27 20:24:50,772 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:26:30,850 - AqauLogger   - DEBUG    -20:26:29 01/27/18 0
+2018-01-27 20:26:30,853 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:28:10,931 - AqauLogger   - DEBUG    -20:28:09 01/27/18 0
+2018-01-27 20:28:10,934 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:29:51,013 - AqauLogger   - DEBUG    -20:29:50 01/27/18 0
+2018-01-27 20:29:51,016 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:31:31,094 - AqauLogger   - DEBUG    -20:31:30 01/27/18 0
+2018-01-27 20:31:31,097 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:33:11,177 - AqauLogger   - DEBUG    -20:33:10 01/27/18 0
+2018-01-27 20:33:11,180 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:34:51,257 - AqauLogger   - DEBUG    -20:34:50 01/27/18 0
+2018-01-27 20:34:51,260 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:36:31,332 - AqauLogger   - DEBUG    -20:36:30 01/27/18 0
+2018-01-27 20:36:31,335 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:38:11,417 - AqauLogger   - DEBUG    -20:38:10 01/27/18 0
+2018-01-27 20:38:11,420 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:39:51,497 - AqauLogger   - DEBUG    -20:39:50 01/27/18 0
+2018-01-27 20:39:51,500 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:41:31,579 - AqauLogger   - DEBUG    -20:41:30 01/27/18 0
+2018-01-27 20:41:31,582 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:43:11,655 - AqauLogger   - DEBUG    -20:43:10 01/27/18 0
+2018-01-27 20:43:11,658 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:44:51,738 - AqauLogger   - DEBUG    -20:44:50 01/27/18 0
+2018-01-27 20:44:51,741 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:46:31,814 - AqauLogger   - DEBUG    -20:46:30 01/27/18 0
+2018-01-27 20:46:31,817 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:48:11,893 - AqauLogger   - DEBUG    -20:48:10 01/27/18 0
+2018-01-27 20:48:11,896 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:49:51,973 - AqauLogger   - DEBUG    -20:49:50 01/27/18 0
+2018-01-27 20:49:51,974 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:51:32,047 - AqauLogger   - DEBUG    -20:51:31 01/27/18 0
+2018-01-27 20:51:32,050 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:53:12,127 - AqauLogger   - DEBUG    -20:53:11 01/27/18 0
+2018-01-27 20:53:12,130 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-27 20:54:52,205 - AqauLogger   - DEBUG    -20:54:51 01/27/18 0
+2018-01-27 20:54:52,207 - AqauLogger   - DEBUG    -B:50, Y: 70         
+2018-01-28 11:42:53,270 - AqauLogger   - INFO     -Today's date set to 2018-01-28 07:30:00
+2018-01-28 11:42:53,273 - AqauLogger   - INFO     -Today's date set to 2018-01-28 16:30:00
+2018-01-28 11:42:53,277 - AqauLogger   - INFO     -Blue value changed from 50 to 10 at 2018-01-28 11:42:53.269980
+2018-01-28 11:42:53,281 - AqauLogger   - INFO     -Yellow value changed from 70 to 0 at 2018-01-28 11:42:53.269980
+2018-01-28 11:44:30,338 - AqauLogger   - DEBUG    -11:44:29 01/28/18 0
+2018-01-28 11:44:30,339 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 11:46:10,416 - AqauLogger   - DEBUG    -11:46:09 01/28/18 0
+2018-01-28 11:46:10,420 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 11:47:50,507 - AqauLogger   - DEBUG    -11:47:49 01/28/18 0
+2018-01-28 11:47:50,510 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 11:49:30,590 - AqauLogger   - DEBUG    -11:49:29 01/28/18 0
+2018-01-28 11:49:30,593 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 11:51:10,674 - AqauLogger   - DEBUG    -11:51:09 01/28/18 0
+2018-01-28 11:51:10,677 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 11:52:50,760 - AqauLogger   - DEBUG    -11:52:49 01/28/18 0
+2018-01-28 11:52:50,763 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 11:54:30,846 - AqauLogger   - DEBUG    -11:54:29 01/28/18 0
+2018-01-28 11:54:30,849 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 11:56:10,935 - AqauLogger   - DEBUG    -11:56:09 01/28/18 0
+2018-01-28 11:56:10,936 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 11:57:51,019 - AqauLogger   - DEBUG    -11:57:50 01/28/18 0
+2018-01-28 11:57:51,022 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 11:59:31,103 - AqauLogger   - DEBUG    -11:59:30 01/28/18 0
+2018-01-28 11:59:31,106 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:01:11,186 - AqauLogger   - DEBUG    -12:01:10 01/28/18 0
+2018-01-28 12:01:11,189 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:02:51,274 - AqauLogger   - DEBUG    -12:02:50 01/28/18 0
+2018-01-28 12:02:51,277 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:04:31,363 - AqauLogger   - DEBUG    -12:04:30 01/28/18 0
+2018-01-28 12:04:31,366 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:06:11,451 - AqauLogger   - DEBUG    -12:06:10 01/28/18 0
+2018-01-28 12:06:11,454 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:07:51,546 - AqauLogger   - DEBUG    -12:07:50 01/28/18 0
+2018-01-28 12:07:51,550 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:09:31,633 - AqauLogger   - DEBUG    -12:09:30 01/28/18 0
+2018-01-28 12:09:31,637 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:11:11,723 - AqauLogger   - DEBUG    -12:11:10 01/28/18 0
+2018-01-28 12:11:11,726 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:12:51,802 - AqauLogger   - DEBUG    -12:12:50 01/28/18 0
+2018-01-28 12:12:51,805 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:14:31,887 - AqauLogger   - DEBUG    -12:14:30 01/28/18 0
+2018-01-28 12:14:31,890 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:16:11,981 - AqauLogger   - DEBUG    -12:16:10 01/28/18 0
+2018-01-28 12:16:11,984 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:17:52,069 - AqauLogger   - DEBUG    -12:17:51 01/28/18 0
+2018-01-28 12:17:52,072 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:19:32,151 - AqauLogger   - DEBUG    -12:19:31 01/28/18 0
+2018-01-28 12:19:32,154 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:21:12,233 - AqauLogger   - DEBUG    -12:21:11 01/28/18 0
+2018-01-28 12:21:12,236 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:22:52,327 - AqauLogger   - DEBUG    -12:22:51 01/28/18 0
+2018-01-28 12:22:52,331 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:24:32,415 - AqauLogger   - DEBUG    -12:24:31 01/28/18 0
+2018-01-28 12:24:32,418 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 12:26:12,507 - AqauLogger   - DEBUG    -12:26:11 01/28/18 0
+2018-01-28 12:26:12,510 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 14:36:23,675 - AqauLogger   - DEBUG    -14:36:22 01/28/18 0
+2018-01-28 14:36:23,678 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 14:38:03,743 - AqauLogger   - DEBUG    -14:38:02 01/28/18 0
+2018-01-28 14:38:03,746 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 14:39:43,832 - AqauLogger   - DEBUG    -14:39:42 01/28/18 0
+2018-01-28 14:39:43,835 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 14:41:23,909 - AqauLogger   - DEBUG    -14:41:22 01/28/18 0
+2018-01-28 14:41:23,912 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 14:43:03,996 - AqauLogger   - DEBUG    -14:43:02 01/28/18 0
+2018-01-28 14:43:03,999 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-01-28 14:44:44,077 - AqauLogger   - DEBUG    -14:44:43 01/28/18 0
+2018-01-28 14:44:44,078 - AqauLogger   - DEBUG    -B:10, Y: 0          
+2018-10-06 15:39:41,536 - AqauLogger   - INFO     -Program Started
+2018-10-06 15:39:41,538 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-06 15:42:03,942 - AqauLogger   - ERROR    -Error Processing Section Program_1
+2018-10-06 15:42:19,576 - AqauLogger   - ERROR    -Error Processing Section Program_2
+2018-10-06 15:42:21,136 - AqauLogger   - INFO     -PWM Thread started
+2018-10-06 15:42:21,808 - AqauLogger   - INFO     -LCD Thread started
+2018-10-06 15:44:56,093 - AqauLogger   - INFO     -Program Started
+2018-10-06 15:44:56,096 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-06 15:47:37,726 - AqauLogger   - INFO     -Program Started
+2018-10-06 15:47:37,728 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-06 15:47:41,022 - AqauLogger   - INFO     -Today's date set to 2018-10-06 15:47:39.632565
+2018-10-06 15:47:52,031 - AqauLogger   - INFO     -Sunrise will start at 2018-10-06 07:15:00
+2018-10-06 15:47:52,309 - AqauLogger   - INFO     -Day will start at 2018-10-06 07:30:00
+2018-10-06 15:47:52,834 - AqauLogger   - INFO     -Sunset will happen at 2018-10-06 09:00:00
+2018-10-06 15:49:02,620 - AqauLogger   - INFO     -Today's date set to 2018-10-06 15:48:00.526679
+2018-10-06 15:49:02,621 - AqauLogger   - INFO     -Sunrise will start at 2018-10-06 16:30:00
+2018-10-06 15:49:02,623 - AqauLogger   - INFO     -Day will start at 2018-10-06 16:30:00
+2018-10-06 15:49:02,625 - AqauLogger   - INFO     -Sunset will happen at 2018-10-06 22:00:00
+2018-10-06 15:49:02,630 - AqauLogger   - INFO     -PWM Thread started
+2018-10-06 15:49:02,633 - AqauLogger   - INFO     -LCD Thread started
+2018-10-06 15:49:02,635 - AqauLogger   - INFO     -Blue value changed from 0 to 10 at 2018-10-06 15:49:02.634649
+2018-10-06 15:50:41,703 - AqauLogger   - INFO     -Program Started
+2018-10-06 15:50:41,705 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-06 15:50:42,871 - AqauLogger   - INFO     -Today's date set to 2018-10-06 15:50:42.871953
+2018-10-06 15:50:42,873 - AqauLogger   - INFO     -Sunrise will start at 2018-10-06 07:15:00
+2018-10-06 15:50:42,875 - AqauLogger   - INFO     -Day will start at 2018-10-06 07:30:00
+2018-10-06 15:50:42,877 - AqauLogger   - INFO     -Sunset will happen at 2018-10-06 09:00:00
+2018-10-06 15:50:43,400 - AqauLogger   - INFO     -Today's date set to 2018-10-06 15:50:43.400116
+2018-10-06 15:50:43,401 - AqauLogger   - INFO     -Sunrise will start at 2018-10-06 16:30:00
+2018-10-06 15:50:43,401 - AqauLogger   - INFO     -Day will start at 2018-10-06 16:30:00
+2018-10-06 15:50:43,402 - AqauLogger   - INFO     -Sunset will happen at 2018-10-06 22:00:00
+2018-10-06 15:50:43,404 - AqauLogger   - INFO     -PWM Thread started
+2018-10-06 15:50:43,404 - AqauLogger   - INFO     -LCD Thread started
+2018-10-06 15:50:43,406 - AqauLogger   - INFO     -Blue value changed from 0 to 5 at 2018-10-06 15:50:43.405967
+2018-10-06 15:51:53,809 - AqauLogger   - INFO     -Program Started
+2018-10-06 15:51:53,812 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-06 15:51:53,814 - AqauLogger   - INFO     -Reading section Blue
+2018-10-06 15:51:53,815 - AqauLogger   - INFO     -Reading section Yellow
+2018-10-06 15:51:53,816 - AqauLogger   - INFO     -Reading section Program_1
+2018-10-06 15:52:03,724 - AqauLogger   - INFO     -Today's date set to 2018-10-06 15:52:03.724859
+2018-10-06 15:52:03,726 - AqauLogger   - INFO     -Sunrise will start at 2018-10-06 07:15:00
+2018-10-06 15:52:03,728 - AqauLogger   - INFO     -Day will start at 2018-10-06 07:30:00
+2018-10-06 15:52:03,730 - AqauLogger   - INFO     -Sunset will happen at 2018-10-06 09:00:00
+2018-10-06 15:52:03,732 - AqauLogger   - INFO     -Reading section Program_2
+2018-10-06 15:52:06,643 - AqauLogger   - INFO     -Today's date set to 2018-10-06 15:52:06.643608
+2018-10-06 15:52:06,645 - AqauLogger   - INFO     -Sunrise will start at 2018-10-06 16:30:00
+2018-10-06 15:52:06,647 - AqauLogger   - INFO     -Day will start at 2018-10-06 16:30:00
+2018-10-06 15:52:06,649 - AqauLogger   - INFO     -Sunset will happen at 2018-10-06 22:00:00
+2018-10-06 15:52:06,654 - AqauLogger   - INFO     -PWM Thread started
+2018-10-06 15:52:06,657 - AqauLogger   - INFO     -Blue value changed from 0 to 5 at 2018-10-06 15:52:06.656286
+2018-10-06 15:52:06,658 - AqauLogger   - INFO     -LCD Thread started
+2018-10-07 11:33:16,348 - AqauLogger   - INFO     -Program Started
+2018-10-07 11:33:16,350 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-07 11:33:16,353 - AqauLogger   - INFO     -Reading section Blue
+2018-10-07 11:33:16,354 - AqauLogger   - INFO     -Reading section Yellow
+2018-10-07 11:33:16,355 - AqauLogger   - INFO     -Reading section Program_1
+2018-10-07 11:33:22,689 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:33:22.689635
+2018-10-07 11:33:22,691 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 07:15:00
+2018-10-07 11:33:22,692 - AqauLogger   - INFO     -Day will start at 2018-10-07 07:30:00
+2018-10-07 11:33:22,693 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 09:00:00
+2018-10-07 11:33:22,694 - AqauLogger   - INFO     -Reading section Program_2
+2018-10-07 11:33:22,695 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:33:22.695487
+2018-10-07 11:33:22,696 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 11:15:00
+2018-10-07 11:33:22,697 - AqauLogger   - INFO     -Day will start at 2018-10-07 11:45:00
+2018-10-07 11:33:22,698 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 14:00:00
+2018-10-07 11:33:22,701 - AqauLogger   - INFO     -PWM Thread started
+2018-10-07 11:33:22,703 - AqauLogger   - INFO     -LCD Thread started
+2018-10-07 11:33:22,704 - AqauLogger   - INFO     -Blue value changed from 0 to 5 at 2018-10-07 11:33:22.704265
+2018-10-07 11:34:12,845 - AqauLogger   - INFO     -Program Started
+2018-10-07 11:34:12,848 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-07 11:34:12,850 - AqauLogger   - INFO     -Reading section Blue
+2018-10-07 11:34:12,852 - AqauLogger   - INFO     -Reading section Yellow
+2018-10-07 11:34:12,853 - AqauLogger   - INFO     -Reading section Program_1
+2018-10-07 11:34:12,854 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:34:12.854733
+2018-10-07 11:34:12,855 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 07:15:00
+2018-10-07 11:34:12,856 - AqauLogger   - INFO     -Day will start at 2018-10-07 07:30:00
+2018-10-07 11:34:12,858 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 09:00:00
+2018-10-07 11:34:12,860 - AqauLogger   - INFO     -Reading section Program_2
+2018-10-07 11:34:12,861 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:34:12.861562
+2018-10-07 11:34:12,862 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 11:15:00
+2018-10-07 11:34:12,863 - AqauLogger   - INFO     -Day will start at 2018-10-07 11:45:00
+2018-10-07 11:34:12,864 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 14:00:00
+2018-10-07 11:34:12,866 - AqauLogger   - INFO     -PWM Thread started
+2018-10-07 11:34:12,867 - AqauLogger   - INFO     -LCD Thread started
+2018-10-07 11:34:20,458 - AqauLogger   - INFO     -Blue value changed from 0 to 5 at 2018-10-07 11:34:12.868388
+2018-10-07 11:34:59,308 - AqauLogger   - INFO     -Program Started
+2018-10-07 11:34:59,310 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-07 11:34:59,311 - AqauLogger   - INFO     -Reading section Blue
+2018-10-07 11:34:59,312 - AqauLogger   - INFO     -Reading section Yellow
+2018-10-07 11:34:59,313 - AqauLogger   - INFO     -Reading section Program_1
+2018-10-07 11:34:59,314 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:34:59.314795
+2018-10-07 11:34:59,315 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 07:15:00
+2018-10-07 11:34:59,316 - AqauLogger   - INFO     -Day will start at 2018-10-07 07:30:00
+2018-10-07 11:34:59,316 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 09:00:00
+2018-10-07 11:34:59,317 - AqauLogger   - INFO     -Reading section Program_2
+2018-10-07 11:34:59,318 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:34:59.318696
+2018-10-07 11:34:59,319 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 11:15:00
+2018-10-07 11:34:59,320 - AqauLogger   - INFO     -Day will start at 2018-10-07 11:45:00
+2018-10-07 11:34:59,321 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 14:00:00
+2018-10-07 11:34:59,323 - AqauLogger   - INFO     -PWM Thread started
+2018-10-07 11:34:59,323 - AqauLogger   - INFO     -LCD Thread started
+2018-10-07 11:35:00,894 - AqauLogger   - INFO     -Blue value changed from 0 to 5 at 2018-10-07 11:34:59.324548
+2018-10-07 11:38:03,985 - AqauLogger   - INFO     -Program Started
+2018-10-07 11:38:03,987 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-07 11:38:03,989 - AqauLogger   - INFO     -Reading section Blue
+2018-10-07 11:38:03,990 - AqauLogger   - INFO     -Reading section Yellow
+2018-10-07 11:38:03,991 - AqauLogger   - INFO     -Reading section Program_1
+2018-10-07 11:38:03,992 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:38:03.992764
+2018-10-07 11:38:03,992 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 07:15:00
+2018-10-07 11:38:03,993 - AqauLogger   - INFO     -Day will start at 2018-10-07 07:30:00
+2018-10-07 11:38:03,994 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 09:00:00
+2018-10-07 11:38:03,994 - AqauLogger   - INFO     -Reading section Program_2
+2018-10-07 11:38:03,995 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:38:03.995690
+2018-10-07 11:38:03,996 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 11:15:00
+2018-10-07 11:38:03,997 - AqauLogger   - INFO     -Day will start at 2018-10-07 11:45:00
+2018-10-07 11:38:03,998 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 14:00:00
+2018-10-07 11:38:04,000 - AqauLogger   - INFO     -PWM Thread started
+2018-10-07 11:38:04,001 - AqauLogger   - INFO     -LCD Thread started
+2018-10-07 11:38:04,002 - AqauLogger   - INFO     -Blue value changed from 0 to 39.600062924999996 at 2018-10-07 11:38:04.002516
+2018-10-07 11:38:04,105 - AqauLogger   - INFO     -Blue value changed from 39.600062924999996 to 39.602641425 at 2018-10-07 11:38:04.105656
+2018-10-07 11:38:04,208 - AqauLogger   - INFO     -Blue value changed from 39.602641425 to 39.605204875 at 2018-10-07 11:38:04.208195
+2018-10-07 11:38:04,310 - AqauLogger   - INFO     -Blue value changed from 39.605204875 to 39.607756675000005 at 2018-10-07 11:38:04.310266
+2018-10-07 11:38:04,411 - AqauLogger   - INFO     -Blue value changed from 39.607756675000005 to 39.610289824999995 at 2018-10-07 11:38:04.411593
+2018-10-07 11:38:04,514 - AqauLogger   - INFO     -Blue value changed from 39.610289824999995 to 39.61286335 at 2018-10-07 11:38:04.514534
+2018-10-07 11:38:04,616 - AqauLogger   - INFO     -Blue value changed from 39.61286335 to 39.615413149999995 at 2018-10-07 11:38:04.616525
+2018-10-07 11:38:04,718 - AqauLogger   - INFO     -Blue value changed from 39.615413149999995 to 39.6179622 at 2018-10-07 11:38:04.718487
+2018-10-07 11:38:04,819 - AqauLogger   - INFO     -Blue value changed from 39.6179622 to 39.620499175 at 2018-10-07 11:38:04.819966
+2018-10-07 11:38:04,931 - AqauLogger   - INFO     -Blue value changed from 39.620499175 to 39.623279600000004 at 2018-10-07 11:38:04.931184
+2018-10-07 11:38:05,059 - AqauLogger   - INFO     -Blue value changed from 39.623279600000004 to 39.6264876 at 2018-10-07 11:38:05.059503
+2018-10-07 11:38:05,162 - AqauLogger   - INFO     -Blue value changed from 39.6264876 to 39.629061275000005 at 2018-10-07 11:38:05.162450
+2018-10-07 11:38:05,264 - AqauLogger   - INFO     -Blue value changed from 39.629061275000005 to 39.631608525000004 at 2018-10-07 11:38:05.264340
+2018-10-07 11:38:05,367 - AqauLogger   - INFO     -Blue value changed from 39.631608525000004 to 39.634190275 at 2018-10-07 11:38:05.367610
+2018-10-07 11:38:05,469 - AqauLogger   - INFO     -Blue value changed from 39.634190275 to 39.636736425 at 2018-10-07 11:38:05.469457
+2018-10-07 11:38:05,571 - AqauLogger   - INFO     -Blue value changed from 39.636736425 to 39.639279675 at 2018-10-07 11:38:05.571186
+2018-10-07 11:38:05,673 - AqauLogger   - INFO     -Blue value changed from 39.639279675 to 39.64184435 at 2018-10-07 11:38:05.673774
+2018-10-07 11:38:05,775 - AqauLogger   - INFO     -Blue value changed from 39.64184435 to 39.644391875000004 at 2018-10-07 11:38:05.775675
+2018-10-07 11:38:05,877 - AqauLogger   - INFO     -Blue value changed from 39.644391875000004 to 39.6469411 at 2018-10-07 11:38:05.877644
+2018-10-07 11:38:05,979 - AqauLogger   - INFO     -Blue value changed from 39.6469411 to 39.6494779 at 2018-10-07 11:38:05.979116
+2018-10-07 11:38:06,080 - AqauLogger   - INFO     -Blue value changed from 39.6494779 to 39.652021225 at 2018-10-07 11:38:06.080848
+2018-10-07 11:38:06,183 - AqauLogger   - INFO     -Blue value changed from 39.652021225 to 39.6545783 at 2018-10-07 11:38:06.183132
+2018-10-07 11:38:06,286 - AqauLogger   - INFO     -Blue value changed from 39.6545783 to 39.657153775 at 2018-10-07 11:38:06.286151
+2018-10-07 11:38:06,388 - AqauLogger   - INFO     -Blue value changed from 39.657153775 to 39.659708075 at 2018-10-07 11:38:06.388323
+2018-10-07 11:38:06,491 - AqauLogger   - INFO     -Blue value changed from 39.659708075 to 39.662275300000005 at 2018-10-07 11:38:06.491012
+2018-10-07 11:38:06,592 - AqauLogger   - INFO     -Blue value changed from 39.662275300000005 to 39.66480925 at 2018-10-07 11:38:06.592370
+2018-10-07 11:38:06,694 - AqauLogger   - INFO     -Blue value changed from 39.66480925 to 39.66735355 at 2018-10-07 11:38:06.694142
+2018-10-07 11:38:06,796 - AqauLogger   - INFO     -Blue value changed from 39.66735355 to 39.669901925 at 2018-10-07 11:38:06.796077
+2018-10-07 11:38:06,897 - AqauLogger   - INFO     -Blue value changed from 39.669901925 to 39.6724492 at 2018-10-07 11:38:06.897968
+2018-10-07 11:38:06,999 - AqauLogger   - INFO     -Blue value changed from 39.6724492 to 39.674982525 at 2018-10-07 11:38:06.999301
+2018-10-07 11:38:07,101 - AqauLogger   - INFO     -Blue value changed from 39.674982525 to 39.677535150000004 at 2018-10-07 11:38:07.101405
+2018-10-07 11:38:07,204 - AqauLogger   - INFO     -Blue value changed from 39.677535150000004 to 39.680115525 at 2018-10-07 11:38:07.204620
+2018-10-07 11:38:07,306 - AqauLogger   - INFO     -Blue value changed from 39.680115525 to 39.682658775 at 2018-10-07 11:38:07.306350
+2018-10-07 11:38:07,407 - AqauLogger   - INFO     -Blue value changed from 39.682658775 to 39.685195175000004 at 2018-10-07 11:38:07.407806
+2018-10-07 11:38:07,509 - AqauLogger   - INFO     -Blue value changed from 39.685195175000004 to 39.687742975 at 2018-10-07 11:38:07.509719
+2018-10-07 11:38:07,611 - AqauLogger   - INFO     -Blue value changed from 39.687742975 to 39.690278899999996 at 2018-10-07 11:38:07.611156
+2018-10-07 11:38:07,712 - AqauLogger   - INFO     -Blue value changed from 39.690278899999996 to 39.692810525 at 2018-10-07 11:38:07.712421
+2018-10-07 11:38:07,813 - AqauLogger   - INFO     -Blue value changed from 39.692810525 to 39.6953449 at 2018-10-07 11:38:07.813795
+2018-10-07 11:38:07,916 - AqauLogger   - INFO     -Blue value changed from 39.6953449 to 39.697917575 at 2018-10-07 11:38:07.916703
+2018-10-07 11:38:08,019 - AqauLogger   - INFO     -Blue value changed from 39.697917575 to 39.7004873 at 2018-10-07 11:38:08.019492
+2018-10-07 11:38:08,121 - AqauLogger   - INFO     -Blue value changed from 39.7004873 to 39.703041375 at 2018-10-07 11:38:08.121654
+2018-10-07 11:38:08,222 - AqauLogger   - INFO     -Blue value changed from 39.703041375 to 39.7055745 at 2018-10-07 11:38:08.222980
+2018-10-07 11:38:08,326 - AqauLogger   - INFO     -Blue value changed from 39.7055745 to 39.7081533 at 2018-10-07 11:38:08.326131
+2018-10-07 11:38:08,429 - AqauLogger   - INFO     -Blue value changed from 39.7081533 to 39.710738049999996 at 2018-10-07 11:38:08.429522
+2018-10-07 11:38:08,531 - AqauLogger   - INFO     -Blue value changed from 39.710738049999996 to 39.7132828 at 2018-10-07 11:38:08.531312
+2018-10-07 11:38:08,633 - AqauLogger   - INFO     -Blue value changed from 39.7132828 to 39.715834375 at 2018-10-07 11:38:08.633375
+2018-10-07 11:38:08,735 - AqauLogger   - INFO     -Blue value changed from 39.715834375 to 39.718383525 at 2018-10-07 11:38:08.735341
+2018-10-07 11:38:08,836 - AqauLogger   - INFO     -Blue value changed from 39.718383525 to 39.720922075 at 2018-10-07 11:38:08.836882
+2018-10-07 11:38:08,940 - AqauLogger   - INFO     -Blue value changed from 39.720922075 to 39.723507375 at 2018-10-07 11:38:08.940294
+2018-10-07 11:38:09,042 - AqauLogger   - INFO     -Blue value changed from 39.723507375 to 39.72605685 at 2018-10-07 11:38:09.042274
+2018-10-07 11:38:09,145 - AqauLogger   - INFO     -Blue value changed from 39.72605685 to 39.728642075 at 2018-10-07 11:38:09.145683
+2018-10-07 11:38:09,247 - AqauLogger   - INFO     -Blue value changed from 39.728642075 to 39.731185475000004 at 2018-10-07 11:38:09.247419
+2018-10-07 11:38:09,348 - AqauLogger   - INFO     -Blue value changed from 39.731185475000004 to 39.73372215 at 2018-10-07 11:38:09.348885
+2018-10-07 11:38:09,451 - AqauLogger   - INFO     -Blue value changed from 39.73372215 to 39.73629595 at 2018-10-07 11:38:09.451838
+2018-10-07 11:38:09,553 - AqauLogger   - INFO     -Blue value changed from 39.73629595 to 39.73884905 at 2018-10-07 11:38:09.553961
+2018-10-07 11:38:09,655 - AqauLogger   - INFO     -Blue value changed from 39.73884905 to 39.741396125 at 2018-10-07 11:38:09.655845
+2018-10-07 11:38:09,757 - AqauLogger   - INFO     -Blue value changed from 39.741396125 to 39.7439484 at 2018-10-07 11:38:09.757936
+2018-10-07 11:38:09,859 - AqauLogger   - INFO     -Blue value changed from 39.7439484 to 39.74649065 at 2018-10-07 11:38:09.859625
+2018-10-07 11:38:09,962 - AqauLogger   - INFO     -Blue value changed from 39.74649065 to 39.7490725 at 2018-10-07 11:38:09.962900
+2018-10-07 11:38:10,064 - AqauLogger   - INFO     -Blue value changed from 39.7490725 to 39.751621525 at 2018-10-07 11:38:10.064861
+2018-10-07 11:38:10,166 - AqauLogger   - INFO     -Blue value changed from 39.751621525 to 39.754154375 at 2018-10-07 11:38:10.166174
+2018-10-07 11:38:10,267 - AqauLogger   - INFO     -Blue value changed from 39.754154375 to 39.756687375 at 2018-10-07 11:38:10.267495
+2018-10-07 11:38:10,370 - AqauLogger   - INFO     -Blue value changed from 39.756687375 to 39.759260775 at 2018-10-07 11:38:10.370430
+2018-10-07 11:38:10,472 - AqauLogger   - INFO     -Blue value changed from 39.759260775 to 39.761813225 at 2018-10-07 11:38:10.472529
+2018-10-07 11:38:10,575 - AqauLogger   - INFO     -Blue value changed from 39.761813225 to 39.764395975 at 2018-10-07 11:38:10.575839
+2018-10-07 11:38:10,678 - AqauLogger   - INFO     -Blue value changed from 39.764395975 to 39.766971725000005 at 2018-10-07 11:38:10.678869
+2018-10-07 11:38:10,781 - AqauLogger   - INFO     -Blue value changed from 39.766971725000005 to 39.7695316 at 2018-10-07 11:38:10.781263
+2018-10-07 11:38:10,882 - AqauLogger   - INFO     -Blue value changed from 39.7695316 to 39.772068499999996 at 2018-10-07 11:38:10.882740
+2018-10-07 11:38:10,986 - AqauLogger   - INFO     -Blue value changed from 39.772068499999996 to 39.774651 at 2018-10-07 11:38:10.986040
+2018-10-07 11:38:11,087 - AqauLogger   - INFO     -Blue value changed from 39.774651 to 39.777198649999995 at 2018-10-07 11:38:11.087946
+2018-10-07 11:38:11,189 - AqauLogger   - INFO     -Blue value changed from 39.777198649999995 to 39.7797341 at 2018-10-07 11:38:11.189364
+2018-10-07 11:38:11,291 - AqauLogger   - INFO     -Blue value changed from 39.7797341 to 39.7822778 at 2018-10-07 11:38:11.291112
+2018-10-07 11:38:11,393 - AqauLogger   - INFO     -Blue value changed from 39.7822778 to 39.784831225 at 2018-10-07 11:38:11.393248
+2018-10-07 11:38:11,494 - AqauLogger   - INFO     -Blue value changed from 39.784831225 to 39.787365825 at 2018-10-07 11:38:11.494633
+2018-10-07 11:38:11,596 - AqauLogger   - INFO     -Blue value changed from 39.787365825 to 39.78990495 at 2018-10-07 11:38:11.596197
+2018-10-07 11:38:11,698 - AqauLogger   - INFO     -Blue value changed from 39.78990495 to 39.792471825 at 2018-10-07 11:38:11.698873
+2018-10-07 11:38:11,801 - AqauLogger   - INFO     -Blue value changed from 39.792471825 to 39.795045275 at 2018-10-07 11:38:11.801810
+2018-10-07 11:38:11,903 - AqauLogger   - INFO     -Blue value changed from 39.795045275 to 39.797599749999996 at 2018-10-07 11:38:11.903990
+2018-10-07 11:38:12,007 - AqauLogger   - INFO     -Blue value changed from 39.797599749999996 to 39.800177500000004 at 2018-10-07 11:38:12.007100
+2018-10-07 11:38:12,108 - AqauLogger   - INFO     -Blue value changed from 39.800177500000004 to 39.802724375 at 2018-10-07 11:38:12.108974
+2018-10-07 11:38:12,210 - AqauLogger   - INFO     -Blue value changed from 39.802724375 to 39.80526285 at 2018-10-07 11:38:12.210514
+2018-10-07 11:38:12,311 - AqauLogger   - INFO     -Blue value changed from 39.80526285 to 39.807798325 at 2018-10-07 11:38:12.311933
+2018-10-07 11:38:12,414 - AqauLogger   - INFO     -Blue value changed from 39.807798325 to 39.8103743 at 2018-10-07 11:38:12.414971
+2018-10-07 11:38:12,516 - AqauLogger   - INFO     -Blue value changed from 39.8103743 to 39.812913075000004 at 2018-10-07 11:38:12.516523
+2018-10-07 11:38:12,618 - AqauLogger   - INFO     -Blue value changed from 39.812913075000004 to 39.81546185 at 2018-10-07 11:38:12.618473
+2018-10-07 11:38:12,719 - AqauLogger   - INFO     -Blue value changed from 39.81546185 to 39.8179987 at 2018-10-07 11:38:12.719948
+2018-10-07 11:38:12,822 - AqauLogger   - INFO     -Blue value changed from 39.8179987 to 39.820550925 at 2018-10-07 11:38:12.822037
+2018-10-07 11:38:12,924 - AqauLogger   - INFO     -Blue value changed from 39.820550925 to 39.823123875 at 2018-10-07 11:38:12.924954
+2018-10-07 11:38:13,026 - AqauLogger   - INFO     -Blue value changed from 39.823123875 to 39.825669999999995 at 2018-10-07 11:38:13.026800
+2018-10-07 11:38:13,128 - AqauLogger   - INFO     -Blue value changed from 39.825669999999995 to 39.82822435 at 2018-10-07 11:38:13.128973
+2018-10-07 11:38:13,230 - AqauLogger   - INFO     -Blue value changed from 39.82822435 to 39.830768025 at 2018-10-07 11:38:13.230721
+2018-10-07 11:38:13,332 - AqauLogger   - INFO     -Blue value changed from 39.830768025 to 39.833315524999996 at 2018-10-07 11:38:13.332620
+2018-10-07 11:38:13,436 - AqauLogger   - INFO     -Blue value changed from 39.833315524999996 to 39.835900625 at 2018-10-07 11:38:13.436025
+2018-10-07 11:38:13,537 - AqauLogger   - INFO     -Blue value changed from 39.835900625 to 39.838436324999996 at 2018-10-07 11:38:13.537453
+2018-10-07 11:38:13,639 - AqauLogger   - INFO     -Blue value changed from 39.838436324999996 to 39.840994800000004 at 2018-10-07 11:38:13.639792
+2018-10-07 11:38:13,741 - AqauLogger   - INFO     -Blue value changed from 39.840994800000004 to 39.843538775 at 2018-10-07 11:38:13.741551
+2018-10-07 11:38:13,843 - AqauLogger   - INFO     -Blue value changed from 39.843538775 to 39.8460855 at 2018-10-07 11:38:13.843419
+2018-10-07 11:38:13,944 - AqauLogger   - INFO     -Blue value changed from 39.8460855 to 39.848617425 at 2018-10-07 11:38:13.944697
+2018-10-07 11:38:14,046 - AqauLogger   - INFO     -Blue value changed from 39.848617425 to 39.851172475 at 2018-10-07 11:38:14.046898
+2018-10-07 11:38:14,149 - AqauLogger   - INFO     -Blue value changed from 39.851172475 to 39.853745575 at 2018-10-07 11:38:14.149823
+2018-10-07 11:38:14,251 - AqauLogger   - INFO     -Blue value changed from 39.853745575 to 39.8562882 at 2018-10-07 11:38:14.251527
+2018-10-07 11:38:14,353 - AqauLogger   - INFO     -Blue value changed from 39.8562882 to 39.858830575 at 2018-10-07 11:38:14.353222
+2018-10-07 11:38:14,456 - AqauLogger   - INFO     -Blue value changed from 39.858830575 to 39.861413025 at 2018-10-07 11:38:14.456520
+2018-10-07 11:38:14,558 - AqauLogger   - INFO     -Blue value changed from 39.861413025 to 39.863960225 at 2018-10-07 11:38:14.558408
+2018-10-07 11:38:14,660 - AqauLogger   - INFO     -Blue value changed from 39.863960225 to 39.866512675 at 2018-10-07 11:38:14.660506
+2018-10-07 11:38:14,762 - AqauLogger   - INFO     -Blue value changed from 39.866512675 to 39.86905275 at 2018-10-07 11:38:14.762109
+2018-10-07 11:38:14,863 - AqauLogger   - INFO     -Blue value changed from 39.86905275 to 39.871599275 at 2018-10-07 11:38:14.863970
+2018-10-07 11:38:14,966 - AqauLogger   - INFO     -Blue value changed from 39.871599275 to 39.874161074999996 at 2018-10-07 11:38:14.966443
+2018-10-07 11:38:15,068 - AqauLogger   - INFO     -Blue value changed from 39.874161074999996 to 39.8767111 at 2018-10-07 11:38:15.068443
+2018-10-07 11:38:15,170 - AqauLogger   - INFO     -Blue value changed from 39.8767111 to 39.879259375000004 at 2018-10-07 11:38:15.170375
+2018-10-07 11:38:15,272 - AqauLogger   - INFO     -Blue value changed from 39.879259375000004 to 39.8818038 at 2018-10-07 11:38:15.272152
+2018-10-07 11:38:15,373 - AqauLogger   - INFO     -Blue value changed from 39.8818038 to 39.884342375 at 2018-10-07 11:38:15.373694
+2018-10-07 11:38:15,475 - AqauLogger   - INFO     -Blue value changed from 39.884342375 to 39.886876550000004 at 2018-10-07 11:38:15.475062
+2018-10-07 11:38:15,577 - AqauLogger   - INFO     -Blue value changed from 39.886876550000004 to 39.889431175 at 2018-10-07 11:38:15.577247
+2018-10-07 11:38:15,678 - AqauLogger   - INFO     -Blue value changed from 39.889431175 to 39.891971725 at 2018-10-07 11:38:15.678868
+2018-10-07 11:38:15,780 - AqauLogger   - INFO     -Blue value changed from 39.891971725 to 39.894511375 at 2018-10-07 11:38:15.780455
+2018-10-07 11:38:15,882 - AqauLogger   - INFO     -Blue value changed from 39.894511375 to 39.89705475 at 2018-10-07 11:38:15.882190
+2018-10-07 11:38:15,983 - AqauLogger   - INFO     -Blue value changed from 39.89705475 to 39.89959545 at 2018-10-07 11:38:15.983817
+2018-10-07 11:38:16,086 - AqauLogger   - INFO     -Blue value changed from 39.89959545 to 39.90215235 at 2018-10-07 11:38:16.086093
+2018-10-07 11:38:16,188 - AqauLogger   - INFO     -Blue value changed from 39.90215235 to 39.90471085 at 2018-10-07 11:38:16.188434
+2018-10-07 11:38:16,291 - AqauLogger   - INFO     -Blue value changed from 39.90471085 to 39.90729175 at 2018-10-07 11:38:16.291670
+2018-10-07 11:38:16,393 - AqauLogger   - INFO     -Blue value changed from 39.90729175 to 39.90984705 at 2018-10-07 11:38:16.393882
+2018-10-07 11:38:16,495 - AqauLogger   - INFO     -Blue value changed from 39.90984705 to 39.912399475 at 2018-10-07 11:38:16.495979
+2018-10-07 11:38:16,598 - AqauLogger   - INFO     -Blue value changed from 39.912399475 to 39.9149723 at 2018-10-07 11:38:16.598892
+2018-10-07 11:38:16,700 - AqauLogger   - INFO     -Blue value changed from 39.9149723 to 39.9175217 at 2018-10-07 11:38:16.700868
+2018-10-07 11:38:16,803 - AqauLogger   - INFO     -Blue value changed from 39.9175217 to 39.9200906 at 2018-10-07 11:38:16.803623
+2018-10-07 11:38:16,905 - AqauLogger   - INFO     -Blue value changed from 39.9200906 to 39.922646825 at 2018-10-07 11:38:16.905873
+2018-10-07 11:38:17,008 - AqauLogger   - INFO     -Blue value changed from 39.922646825 to 39.925220175 at 2018-10-07 11:38:17.008806
+2018-10-07 11:38:17,110 - AqauLogger   - INFO     -Blue value changed from 39.925220175 to 39.9277717 at 2018-10-07 11:38:17.110867
+2018-10-07 11:38:17,212 - AqauLogger   - INFO     -Blue value changed from 39.9277717 to 39.930321625 at 2018-10-07 11:38:17.212865
+2018-10-07 11:38:17,314 - AqauLogger   - INFO     -Blue value changed from 39.930321625 to 39.932873325 at 2018-10-07 11:38:17.314932
+2018-10-07 11:38:17,417 - AqauLogger   - INFO     -Blue value changed from 39.932873325 to 39.935437525 at 2018-10-07 11:38:17.417501
+2018-10-07 11:38:17,520 - AqauLogger   - INFO     -Blue value changed from 39.935437525 to 39.938013525 at 2018-10-07 11:38:17.520541
+2018-10-07 11:38:17,622 - AqauLogger   - INFO     -Blue value changed from 39.938013525 to 39.94055895 at 2018-10-07 11:38:17.622358
+2018-10-07 11:38:17,725 - AqauLogger   - INFO     -Blue value changed from 39.94055895 to 39.9431418 at 2018-10-07 11:38:17.725671
+2018-10-07 11:38:17,828 - AqauLogger   - INFO     -Blue value changed from 39.9431418 to 39.945708499999995 at 2018-10-07 11:38:17.828339
+2018-10-07 11:38:17,929 - AqauLogger   - INFO     -Blue value changed from 39.945708499999995 to 39.94824655 at 2018-10-07 11:38:17.929862
+2018-10-07 11:38:18,032 - AqauLogger   - INFO     -Blue value changed from 39.94824655 to 39.9508133 at 2018-10-07 11:38:18.032532
+2018-10-07 11:38:18,133 - AqauLogger   - INFO     -Blue value changed from 39.9508133 to 39.953349925 at 2018-10-07 11:38:18.133996
+2018-10-07 11:38:18,235 - AqauLogger   - INFO     -Blue value changed from 39.953349925 to 39.955883725 at 2018-10-07 11:38:18.235349
+2018-10-07 11:38:18,338 - AqauLogger   - INFO     -Blue value changed from 39.955883725 to 39.9584519 at 2018-10-07 11:38:18.338075
+2018-10-07 11:38:18,439 - AqauLogger   - INFO     -Blue value changed from 39.9584519 to 39.960989675 at 2018-10-07 11:38:18.439586
+2018-10-07 11:38:18,541 - AqauLogger   - INFO     -Blue value changed from 39.960989675 to 39.963541525 at 2018-10-07 11:38:18.541661
+2018-10-07 11:38:18,644 - AqauLogger   - INFO     -Blue value changed from 39.963541525 to 39.966111675 at 2018-10-07 11:38:18.644467
+2018-10-07 11:38:18,746 - AqauLogger   - INFO     -Blue value changed from 39.966111675 to 39.968660125 at 2018-10-07 11:38:18.746404
+2018-10-07 11:38:18,848 - AqauLogger   - INFO     -Blue value changed from 39.968660125 to 39.9712232 at 2018-10-07 11:38:18.848928
+2018-10-07 11:38:18,950 - AqauLogger   - INFO     -Blue value changed from 39.9712232 to 39.97375465 at 2018-10-07 11:38:18.950185
+2018-10-07 11:38:19,051 - AqauLogger   - INFO     -Blue value changed from 39.97375465 to 39.97629445 at 2018-10-07 11:38:19.051778
+2018-10-07 11:38:19,154 - AqauLogger   - INFO     -Blue value changed from 39.97629445 to 39.978874075 at 2018-10-07 11:38:19.154962
+2018-10-07 11:38:19,257 - AqauLogger   - INFO     -Blue value changed from 39.978874075 to 39.981438274999995 at 2018-10-07 11:38:19.257531
+2018-10-07 11:38:19,359 - AqauLogger   - INFO     -Blue value changed from 39.981438274999995 to 39.9839942 at 2018-10-07 11:38:19.359768
+2018-10-07 11:38:19,461 - AqauLogger   - INFO     -Blue value changed from 39.9839942 to 39.9865342 at 2018-10-07 11:38:19.461367
+2018-10-07 11:38:19,564 - AqauLogger   - INFO     -Blue value changed from 39.9865342 to 39.989100925 at 2018-10-07 11:38:19.564037
+2018-10-07 11:38:19,665 - AqauLogger   - INFO     -Blue value changed from 39.989100925 to 39.991634775 at 2018-10-07 11:38:19.665391
+2018-10-07 11:38:19,767 - AqauLogger   - INFO     -Blue value changed from 39.991634775 to 39.994182249999994 at 2018-10-07 11:38:19.767290
+2018-10-07 11:38:19,869 - AqauLogger   - INFO     -Blue value changed from 39.994182249999994 to 39.996734625 at 2018-10-07 11:38:19.869384
+2018-10-07 11:38:19,971 - AqauLogger   - INFO     -Blue value changed from 39.996734625 to 39.999281849999996 at 2018-10-07 11:38:19.971274
+2018-10-07 11:38:20,072 - AqauLogger   - INFO     -Blue value changed from 39.999281849999996 to 40.0018126 at 2018-10-07 11:38:20.072504
+2018-10-07 11:38:20,174 - AqauLogger   - INFO     -Blue value changed from 40.0018126 to 40.0043564 at 2018-10-07 11:38:20.174256
+2018-10-07 11:38:20,277 - AqauLogger   - INFO     -Blue value changed from 40.0043564 to 40.006934675000004 at 2018-10-07 11:38:20.277386
+2018-10-07 11:38:20,378 - AqauLogger   - INFO     -Blue value changed from 40.006934675000004 to 40.009470875 at 2018-10-07 11:38:20.378835
+2018-10-07 11:38:20,480 - AqauLogger   - INFO     -Blue value changed from 40.009470875 to 40.012022875 at 2018-10-07 11:38:20.480914
+2018-10-07 11:38:20,584 - AqauLogger   - INFO     -Blue value changed from 40.012022875 to 40.0146064 at 2018-10-07 11:38:20.584256
+2018-10-07 11:38:20,686 - AqauLogger   - INFO     -Blue value changed from 40.0146064 to 40.01716405 at 2018-10-07 11:38:20.686562
+2018-10-07 11:38:20,788 - AqauLogger   - INFO     -Blue value changed from 40.01716405 to 40.019724974999995 at 2018-10-07 11:38:20.788998
+2018-10-07 11:38:20,890 - AqauLogger   - INFO     -Blue value changed from 40.019724974999995 to 40.022272425 at 2018-10-07 11:38:20.890897
+2018-10-07 11:38:20,994 - AqauLogger   - INFO     -Blue value changed from 40.022272425 to 40.024851975000004 at 2018-10-07 11:38:20.994079
+2018-10-07 11:38:21,095 - AqauLogger   - INFO     -Blue value changed from 40.024851975000004 to 40.02739625 at 2018-10-07 11:38:21.095850
+2018-10-07 11:38:21,197 - AqauLogger   - INFO     -Blue value changed from 40.02739625 to 40.029934000000004 at 2018-10-07 11:38:21.197360
+2018-10-07 11:38:21,299 - AqauLogger   - INFO     -Blue value changed from 40.029934000000004 to 40.03247785 at 2018-10-07 11:38:21.299114
+2018-10-07 11:38:21,401 - AqauLogger   - INFO     -Blue value changed from 40.03247785 to 40.035030225 at 2018-10-07 11:38:21.401208
+2018-10-07 11:38:21,504 - AqauLogger   - INFO     -Blue value changed from 40.035030225 to 40.037607799999996 at 2018-10-07 11:38:21.504311
+2018-10-07 11:38:21,606 - AqauLogger   - INFO     -Blue value changed from 40.037607799999996 to 40.0401569 at 2018-10-07 11:38:21.606275
+2018-10-07 11:38:21,709 - AqauLogger   - INFO     -Blue value changed from 40.0401569 to 40.042728975 at 2018-10-07 11:38:21.709159
+2018-10-07 11:38:21,811 - AqauLogger   - INFO     -Blue value changed from 40.042728975 to 40.0452801 at 2018-10-07 11:38:21.811203
+2018-10-07 11:38:21,912 - AqauLogger   - INFO     -Blue value changed from 40.0452801 to 40.04781445 at 2018-10-07 11:38:21.912578
+2018-10-07 11:38:22,014 - AqauLogger   - INFO     -Blue value changed from 40.04781445 to 40.050357500000004 at 2018-10-07 11:38:22.014300
+2018-10-07 11:38:22,116 - AqauLogger   - INFO     -Blue value changed from 40.050357500000004 to 40.052924274999995 at 2018-10-07 11:38:22.116970
+2018-10-07 11:38:22,219 - AqauLogger   - INFO     -Blue value changed from 40.052924274999995 to 40.05548135 at 2018-10-07 11:38:22.219254
+2018-10-07 11:38:22,321 - AqauLogger   - INFO     -Blue value changed from 40.05548135 to 40.058032075 at 2018-10-07 11:38:22.321282
+2018-10-07 11:38:22,424 - AqauLogger   - INFO     -Blue value changed from 40.058032075 to 40.060614625 at 2018-10-07 11:38:22.424585
+2018-10-07 11:38:22,526 - AqauLogger   - INFO     -Blue value changed from 40.060614625 to 40.063156875 at 2018-10-07 11:38:22.526274
+2018-10-07 11:38:22,627 - AqauLogger   - INFO     -Blue value changed from 40.063156875 to 40.06569245 at 2018-10-07 11:38:22.627697
+2018-10-07 11:38:22,731 - AqauLogger   - INFO     -Blue value changed from 40.06569245 to 40.0682824 at 2018-10-07 11:38:22.731296
+2018-10-07 11:38:22,833 - AqauLogger   - INFO     -Blue value changed from 40.0682824 to 40.070845225 at 2018-10-07 11:38:22.833808
+2018-10-07 11:38:22,935 - AqauLogger   - INFO     -Blue value changed from 40.070845225 to 40.07338115 at 2018-10-07 11:38:22.935245
+2018-10-07 11:38:23,036 - AqauLogger   - INFO     -Blue value changed from 40.07338115 to 40.075911475 at 2018-10-07 11:38:23.036459
+2018-10-07 11:38:23,139 - AqauLogger   - INFO     -Blue value changed from 40.075911475 to 40.078496725 at 2018-10-07 11:38:23.139868
+2018-10-07 11:38:23,241 - AqauLogger   - INFO     -Blue value changed from 40.078496725 to 40.081035275 at 2018-10-07 11:38:23.241411
+2018-10-07 11:38:23,344 - AqauLogger   - INFO     -Blue value changed from 40.081035275 to 40.083621050000005 at 2018-10-07 11:38:23.344842
+2018-10-07 11:38:23,446 - AqauLogger   - INFO     -Blue value changed from 40.083621050000005 to 40.08617235 at 2018-10-07 11:38:23.446894
+2018-10-07 11:38:23,549 - AqauLogger   - INFO     -Blue value changed from 40.08617235 to 40.088748875 at 2018-10-07 11:38:23.549954
+2018-10-07 11:38:23,652 - AqauLogger   - INFO     -Blue value changed from 40.088748875 to 40.091301425000005 at 2018-10-07 11:38:23.652056
+2018-10-07 11:38:23,753 - AqauLogger   - INFO     -Blue value changed from 40.091301425000005 to 40.09384405 at 2018-10-07 11:38:23.753761
+2018-10-07 11:38:23,856 - AqauLogger   - INFO     -Blue value changed from 40.09384405 to 40.096415925 at 2018-10-07 11:38:23.856637
+2018-10-07 11:38:23,958 - AqauLogger   - INFO     -Blue value changed from 40.096415925 to 40.0989709 at 2018-10-07 11:38:23.958835
+2018-10-07 11:38:24,061 - AqauLogger   - INFO     -Blue value changed from 40.0989709 to 40.1015338 at 2018-10-07 11:38:24.061352
+2018-10-07 11:38:24,162 - AqauLogger   - INFO     -Blue value changed from 40.1015338 to 40.104074175 at 2018-10-07 11:38:24.162967
+2018-10-07 11:38:24,264 - AqauLogger   - INFO     -Blue value changed from 40.104074175 to 40.106623325 at 2018-10-07 11:38:24.264933
+2018-10-07 11:38:24,366 - AqauLogger   - INFO     -Blue value changed from 40.106623325 to 40.109164725 at 2018-10-07 11:38:24.366588
+2018-10-07 11:38:24,469 - AqauLogger   - INFO     -Blue value changed from 40.109164725 to 40.111734 at 2018-10-07 11:38:24.469359
+2018-10-07 11:38:24,571 - AqauLogger   - INFO     -Blue value changed from 40.111734 to 40.11427545 at 2018-10-07 11:38:24.571018
+2018-10-07 11:38:24,672 - AqauLogger   - INFO     -Blue value changed from 40.11427545 to 40.116813074999996 at 2018-10-07 11:38:24.672523
+2018-10-07 11:38:24,774 - AqauLogger   - INFO     -Blue value changed from 40.116813074999996 to 40.119354224999995 at 2018-10-07 11:38:24.774169
+2018-10-07 11:38:24,876 - AqauLogger   - INFO     -Blue value changed from 40.119354224999995 to 40.121901675 at 2018-10-07 11:38:24.876066
+2018-10-07 11:38:24,978 - AqauLogger   - INFO     -Blue value changed from 40.121901675 to 40.1244539 at 2018-10-07 11:38:24.978155
+2018-10-07 11:38:25,080 - AqauLogger   - INFO     -Blue value changed from 40.1244539 to 40.127002825000005 at 2018-10-07 11:38:25.080113
+2018-10-07 11:38:25,182 - AqauLogger   - INFO     -Blue value changed from 40.127002825000005 to 40.12955625 at 2018-10-07 11:38:25.182250
+2018-10-07 11:38:25,284 - AqauLogger   - INFO     -Blue value changed from 40.12955625 to 40.132121775 at 2018-10-07 11:38:25.284870
+2018-10-07 11:38:25,386 - AqauLogger   - INFO     -Blue value changed from 40.132121775 to 40.1346528 at 2018-10-07 11:38:25.386111
+2018-10-07 11:38:25,487 - AqauLogger   - INFO     -Blue value changed from 40.1346528 to 40.137196700000004 at 2018-10-07 11:38:25.487868
+2018-10-07 11:38:25,591 - AqauLogger   - INFO     -Blue value changed from 40.137196700000004 to 40.1397751 at 2018-10-07 11:38:25.591003
+2018-10-07 11:38:25,692 - AqauLogger   - INFO     -Blue value changed from 40.1397751 to 40.1423145 at 2018-10-07 11:38:25.692580
+2018-10-07 11:38:25,795 - AqauLogger   - INFO     -Blue value changed from 40.1423145 to 40.14487795 at 2018-10-07 11:38:25.795118
+2018-10-07 11:38:25,896 - AqauLogger   - INFO     -Blue value changed from 40.14487795 to 40.14741115 at 2018-10-07 11:38:25.896445
+2018-10-07 11:38:25,998 - AqauLogger   - INFO     -Blue value changed from 40.14741115 to 40.149960525 at 2018-10-07 11:38:25.998420
+2018-10-07 11:38:26,100 - AqauLogger   - INFO     -Blue value changed from 40.149960525 to 40.15250795 at 2018-10-07 11:38:26.100317
+2018-10-07 11:38:26,202 - AqauLogger   - INFO     -Blue value changed from 40.15250795 to 40.155059 at 2018-10-07 11:38:26.202359
+2018-10-07 11:38:26,305 - AqauLogger   - INFO     -Blue value changed from 40.155059 to 40.157633775 at 2018-10-07 11:38:26.305351
+2018-10-07 11:38:26,407 - AqauLogger   - INFO     -Blue value changed from 40.157633775 to 40.160180025 at 2018-10-07 11:38:26.407200
+2018-10-07 11:38:26,508 - AqauLogger   - INFO     -Blue value changed from 40.160180025 to 40.162714799999996 at 2018-10-07 11:38:26.508591
+2018-10-07 11:38:26,610 - AqauLogger   - INFO     -Blue value changed from 40.162714799999996 to 40.165260075 at 2018-10-07 11:38:26.610403
+2018-10-07 11:38:26,713 - AqauLogger   - INFO     -Blue value changed from 40.165260075 to 40.1678381 at 2018-10-07 11:38:26.713524
+2018-10-07 11:38:26,814 - AqauLogger   - INFO     -Blue value changed from 40.1678381 to 40.170372775 at 2018-10-07 11:38:26.814910
+2018-10-07 11:38:26,917 - AqauLogger   - INFO     -Blue value changed from 40.170372775 to 40.1729477 at 2018-10-07 11:38:26.917908
+2018-10-07 11:38:27,019 - AqauLogger   - INFO     -Blue value changed from 40.1729477 to 40.175483299999996 at 2018-10-07 11:38:27.019332
+2018-10-07 11:38:27,120 - AqauLogger   - INFO     -Blue value changed from 40.175483299999996 to 40.17802415 at 2018-10-07 11:38:27.120966
+2018-10-07 11:38:27,222 - AqauLogger   - INFO     -Blue value changed from 40.17802415 to 40.18057075 at 2018-10-07 11:38:27.222829
+2018-10-07 11:38:27,324 - AqauLogger   - INFO     -Blue value changed from 40.18057075 to 40.18310735 at 2018-10-07 11:38:27.324293
+2018-10-07 11:38:27,426 - AqauLogger   - INFO     -Blue value changed from 40.18310735 to 40.185664325 at 2018-10-07 11:38:27.426572
+2018-10-07 11:38:27,528 - AqauLogger   - INFO     -Blue value changed from 40.185664325 to 40.188208925 at 2018-10-07 11:38:27.528357
+2018-10-07 11:38:27,629 - AqauLogger   - INFO     -Blue value changed from 40.188208925 to 40.190746425 at 2018-10-07 11:38:27.629857
+2018-10-07 11:38:27,731 - AqauLogger   - INFO     -Blue value changed from 40.190746425 to 40.1932943 at 2018-10-07 11:38:27.731772
+2018-10-07 11:38:27,835 - AqauLogger   - INFO     -Blue value changed from 40.1932943 to 40.1958794 at 2018-10-07 11:38:27.835175
+2018-10-07 11:38:27,936 - AqauLogger   - INFO     -Blue value changed from 40.1958794 to 40.19841005 at 2018-10-07 11:38:27.936402
+2018-10-07 11:38:28,038 - AqauLogger   - INFO     -Blue value changed from 40.19841005 to 40.20095605 at 2018-10-07 11:38:28.038242
+2018-10-07 11:38:28,139 - AqauLogger   - INFO     -Blue value changed from 40.20095605 to 40.203499025 at 2018-10-07 11:38:28.139960
+2018-10-07 11:38:28,241 - AqauLogger   - INFO     -Blue value changed from 40.203499025 to 40.206045025 at 2018-10-07 11:38:28.241800
+2018-10-07 11:38:28,344 - AqauLogger   - INFO     -Blue value changed from 40.206045025 to 40.2086077 at 2018-10-07 11:38:28.344307
+2018-10-07 11:38:28,445 - AqauLogger   - INFO     -Blue value changed from 40.2086077 to 40.211137525000005 at 2018-10-07 11:38:28.445501
+2018-10-07 11:38:28,548 - AqauLogger   - INFO     -Blue value changed from 40.211137525000005 to 40.2137115 at 2018-10-07 11:38:28.548459
+2018-10-07 11:38:28,650 - AqauLogger   - INFO     -Blue value changed from 40.2137115 to 40.2162575 at 2018-10-07 11:38:28.650300
+2018-10-07 11:38:28,752 - AqauLogger   - INFO     -Blue value changed from 40.2162575 to 40.218805575000005 at 2018-10-07 11:38:28.752223
+2018-10-07 11:38:28,855 - AqauLogger   - INFO     -Blue value changed from 40.218805575000005 to 40.221387925 at 2018-10-07 11:38:28.855516
+2018-10-07 11:38:28,957 - AqauLogger   - INFO     -Blue value changed from 40.221387925 to 40.223946325 at 2018-10-07 11:38:28.957853
+2018-10-07 11:38:29,059 - AqauLogger   - INFO     -Blue value changed from 40.223946325 to 40.22648865 at 2018-10-07 11:38:29.059546
+2018-10-07 11:38:29,161 - AqauLogger   - INFO     -Blue value changed from 40.22648865 to 40.22902875 at 2018-10-07 11:38:29.161149
+2018-10-07 11:38:29,262 - AqauLogger   - INFO     -Blue value changed from 40.22902875 to 40.231568825 at 2018-10-07 11:38:29.262752
+2018-10-07 11:38:29,365 - AqauLogger   - INFO     -Blue value changed from 40.231568825 to 40.234133875 at 2018-10-07 11:38:29.365355
+2018-10-07 11:38:29,467 - AqauLogger   - INFO     -Blue value changed from 40.234133875 to 40.236686625 at 2018-10-07 11:38:29.467465
+2018-10-07 11:38:29,569 - AqauLogger   - INFO     -Blue value changed from 40.236686625 to 40.239231575 at 2018-10-07 11:38:29.569262
+2018-10-07 11:38:29,670 - AqauLogger   - INFO     -Blue value changed from 40.239231575 to 40.241766775 at 2018-10-07 11:38:29.670670
+2018-10-07 11:38:29,772 - AqauLogger   - INFO     -Blue value changed from 40.241766775 to 40.244305525 at 2018-10-07 11:38:29.772220
+2018-10-07 11:38:29,874 - AqauLogger   - INFO     -Blue value changed from 40.244305525 to 40.246855925 at 2018-10-07 11:38:29.874236
+2018-10-07 11:38:29,976 - AqauLogger   - INFO     -Blue value changed from 40.246855925 to 40.24940165 at 2018-10-07 11:38:29.976065
+2018-10-07 11:38:30,077 - AqauLogger   - INFO     -Blue value changed from 40.24940165 to 40.251942774999996 at 2018-10-07 11:38:30.077711
+2018-10-07 11:38:30,180 - AqauLogger   - INFO     -Blue value changed from 40.251942774999996 to 40.254506375000005 at 2018-10-07 11:38:30.180255
+2018-10-07 11:38:30,282 - AqauLogger   - INFO     -Blue value changed from 40.254506375000005 to 40.257060375 at 2018-10-07 11:38:30.282415
+2018-10-07 11:38:30,385 - AqauLogger   - INFO     -Blue value changed from 40.257060375 to 40.2596259 at 2018-10-07 11:38:30.385035
+2018-10-07 11:38:30,486 - AqauLogger   - INFO     -Blue value changed from 40.2596259 to 40.262160525 at 2018-10-07 11:38:30.486421
+2018-10-07 11:38:30,588 - AqauLogger   - INFO     -Blue value changed from 40.262160525 to 40.264709925 at 2018-10-07 11:38:30.588396
+2018-10-07 11:38:30,690 - AqauLogger   - INFO     -Blue value changed from 40.264709925 to 40.267258874999996 at 2018-10-07 11:38:30.690354
+2018-10-07 11:38:30,792 - AqauLogger   - INFO     -Blue value changed from 40.267258874999996 to 40.269801775000005 at 2018-10-07 11:38:30.792070
+2018-10-07 11:38:30,893 - AqauLogger   - INFO     -Blue value changed from 40.269801775000005 to 40.272344425 at 2018-10-07 11:38:30.893777
+2018-10-07 11:38:30,996 - AqauLogger   - INFO     -Blue value changed from 40.272344425 to 40.274912275 at 2018-10-07 11:38:30.996491
+2018-10-07 11:38:31,098 - AqauLogger   - INFO     -Blue value changed from 40.274912275 to 40.27746055 at 2018-10-07 11:38:31.098421
+2018-10-07 11:38:31,201 - AqauLogger   - INFO     -Blue value changed from 40.27746055 to 40.280027425 at 2018-10-07 11:38:31.201096
+2018-10-07 11:38:31,303 - AqauLogger   - INFO     -Blue value changed from 40.280027425 to 40.282580374999995 at 2018-10-07 11:38:31.303215
+2018-10-07 11:38:31,405 - AqauLogger   - INFO     -Blue value changed from 40.282580374999995 to 40.285131275 at 2018-10-07 11:38:31.405251
+2018-10-07 11:38:31,506 - AqauLogger   - INFO     -Blue value changed from 40.285131275 to 40.287668675 at 2018-10-07 11:38:31.506747
+2018-10-07 11:38:31,609 - AqauLogger   - INFO     -Blue value changed from 40.287668675 to 40.2902417 at 2018-10-07 11:38:31.609667
+2018-10-07 11:38:31,712 - AqauLogger   - INFO     -Blue value changed from 40.2902417 to 40.292814725 at 2018-10-07 11:38:31.712589
+2018-10-07 11:38:31,814 - AqauLogger   - INFO     -Blue value changed from 40.292814725 to 40.295360925000004 at 2018-10-07 11:38:31.814437
+2018-10-07 11:38:31,917 - AqauLogger   - INFO     -Blue value changed from 40.295360925000004 to 40.2979386 at 2018-10-07 11:38:31.917544
+2018-10-07 11:38:32,020 - AqauLogger   - INFO     -Blue value changed from 40.2979386 to 40.300520075 at 2018-10-07 11:38:32.020803
+2018-10-07 11:38:32,122 - AqauLogger   - INFO     -Blue value changed from 40.300520075 to 40.30306635 at 2018-10-07 11:38:32.122653
+2018-10-07 11:38:32,224 - AqauLogger   - INFO     -Blue value changed from 40.30306635 to 40.305605475 at 2018-10-07 11:38:32.224219
+2018-10-07 11:38:32,325 - AqauLogger   - INFO     -Blue value changed from 40.305605475 to 40.308137200000004 at 2018-10-07 11:38:32.325487
+2018-10-07 11:38:32,427 - AqauLogger   - INFO     -Blue value changed from 40.308137200000004 to 40.310696525 at 2018-10-07 11:38:32.427860
+2018-10-07 11:38:32,529 - AqauLogger   - INFO     -Blue value changed from 40.310696525 to 40.313237175000005 at 2018-10-07 11:38:32.529486
+2018-10-07 11:38:32,631 - AqauLogger   - INFO     -Blue value changed from 40.313237175000005 to 40.3157754 at 2018-10-07 11:38:32.631015
+2018-10-07 11:38:32,732 - AqauLogger   - INFO     -Blue value changed from 40.3157754 to 40.318313675 at 2018-10-07 11:38:32.732546
+2018-10-07 11:38:32,834 - AqauLogger   - INFO     -Blue value changed from 40.318313675 to 40.320861375 at 2018-10-07 11:38:32.834455
+2018-10-07 11:38:32,936 - AqauLogger   - INFO     -Blue value changed from 40.320861375 to 40.3234056 at 2018-10-07 11:38:32.936224
+2018-10-07 11:38:33,039 - AqauLogger   - INFO     -Blue value changed from 40.3234056 to 40.325976425 at 2018-10-07 11:38:33.039057
+2018-10-07 11:38:33,140 - AqauLogger   - INFO     -Blue value changed from 40.325976425 to 40.328508799999994 at 2018-10-07 11:38:33.140352
+2018-10-07 11:38:33,243 - AqauLogger   - INFO     -Blue value changed from 40.328508799999994 to 40.3310875 at 2018-10-07 11:38:33.243500
+2018-10-07 11:38:33,345 - AqauLogger   - INFO     -Blue value changed from 40.3310875 to 40.333640575 at 2018-10-07 11:38:33.345623
+2018-10-07 11:38:33,447 - AqauLogger   - INFO     -Blue value changed from 40.333640575 to 40.336192575 at 2018-10-07 11:38:33.447702
+2018-10-07 11:38:33,549 - AqauLogger   - INFO     -Blue value changed from 40.336192575 to 40.338742525 at 2018-10-07 11:38:33.549701
+2018-10-07 11:38:33,651 - AqauLogger   - INFO     -Blue value changed from 40.338742525 to 40.3412984 at 2018-10-07 11:38:33.651936
+2018-10-07 11:38:33,754 - AqauLogger   - INFO     -Blue value changed from 40.3412984 to 40.343869525 at 2018-10-07 11:38:33.754780
+2018-10-07 11:38:33,856 - AqauLogger   - INFO     -Blue value changed from 40.343869525 to 40.3464117 at 2018-10-07 11:38:33.856468
+2018-10-07 11:38:33,959 - AqauLogger   - INFO     -Blue value changed from 40.3464117 to 40.34898545 at 2018-10-07 11:38:33.959418
+2018-10-07 11:38:34,061 - AqauLogger   - INFO     -Blue value changed from 40.34898545 to 40.351532999999996 at 2018-10-07 11:38:34.061320
+2018-10-07 11:38:34,163 - AqauLogger   - INFO     -Blue value changed from 40.351532999999996 to 40.354093625 at 2018-10-07 11:38:34.163745
+2018-10-07 11:38:34,265 - AqauLogger   - INFO     -Blue value changed from 40.354093625 to 40.3566426 at 2018-10-07 11:38:34.265704
+2018-10-07 11:38:34,368 - AqauLogger   - INFO     -Blue value changed from 40.3566426 to 40.3592132 at 2018-10-07 11:38:34.368528
+2018-10-07 11:38:34,470 - AqauLogger   - INFO     -Blue value changed from 40.3592132 to 40.361763775 at 2018-10-07 11:38:34.470550
+2018-10-07 11:38:34,572 - AqauLogger   - INFO     -Blue value changed from 40.361763775 to 40.364315725000004 at 2018-10-07 11:38:34.572629
+2018-10-07 11:38:34,675 - AqauLogger   - INFO     -Blue value changed from 40.364315725000004 to 40.366899225000004 at 2018-10-07 11:38:34.675968
+2018-10-07 11:38:34,777 - AqauLogger   - INFO     -Blue value changed from 40.366899225000004 to 40.369435800000005 at 2018-10-07 11:38:34.777431
+2018-10-07 11:38:34,878 - AqauLogger   - INFO     -Blue value changed from 40.369435800000005 to 40.371971925 at 2018-10-07 11:38:34.878877
+2018-10-07 11:38:34,981 - AqauLogger   - INFO     -Blue value changed from 40.371971925 to 40.374541825 at 2018-10-07 11:38:34.981673
+2018-10-07 11:38:35,083 - AqauLogger   - INFO     -Blue value changed from 40.374541825 to 40.3770772 at 2018-10-07 11:38:35.083088
+2018-10-07 11:38:35,186 - AqauLogger   - INFO     -Blue value changed from 40.3770772 to 40.37965465 at 2018-10-07 11:38:35.186186
+2018-10-07 11:38:35,288 - AqauLogger   - INFO     -Blue value changed from 40.37965465 to 40.382205625000005 at 2018-10-07 11:38:35.288225
+2018-10-07 11:38:35,391 - AqauLogger   - INFO     -Blue value changed from 40.382205625000005 to 40.38478705 at 2018-10-07 11:38:35.391481
+2018-10-07 11:38:35,493 - AqauLogger   - INFO     -Blue value changed from 40.38478705 to 40.3873483 at 2018-10-07 11:38:35.493932
+2018-10-07 11:38:35,596 - AqauLogger   - INFO     -Blue value changed from 40.3873483 to 40.3899065 at 2018-10-07 11:38:35.596260
+2018-10-07 11:38:35,698 - AqauLogger   - INFO     -Blue value changed from 40.3899065 to 40.392469175 at 2018-10-07 11:38:35.698767
+2018-10-07 11:38:35,801 - AqauLogger   - INFO     -Blue value changed from 40.392469175 to 40.395035375 at 2018-10-07 11:38:35.801415
+2018-10-07 11:38:35,903 - AqauLogger   - INFO     -Blue value changed from 40.395035375 to 40.3975873 at 2018-10-07 11:38:35.903492
+2018-10-07 11:38:36,005 - AqauLogger   - INFO     -Blue value changed from 40.3975873 to 40.40013565 at 2018-10-07 11:38:36.005425
+2018-10-07 11:38:36,107 - AqauLogger   - INFO     -Blue value changed from 40.40013565 to 40.40268585 at 2018-10-07 11:38:36.107434
+2018-10-07 11:38:36,210 - AqauLogger   - INFO     -Blue value changed from 40.40268585 to 40.40526185 at 2018-10-07 11:38:36.210474
+2018-10-07 11:38:36,312 - AqauLogger   - INFO     -Blue value changed from 40.40526185 to 40.407813274999995 at 2018-10-07 11:38:36.312530
+2018-10-07 11:38:36,415 - AqauLogger   - INFO     -Blue value changed from 40.407813274999995 to 40.41037595 at 2018-10-07 11:38:36.415037
+2018-10-07 11:38:36,516 - AqauLogger   - INFO     -Blue value changed from 40.41037595 to 40.412918775 at 2018-10-07 11:38:36.516750
+2018-10-07 11:38:36,619 - AqauLogger   - INFO     -Blue value changed from 40.412918775 to 40.4154871 at 2018-10-07 11:38:36.619483
+2018-10-07 11:38:36,721 - AqauLogger   - INFO     -Blue value changed from 40.4154871 to 40.418035275 at 2018-10-07 11:38:36.721411
+2018-10-07 11:38:36,823 - AqauLogger   - INFO     -Blue value changed from 40.418035275 to 40.4205874 at 2018-10-07 11:38:36.823496
+2018-10-07 11:38:36,926 - AqauLogger   - INFO     -Blue value changed from 40.4205874 to 40.423170999999996 at 2018-10-07 11:38:36.926840
+2018-10-07 11:38:37,030 - AqauLogger   - INFO     -Blue value changed from 40.423170999999996 to 40.42575755 at 2018-10-07 11:38:37.030302
+2018-10-07 11:38:37,132 - AqauLogger   - INFO     -Blue value changed from 40.42575755 to 40.428309750000004 at 2018-10-07 11:38:37.132390
+2018-10-07 11:38:37,235 - AqauLogger   - INFO     -Blue value changed from 40.428309750000004 to 40.430881975 at 2018-10-07 11:38:37.235278
+2018-10-07 11:38:37,337 - AqauLogger   - INFO     -Blue value changed from 40.430881975 to 40.433427075 at 2018-10-07 11:38:37.337083
+2018-10-07 11:38:37,439 - AqauLogger   - INFO     -Blue value changed from 40.433427075 to 40.43598195 at 2018-10-07 11:38:37.439277
+2018-10-07 11:38:37,541 - AqauLogger   - INFO     -Blue value changed from 40.43598195 to 40.438547875 at 2018-10-07 11:38:37.541915
+2018-10-07 11:38:37,644 - AqauLogger   - INFO     -Blue value changed from 40.438547875 to 40.441115325 at 2018-10-07 11:38:37.644613
+2018-10-07 11:38:37,746 - AqauLogger   - INFO     -Blue value changed from 40.441115325 to 40.443663625 at 2018-10-07 11:38:37.746545
+2018-10-07 11:38:37,848 - AqauLogger   - INFO     -Blue value changed from 40.443663625 to 40.446202875 at 2018-10-07 11:38:37.848115
+2018-10-07 11:38:37,950 - AqauLogger   - INFO     -Blue value changed from 40.446202875 to 40.4487732 at 2018-10-07 11:38:37.950927
+2018-10-07 11:38:38,052 - AqauLogger   - INFO     -Blue value changed from 40.4487732 to 40.45131315 at 2018-10-07 11:38:38.052525
+2018-10-07 11:38:38,154 - AqauLogger   - INFO     -Blue value changed from 40.45131315 to 40.453864975 at 2018-10-07 11:38:38.154599
+2018-10-07 11:38:38,257 - AqauLogger   - INFO     -Blue value changed from 40.453864975 to 40.45643625 at 2018-10-07 11:38:38.257450
+2018-10-07 11:38:38,358 - AqauLogger   - INFO     -Blue value changed from 40.45643625 to 40.458966125 at 2018-10-07 11:38:38.358645
+2018-10-07 11:38:38,460 - AqauLogger   - INFO     -Blue value changed from 40.458966125 to 40.4615105 at 2018-10-07 11:38:38.460420
+2018-10-07 11:38:38,562 - AqauLogger   - INFO     -Blue value changed from 40.4615105 to 40.464056750000005 at 2018-10-07 11:38:38.562269
+2018-10-07 11:38:38,663 - AqauLogger   - INFO     -Blue value changed from 40.464056750000005 to 40.4665942 at 2018-10-07 11:38:38.663767
+2018-10-07 11:38:38,765 - AqauLogger   - INFO     -Blue value changed from 40.4665942 to 40.469148675 at 2018-10-07 11:38:38.765946
+2018-10-07 11:38:38,868 - AqauLogger   - INFO     -Blue value changed from 40.469148675 to 40.471701 at 2018-10-07 11:38:38.868040
+2018-10-07 11:38:38,969 - AqauLogger   - INFO     -Blue value changed from 40.471701 to 40.474245325 at 2018-10-07 11:38:38.969812
+2018-10-07 11:38:39,071 - AqauLogger   - INFO     -Blue value changed from 40.474245325 to 40.476790475 at 2018-10-07 11:38:39.071619
+2018-10-07 11:38:39,174 - AqauLogger   - INFO     -Blue value changed from 40.476790475 to 40.479366225 at 2018-10-07 11:38:39.174649
+2018-10-07 11:38:39,276 - AqauLogger   - INFO     -Blue value changed from 40.479366225 to 40.481909099999996 at 2018-10-07 11:38:39.276363
+2018-10-07 11:38:39,378 - AqauLogger   - INFO     -Blue value changed from 40.481909099999996 to 40.4844573 at 2018-10-07 11:38:39.378291
+2018-10-07 11:38:39,481 - AqauLogger   - INFO     -Blue value changed from 40.4844573 to 40.487041425 at 2018-10-07 11:38:39.481657
+2018-10-07 11:38:39,583 - AqauLogger   - INFO     -Blue value changed from 40.487041425 to 40.48959825 at 2018-10-07 11:38:39.583930
+2018-10-07 11:38:39,686 - AqauLogger   - INFO     -Blue value changed from 40.48959825 to 40.49216335 at 2018-10-07 11:38:39.686534
+2018-10-07 11:38:39,787 - AqauLogger   - INFO     -Blue value changed from 40.49216335 to 40.494698375 at 2018-10-07 11:38:39.787935
+2018-10-07 11:38:39,891 - AqauLogger   - INFO     -Blue value changed from 40.494698375 to 40.4972772 at 2018-10-07 11:38:39.891087
+2018-10-07 11:38:39,993 - AqauLogger   - INFO     -Blue value changed from 40.4972772 to 40.4998491 at 2018-10-07 11:38:39.993964
+2018-10-07 11:38:40,095 - AqauLogger   - INFO     -Blue value changed from 40.4998491 to 40.5023964 at 2018-10-07 11:38:40.095855
+2018-10-07 11:38:40,199 - AqauLogger   - INFO     -Blue value changed from 40.5023964 to 40.50498145 at 2018-10-07 11:38:40.199257
+2018-10-07 11:38:40,300 - AqauLogger   - INFO     -Blue value changed from 40.50498145 to 40.507516700000004 at 2018-10-07 11:38:40.300668
+2018-10-07 11:38:40,402 - AqauLogger   - INFO     -Blue value changed from 40.507516700000004 to 40.5100523 at 2018-10-07 11:38:40.402092
+2018-10-07 11:38:40,504 - AqauLogger   - INFO     -Blue value changed from 40.5100523 to 40.51260575 at 2018-10-07 11:38:40.504230
+2018-10-07 11:38:40,606 - AqauLogger   - INFO     -Blue value changed from 40.51260575 to 40.515172975 at 2018-10-07 11:38:40.606918
+2018-10-07 11:38:40,708 - AqauLogger   - INFO     -Blue value changed from 40.515172975 to 40.517715025 at 2018-10-07 11:38:40.708600
+2018-10-07 11:38:40,811 - AqauLogger   - INFO     -Blue value changed from 40.517715025 to 40.520292 at 2018-10-07 11:38:40.811680
+2018-10-07 11:38:40,914 - AqauLogger   - INFO     -Blue value changed from 40.520292 to 40.522860324999996 at 2018-10-07 11:38:40.914412
+2018-10-07 11:38:41,015 - AqauLogger   - INFO     -Blue value changed from 40.522860324999996 to 40.5253922 at 2018-10-07 11:38:41.015688
+2018-10-07 11:38:41,117 - AqauLogger   - INFO     -Blue value changed from 40.5253922 to 40.527928349999996 at 2018-10-07 11:38:41.117134
+2018-10-07 11:38:41,218 - AqauLogger   - INFO     -Blue value changed from 40.527928349999996 to 40.530462375 at 2018-10-07 11:38:41.218495
+2018-10-07 11:38:41,320 - AqauLogger   - INFO     -Blue value changed from 40.530462375 to 40.533005775 at 2018-10-07 11:38:41.320230
+2018-10-07 11:38:41,422 - AqauLogger   - INFO     -Blue value changed from 40.533005775 to 40.535551325 at 2018-10-07 11:38:41.422052
+2018-10-07 11:38:41,525 - AqauLogger   - INFO     -Blue value changed from 40.535551325 to 40.538133075000005 at 2018-10-07 11:38:41.525322
+2018-10-07 11:38:41,627 - AqauLogger   - INFO     -Blue value changed from 40.538133075000005 to 40.540677375 at 2018-10-07 11:38:41.627094
+2018-10-07 11:38:41,728 - AqauLogger   - INFO     -Blue value changed from 40.540677375 to 40.54321335 at 2018-10-07 11:38:41.728533
+2018-10-07 11:38:41,831 - AqauLogger   - INFO     -Blue value changed from 40.54321335 to 40.5457804 at 2018-10-07 11:38:41.831215
+2018-10-07 11:38:41,932 - AqauLogger   - INFO     -Blue value changed from 40.5457804 to 40.5483168 at 2018-10-07 11:38:41.932671
+2018-10-07 11:38:42,034 - AqauLogger   - INFO     -Blue value changed from 40.5483168 to 40.550853175 at 2018-10-07 11:38:42.034127
+2018-10-07 11:38:42,135 - AqauLogger   - INFO     -Blue value changed from 40.550853175 to 40.55339505 at 2018-10-07 11:38:42.135802
+2018-10-07 11:38:42,237 - AqauLogger   - INFO     -Blue value changed from 40.55339505 to 40.5559286 at 2018-10-07 11:38:42.237144
+2018-10-07 11:38:42,339 - AqauLogger   - INFO     -Blue value changed from 40.5559286 to 40.5584873 at 2018-10-07 11:38:42.339492
+2018-10-07 11:38:42,441 - AqauLogger   - INFO     -Blue value changed from 40.5584873 to 40.561038125 at 2018-10-07 11:38:42.441525
+2018-10-07 11:38:42,544 - AqauLogger   - INFO     -Blue value changed from 40.561038125 to 40.56362105 at 2018-10-07 11:38:42.544841
+2018-10-07 11:38:42,646 - AqauLogger   - INFO     -Blue value changed from 40.56362105 to 40.566166725 at 2018-10-07 11:38:42.646668
+2018-10-07 11:38:42,748 - AqauLogger   - INFO     -Blue value changed from 40.566166725 to 40.568716025 at 2018-10-07 11:38:42.748641
+2018-10-07 11:38:42,851 - AqauLogger   - INFO     -Blue value changed from 40.568716025 to 40.57129725 at 2018-10-07 11:38:42.851890
+2018-10-07 11:38:42,954 - AqauLogger   - INFO     -Blue value changed from 40.57129725 to 40.573866525 at 2018-10-07 11:38:42.954661
+2018-10-07 11:38:43,056 - AqauLogger   - INFO     -Blue value changed from 40.573866525 to 40.5764024 at 2018-10-07 11:38:43.056096
+2018-10-07 11:38:43,157 - AqauLogger   - INFO     -Blue value changed from 40.5764024 to 40.578938325 at 2018-10-07 11:38:43.157533
+2018-10-07 11:38:43,259 - AqauLogger   - INFO     -Blue value changed from 40.578938325 to 40.58148525 at 2018-10-07 11:38:43.259410
+2018-10-07 11:38:43,360 - AqauLogger   - INFO     -Blue value changed from 40.58148525 to 40.58401845 at 2018-10-07 11:38:43.360737
+2018-10-07 11:38:43,463 - AqauLogger   - INFO     -Blue value changed from 40.58401845 to 40.586577274999996 at 2018-10-07 11:38:43.463091
+2018-10-07 11:38:43,564 - AqauLogger   - INFO     -Blue value changed from 40.586577274999996 to 40.589120275 at 2018-10-07 11:38:43.564811
+2018-10-07 11:38:43,666 - AqauLogger   - INFO     -Blue value changed from 40.589120275 to 40.591658925 at 2018-10-07 11:38:43.666356
+2018-10-07 11:38:43,767 - AqauLogger   - INFO     -Blue value changed from 40.591658925 to 40.5941953 at 2018-10-07 11:38:43.767812
+2018-10-07 11:38:43,869 - AqauLogger   - INFO     -Blue value changed from 40.5941953 to 40.596738775 at 2018-10-07 11:38:43.869551
+2018-10-07 11:38:43,972 - AqauLogger   - INFO     -Blue value changed from 40.596738775 to 40.5993132 at 2018-10-07 11:38:43.972527
+2018-10-07 11:38:44,073 - AqauLogger   - INFO     -Blue value changed from 40.5993132 to 40.601844525 at 2018-10-07 11:38:44.073781
+2018-10-07 11:38:44,176 - AqauLogger   - INFO     -Blue value changed from 40.601844525 to 40.604406274999995 at 2018-10-07 11:38:44.176251
+2018-10-07 11:38:44,277 - AqauLogger   - INFO     -Blue value changed from 40.604406274999995 to 40.606947825 at 2018-10-07 11:38:44.277912
+2018-10-07 11:38:44,381 - AqauLogger   - INFO     -Blue value changed from 40.606947825 to 40.609529625 at 2018-10-07 11:38:44.381185
+2018-10-07 11:38:44,483 - AqauLogger   - INFO     -Blue value changed from 40.609529625 to 40.612089775 at 2018-10-07 11:38:44.483590
+2018-10-07 11:38:44,585 - AqauLogger   - INFO     -Blue value changed from 40.612089775 to 40.614639425 at 2018-10-07 11:38:44.585577
+2018-10-07 11:38:44,688 - AqauLogger   - INFO     -Blue value changed from 40.614639425 to 40.6172156 at 2018-10-07 11:38:44.688623
+2018-10-07 11:38:44,789 - AqauLogger   - INFO     -Blue value changed from 40.6172156 to 40.61974995 at 2018-10-07 11:38:44.789998
+2018-10-07 11:38:44,891 - AqauLogger   - INFO     -Blue value changed from 40.61974995 to 40.6222842 at 2018-10-07 11:38:44.891367
+2018-10-07 11:38:44,993 - AqauLogger   - INFO     -Blue value changed from 40.6222842 to 40.624832925 at 2018-10-07 11:38:44.993317
+2018-10-07 11:38:45,095 - AqauLogger   - INFO     -Blue value changed from 40.624832925 to 40.6273787 at 2018-10-07 11:38:45.095147
+2018-10-07 11:38:45,197 - AqauLogger   - INFO     -Blue value changed from 40.6273787 to 40.6299352 at 2018-10-07 11:38:45.197408
+2018-10-07 11:38:45,300 - AqauLogger   - INFO     -Blue value changed from 40.6299352 to 40.632515 at 2018-10-07 11:38:45.300600
+2018-10-07 11:38:45,402 - AqauLogger   - INFO     -Blue value changed from 40.632515 to 40.635073125 at 2018-10-07 11:38:45.402925
+2018-10-07 11:38:45,504 - AqauLogger   - INFO     -Blue value changed from 40.635073125 to 40.63760895 at 2018-10-07 11:38:45.504357
+2018-10-07 11:38:45,605 - AqauLogger   - INFO     -Blue value changed from 40.63760895 to 40.640142325 at 2018-10-07 11:38:45.605692
+2018-10-07 11:38:45,708 - AqauLogger   - INFO     -Blue value changed from 40.640142325 to 40.6427104 at 2018-10-07 11:38:45.708415
+2018-10-07 11:38:45,809 - AqauLogger   - INFO     -Blue value changed from 40.6427104 to 40.6452467 at 2018-10-07 11:38:45.809867
+2018-10-07 11:38:45,911 - AqauLogger   - INFO     -Blue value changed from 40.6452467 to 40.6477936 at 2018-10-07 11:38:45.911743
+2018-10-07 11:38:46,014 - AqauLogger   - INFO     -Blue value changed from 40.6477936 to 40.650368325 at 2018-10-07 11:38:46.014732
+2018-10-07 11:38:46,116 - AqauLogger   - INFO     -Blue value changed from 40.650368325 to 40.6529198 at 2018-10-07 11:38:46.116791
+2018-10-07 11:38:46,218 - AqauLogger   - INFO     -Blue value changed from 40.6529198 to 40.655461775 at 2018-10-07 11:38:46.218470
+2018-10-07 11:38:46,320 - AqauLogger   - INFO     -Blue value changed from 40.655461775 to 40.658006625 at 2018-10-07 11:38:46.320264
+2018-10-07 11:38:46,422 - AqauLogger   - INFO     -Blue value changed from 40.658006625 to 40.66055155 at 2018-10-07 11:38:46.422062
+2018-10-07 11:38:46,524 - AqauLogger   - INFO     -Blue value changed from 40.66055155 to 40.6631208 at 2018-10-07 11:38:46.524831
+2018-10-07 11:38:46,626 - AqauLogger   - INFO     -Blue value changed from 40.6631208 to 40.665655725 at 2018-10-07 11:38:46.626229
+2018-10-07 11:38:46,728 - AqauLogger   - INFO     -Blue value changed from 40.665655725 to 40.668202775000005 at 2018-10-07 11:38:46.728110
+2018-10-07 11:38:46,830 - AqauLogger   - INFO     -Blue value changed from 40.668202775000005 to 40.67075775 at 2018-10-07 11:38:46.830310
+2018-10-07 11:38:46,932 - AqauLogger   - INFO     -Blue value changed from 40.67075775 to 40.673324525 at 2018-10-07 11:38:46.932981
+2018-10-07 11:38:47,034 - AqauLogger   - INFO     -Blue value changed from 40.673324525 to 40.6758704 at 2018-10-07 11:38:47.034815
+2018-10-07 11:38:47,136 - AqauLogger   - INFO     -Blue value changed from 40.6758704 to 40.678415699999995 at 2018-10-07 11:38:47.136628
+2018-10-07 11:38:47,238 - AqauLogger   - INFO     -Blue value changed from 40.678415699999995 to 40.6809578 at 2018-10-07 11:38:47.238312
+2018-10-07 11:38:47,340 - AqauLogger   - INFO     -Blue value changed from 40.6809578 to 40.6835048 at 2018-10-07 11:38:47.340191
+2018-10-07 11:38:47,443 - AqauLogger   - INFO     -Blue value changed from 40.6835048 to 40.68608515 at 2018-10-07 11:38:47.443406
+2018-10-07 11:38:47,545 - AqauLogger   - INFO     -Blue value changed from 40.68608515 to 40.688633625 at 2018-10-07 11:38:47.545344
+2018-10-07 11:38:47,648 - AqauLogger   - INFO     -Blue value changed from 40.688633625 to 40.691207975 at 2018-10-07 11:38:47.648318
+2018-10-07 11:38:47,749 - AqauLogger   - INFO     -Blue value changed from 40.691207975 to 40.693746974999996 at 2018-10-07 11:38:47.749878
+2018-10-07 11:38:47,851 - AqauLogger   - INFO     -Blue value changed from 40.693746974999996 to 40.696282975 at 2018-10-07 11:38:47.851318
+2018-10-07 11:38:47,952 - AqauLogger   - INFO     -Blue value changed from 40.696282975 to 40.698822175 at 2018-10-07 11:38:47.952887
+2018-10-07 11:39:28,077 - AqauLogger   - INFO     -Program Started
+2018-10-07 11:39:28,079 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-07 11:39:28,081 - AqauLogger   - INFO     -Reading section Blue
+2018-10-07 11:39:28,081 - AqauLogger   - INFO     -Reading section Yellow
+2018-10-07 11:39:28,082 - AqauLogger   - INFO     -Reading section Program_1
+2018-10-07 11:39:28,083 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:39:28.083236
+2018-10-07 11:39:28,084 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 07:15:00
+2018-10-07 11:39:28,085 - AqauLogger   - INFO     -Day will start at 2018-10-07 07:30:00
+2018-10-07 11:39:28,085 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 09:00:00
+2018-10-07 11:39:28,086 - AqauLogger   - INFO     -Reading section Program_2
+2018-10-07 11:39:28,087 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:39:28.087138
+2018-10-07 11:39:28,088 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 11:15:00
+2018-10-07 11:39:28,088 - AqauLogger   - INFO     -Day will start at 2018-10-07 11:45:00
+2018-10-07 11:39:28,089 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 14:00:00
+2018-10-07 11:39:28,091 - AqauLogger   - INFO     -PWM Thread started
+2018-10-07 11:39:28,092 - AqauLogger   - INFO     -LCD Thread started
+2018-10-07 11:39:28,092 - AqauLogger   - INFO     -Blue value changed from 0 to 5 at 2018-10-07 11:39:28.092999
+2018-10-07 11:41:34,229 - AqauLogger   - INFO     -Program Started
+2018-10-07 11:41:34,231 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-07 11:41:34,233 - AqauLogger   - INFO     -Reading section Blue
+2018-10-07 11:41:34,233 - AqauLogger   - INFO     -Reading section Yellow
+2018-10-07 11:41:34,234 - AqauLogger   - INFO     -Reading section Program_1
+2018-10-07 11:41:34,235 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:41:34.235761
+2018-10-07 11:41:34,236 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 07:15:00
+2018-10-07 11:41:34,237 - AqauLogger   - INFO     -Day will start at 2018-10-07 07:30:00
+2018-10-07 11:41:34,238 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 09:00:00
+2018-10-07 11:41:34,239 - AqauLogger   - INFO     -Reading section Program_2
+2018-10-07 11:41:34,240 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:41:34.240639
+2018-10-07 11:41:34,241 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 11:15:00
+2018-10-07 11:41:34,241 - AqauLogger   - INFO     -Day will start at 2018-10-07 11:45:00
+2018-10-07 11:41:34,242 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 14:00:00
+2018-10-07 11:41:34,244 - AqauLogger   - INFO     -PWM Thread started
+2018-10-07 11:41:34,245 - AqauLogger   - INFO     -LCD Thread started
+2018-10-07 11:41:38,489 - AqauLogger   - INFO     -Blue value changed from 0 to 5 at 2018-10-07 11:41:34.245516
+2018-10-07 11:42:43,725 - AqauLogger   - INFO     -Program Started
+2018-10-07 11:42:43,726 - AqauLogger   - INFO     -Reading Configuration File c:\Users\pkaro\Desktop\Projects\AquaLights/settings.ini
+2018-10-07 11:42:43,728 - AqauLogger   - INFO     -Reading section Blue
+2018-10-07 11:42:43,729 - AqauLogger   - INFO     -Reading section Yellow
+2018-10-07 11:42:43,729 - AqauLogger   - INFO     -Reading section Program_1
+2018-10-07 11:42:43,730 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:42:43.730866
+2018-10-07 11:42:43,731 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 07:15:00
+2018-10-07 11:42:43,731 - AqauLogger   - INFO     -Day will start at 2018-10-07 07:30:00
+2018-10-07 11:42:43,732 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 09:00:00
+2018-10-07 11:42:43,733 - AqauLogger   - INFO     -Reading section Program_2
+2018-10-07 11:42:43,734 - AqauLogger   - INFO     -Today's date set to 2018-10-07 11:42:43.734767
+2018-10-07 11:42:43,735 - AqauLogger   - INFO     -Sunrise starts at 2018-10-07 11:15:00
+2018-10-07 11:42:43,736 - AqauLogger   - INFO     -Day will start at 2018-10-07 11:45:00
+2018-10-07 11:42:43,737 - AqauLogger   - INFO     -Sunset will happen at 2018-10-07 14:00:00
+2018-10-07 11:42:43,738 - AqauLogger   - INFO     -PWM Thread started
+2018-10-07 11:42:43,739 - AqauLogger   - INFO     -LCD Thread started
+2018-10-07 11:42:53,753 - AqauLogger   - INFO     -Blue value changed from 0 to 46 at 2018-10-07 11:42:43.740620
+2018-10-07 11:42:53,754 - AqauLogger   - INFO     -Yellow value changed from 0 to 83 at 2018-10-07 11:42:43.740620
+2018-10-07 11:43:00,011 - AqauLogger   - INFO     -Blue value changed from 46 to 47 at 2018-10-07 11:43:00.011086
+2018-10-07 11:43:00,013 - AqauLogger   - INFO     -Yellow value changed from 83 to 84 at 2018-10-07 11:43:00.011086
+2018-10-07 11:43:20,093 - AqauLogger   - INFO     -Yellow value changed from 84 to 85 at 2018-10-07 11:43:20.093422
+2018-10-07 11:43:40,074 - AqauLogger   - INFO     -Blue value changed from 47 to 48 at 2018-10-07 11:43:40.074763
+2018-10-07 11:43:40,076 - AqauLogger   - INFO     -Yellow value changed from 85 to 86 at 2018-10-07 11:43:40.074763
+2018-10-07 11:44:00,014 - AqauLogger   - INFO     -Yellow value changed from 86 to 87 at 2018-10-07 11:44:00.014503
+2018-10-07 11:44:20,012 - AqauLogger   - INFO     -Blue value changed from 48 to 49 at 2018-10-07 11:44:20.012202
+2018-10-07 11:44:20,013 - AqauLogger   - INFO     -Yellow value changed from 87 to 88 at 2018-10-07 11:44:20.012202
+2018-10-07 11:44:33,944 - AqauLogger   - DEBUG    -11:44:32 10/07/18 0
+2018-10-07 11:44:33,946 - AqauLogger   - DEBUG    -B:49, Y: 88         
+2018-10-07 11:44:40,088 - AqauLogger   - INFO     -Yellow value changed from 88 to 89 at 2018-10-07 11:44:40.088370
+2018-10-07 11:45:00,060 - AqauLogger   - INFO     -Blue value changed from 49 to 50 at 2018-10-07 11:45:00.060922
+2018-10-07 11:45:00,061 - AqauLogger   - INFO     -Yellow value changed from 89 to 90 at 2018-10-07 11:45:00.060922
+2018-10-07 11:46:14,024 - AqauLogger   - DEBUG    -11:46:13 10/07/18 0
+2018-10-07 11:46:14,026 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 11:47:54,100 - AqauLogger   - DEBUG    -11:47:53 10/07/18 0
+2018-10-07 11:47:54,101 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 11:49:34,184 - AqauLogger   - DEBUG    -11:49:33 10/07/18 0
+2018-10-07 11:49:34,185 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 11:51:14,267 - AqauLogger   - DEBUG    -11:51:13 10/07/18 0
+2018-10-07 11:51:14,268 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 11:52:54,355 - AqauLogger   - DEBUG    -11:52:53 10/07/18 0
+2018-10-07 11:52:54,357 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 11:54:34,435 - AqauLogger   - DEBUG    -11:54:33 10/07/18 0
+2018-10-07 11:54:34,437 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 11:56:14,522 - AqauLogger   - DEBUG    -11:56:13 10/07/18 0
+2018-10-07 11:56:14,523 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 11:57:54,604 - AqauLogger   - DEBUG    -11:57:53 10/07/18 0
+2018-10-07 11:57:54,606 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 11:59:34,682 - AqauLogger   - DEBUG    -11:59:33 10/07/18 0
+2018-10-07 11:59:34,683 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:01:14,759 - AqauLogger   - DEBUG    -12:01:13 10/07/18 0
+2018-10-07 12:01:14,760 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:02:54,837 - AqauLogger   - DEBUG    -12:02:53 10/07/18 0
+2018-10-07 12:02:54,839 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:04:34,920 - AqauLogger   - DEBUG    -12:04:33 10/07/18 0
+2018-10-07 12:04:34,921 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:06:15,001 - AqauLogger   - DEBUG    -12:06:14 10/07/18 0
+2018-10-07 12:06:15,002 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:07:55,078 - AqauLogger   - DEBUG    -12:07:54 10/07/18 0
+2018-10-07 12:07:55,080 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:09:35,162 - AqauLogger   - DEBUG    -12:09:34 10/07/18 0
+2018-10-07 12:09:35,164 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:11:15,238 - AqauLogger   - DEBUG    -12:11:14 10/07/18 0
+2018-10-07 12:11:15,240 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:12:55,315 - AqauLogger   - DEBUG    -12:12:54 10/07/18 0
+2018-10-07 12:12:55,317 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:14:35,400 - AqauLogger   - DEBUG    -12:14:34 10/07/18 0
+2018-10-07 12:14:35,401 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:16:15,482 - AqauLogger   - DEBUG    -12:16:14 10/07/18 0
+2018-10-07 12:16:15,484 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:17:55,568 - AqauLogger   - DEBUG    -12:17:54 10/07/18 0
+2018-10-07 12:17:55,570 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:19:35,648 - AqauLogger   - DEBUG    -12:19:34 10/07/18 0
+2018-10-07 12:19:35,649 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:22:16,561 - AqauLogger   - DEBUG    -12:22:15 10/07/18 0
+2018-10-07 12:22:16,562 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:23:56,635 - AqauLogger   - DEBUG    -12:23:55 10/07/18 0
+2018-10-07 12:23:56,637 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:25:36,711 - AqauLogger   - DEBUG    -12:25:35 10/07/18 0
+2018-10-07 12:25:36,712 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:27:16,787 - AqauLogger   - DEBUG    -12:27:15 10/07/18 0
+2018-10-07 12:27:16,789 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:28:56,865 - AqauLogger   - DEBUG    -12:28:55 10/07/18 0
+2018-10-07 12:28:56,867 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:30:36,948 - AqauLogger   - DEBUG    -12:30:35 10/07/18 0
+2018-10-07 12:30:36,950 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:32:17,024 - AqauLogger   - DEBUG    -12:32:16 10/07/18 0
+2018-10-07 12:32:17,026 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:33:57,108 - AqauLogger   - DEBUG    -12:33:56 10/07/18 0
+2018-10-07 12:33:57,110 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:35:37,189 - AqauLogger   - DEBUG    -12:35:36 10/07/18 0
+2018-10-07 12:35:37,190 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:37:17,263 - AqauLogger   - DEBUG    -12:37:16 10/07/18 0
+2018-10-07 12:37:17,265 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:38:57,348 - AqauLogger   - DEBUG    -12:38:56 10/07/18 0
+2018-10-07 12:38:57,349 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:40:37,429 - AqauLogger   - DEBUG    -12:40:36 10/07/18 0
+2018-10-07 12:40:37,431 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:42:17,511 - AqauLogger   - DEBUG    -12:42:16 10/07/18 0
+2018-10-07 12:42:17,513 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:43:57,588 - AqauLogger   - DEBUG    -12:43:56 10/07/18 0
+2018-10-07 12:43:57,590 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:45:37,667 - AqauLogger   - DEBUG    -12:45:36 10/07/18 0
+2018-10-07 12:45:37,668 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:47:17,746 - AqauLogger   - DEBUG    -12:47:16 10/07/18 0
+2018-10-07 12:47:17,747 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:48:57,822 - AqauLogger   - DEBUG    -12:48:56 10/07/18 0
+2018-10-07 12:48:57,824 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:50:37,900 - AqauLogger   - DEBUG    -12:50:36 10/07/18 0
+2018-10-07 12:50:37,901 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:53:20,529 - AqauLogger   - DEBUG    -12:53:19 10/07/18 0
+2018-10-07 12:53:20,530 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:55:00,600 - AqauLogger   - DEBUG    -12:54:59 10/07/18 0
+2018-10-07 12:55:00,601 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:56:40,678 - AqauLogger   - DEBUG    -12:56:39 10/07/18 0
+2018-10-07 12:56:40,680 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 12:58:20,759 - AqauLogger   - DEBUG    -12:58:19 10/07/18 0
+2018-10-07 12:58:20,761 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:00:00,839 - AqauLogger   - DEBUG    -12:59:59 10/07/18 0
+2018-10-07 13:00:00,841 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:01:40,920 - AqauLogger   - DEBUG    -13:01:39 10/07/18 0
+2018-10-07 13:01:40,921 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:03:21,006 - AqauLogger   - DEBUG    -13:03:20 10/07/18 0
+2018-10-07 13:03:21,007 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:05:01,084 - AqauLogger   - DEBUG    -13:05:00 10/07/18 0
+2018-10-07 13:05:01,086 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:06:41,167 - AqauLogger   - DEBUG    -13:06:40 10/07/18 0
+2018-10-07 13:06:41,169 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:08:21,248 - AqauLogger   - DEBUG    -13:08:20 10/07/18 0
+2018-10-07 13:08:21,250 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:10:01,326 - AqauLogger   - DEBUG    -13:10:00 10/07/18 0
+2018-10-07 13:10:01,327 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:11:41,408 - AqauLogger   - DEBUG    -13:11:40 10/07/18 0
+2018-10-07 13:11:41,408 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:13:21,488 - AqauLogger   - DEBUG    -13:13:20 10/07/18 0
+2018-10-07 13:13:21,490 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:15:01,573 - AqauLogger   - DEBUG    -13:15:00 10/07/18 0
+2018-10-07 13:15:01,574 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:16:41,651 - AqauLogger   - DEBUG    -13:16:40 10/07/18 0
+2018-10-07 13:16:41,653 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:18:21,732 - AqauLogger   - DEBUG    -13:18:20 10/07/18 0
+2018-10-07 13:18:21,734 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:20:01,815 - AqauLogger   - DEBUG    -13:20:00 10/07/18 0
+2018-10-07 13:20:01,817 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:21:41,897 - AqauLogger   - DEBUG    -13:21:40 10/07/18 0
+2018-10-07 13:21:41,899 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:24:22,896 - AqauLogger   - DEBUG    -13:24:21 10/07/18 0
+2018-10-07 13:24:22,897 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:26:02,963 - AqauLogger   - DEBUG    -13:26:01 10/07/18 0
+2018-10-07 13:26:02,965 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:27:43,044 - AqauLogger   - DEBUG    -13:27:42 10/07/18 0
+2018-10-07 13:27:43,046 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:29:23,129 - AqauLogger   - DEBUG    -13:29:22 10/07/18 0
+2018-10-07 13:29:23,131 - AqauLogger   - DEBUG    -B:50, Y: 90         
+2018-10-07 13:30:00,095 - AqauLogger   - INFO     -Blue value changed from 50 to 49 at 2018-10-07 13:30:00.095080
+2018-10-07 13:30:00,096 - AqauLogger   - INFO     -Yellow value changed from 90 to 89 at 2018-10-07 13:30:00.095080
+2018-10-07 13:30:20,064 - AqauLogger   - INFO     -Yellow value changed from 89 to 88 at 2018-10-07 13:30:20.064371
+2018-10-07 13:30:40,043 - AqauLogger   - INFO     -Blue value changed from 49 to 48 at 2018-10-07 13:30:40.043513
+2018-10-07 13:30:40,045 - AqauLogger   - INFO     -Yellow value changed from 88 to 87 at 2018-10-07 13:30:40.043513
+2018-10-07 13:31:00,013 - AqauLogger   - INFO     -Yellow value changed from 87 to 86 at 2018-10-07 13:31:00.013741
+2018-10-07 13:31:03,209 - AqauLogger   - DEBUG    -13:31:02 10/07/18 0
+2018-10-07 13:31:03,211 - AqauLogger   - DEBUG    -B:48, Y: 86         
+2018-10-07 13:31:20,082 - AqauLogger   - INFO     -Blue value changed from 48 to 47 at 2018-10-07 13:31:20.082312
+2018-10-07 13:31:20,084 - AqauLogger   - INFO     -Yellow value changed from 86 to 85 at 2018-10-07 13:31:20.082312
+2018-10-07 13:31:40,059 - AqauLogger   - INFO     -Yellow value changed from 85 to 84 at 2018-10-07 13:31:40.059235
+2018-10-07 13:32:00,039 - AqauLogger   - INFO     -Blue value changed from 47 to 46 at 2018-10-07 13:32:00.039376
+2018-10-07 13:32:00,041 - AqauLogger   - INFO     -Yellow value changed from 84 to 83 at 2018-10-07 13:32:00.039376
+2018-10-07 13:32:20,020 - AqauLogger   - INFO     -Yellow value changed from 83 to 82 at 2018-10-07 13:32:20.020605
+2018-10-07 13:32:40,097 - AqauLogger   - INFO     -Blue value changed from 46 to 45 at 2018-10-07 13:32:40.097067
+2018-10-07 13:32:40,099 - AqauLogger   - INFO     -Yellow value changed from 82 to 81 at 2018-10-07 13:32:40.097067
+2018-10-07 13:32:43,293 - AqauLogger   - DEBUG    -13:32:42 10/07/18 0
+2018-10-07 13:32:43,295 - AqauLogger   - DEBUG    -B:45, Y: 81         
+2018-10-07 13:33:00,066 - AqauLogger   - INFO     -Yellow value changed from 81 to 80 at 2018-10-07 13:33:00.066357
+2018-10-07 13:33:20,038 - AqauLogger   - INFO     -Blue value changed from 45 to 44 at 2018-10-07 13:33:20.038319
+2018-10-07 13:33:20,040 - AqauLogger   - INFO     -Yellow value changed from 80 to 79 at 2018-10-07 13:33:20.038319
+2018-10-07 13:33:40,021 - AqauLogger   - INFO     -Yellow value changed from 79 to 78 at 2018-10-07 13:33:40.021271
+2018-10-07 13:34:00,083 - AqauLogger   - INFO     -Blue value changed from 44 to 43 at 2018-10-07 13:34:00.083589
+2018-10-07 13:34:00,085 - AqauLogger   - INFO     -Yellow value changed from 78 to 77 at 2018-10-07 13:34:00.083589
+2018-10-07 13:34:20,051 - AqauLogger   - INFO     -Yellow value changed from 77 to 76 at 2018-10-07 13:34:20.051590
+2018-10-07 13:34:23,370 - AqauLogger   - DEBUG    -13:34:22 10/07/18 0
+2018-10-07 13:34:23,371 - AqauLogger   - DEBUG    -B:43, Y: 76         
+2018-10-07 13:34:40,025 - AqauLogger   - INFO     -Blue value changed from 43 to 42 at 2018-10-07 13:34:40.025517
+2018-10-07 13:34:40,027 - AqauLogger   - INFO     -Yellow value changed from 76 to 75 at 2018-10-07 13:34:40.025517
+2018-10-07 13:35:00,096 - AqauLogger   - INFO     -Yellow value changed from 75 to 74 at 2018-10-07 13:35:00.096520
+2018-10-07 13:35:20,072 - AqauLogger   - INFO     -Blue value changed from 42 to 41 at 2018-10-07 13:35:20.072516
+2018-10-07 13:35:20,074 - AqauLogger   - INFO     -Yellow value changed from 74 to 73 at 2018-10-07 13:35:20.072516
+2018-10-07 13:35:40,048 - AqauLogger   - INFO     -Yellow value changed from 73 to 72 at 2018-10-07 13:35:40.048611
+2018-10-07 13:36:00,017 - AqauLogger   - INFO     -Blue value changed from 41 to 40 at 2018-10-07 13:36:00.017667
+2018-10-07 13:36:00,019 - AqauLogger   - INFO     -Yellow value changed from 72 to 71 at 2018-10-07 13:36:00.017667
+2018-10-07 13:36:03,447 - AqauLogger   - DEBUG    -13:36:02 10/07/18 0
+2018-10-07 13:36:03,448 - AqauLogger   - DEBUG    -B:40, Y: 71         
+2018-10-07 13:36:20,089 - AqauLogger   - INFO     -Yellow value changed from 71 to 70 at 2018-10-07 13:36:20.089409
+2018-10-07 13:36:40,072 - AqauLogger   - INFO     -Blue value changed from 40 to 39 at 2018-10-07 13:36:40.072746
+2018-10-07 13:36:40,074 - AqauLogger   - INFO     -Yellow value changed from 70 to 69 at 2018-10-07 13:36:40.072746
+2018-10-07 13:37:00,051 - AqauLogger   - INFO     -Yellow value changed from 69 to 68 at 2018-10-07 13:37:00.051401
+2018-10-07 13:37:20,030 - AqauLogger   - INFO     -Blue value changed from 39 to 38 at 2018-10-07 13:37:20.030563
+2018-10-07 13:37:20,032 - AqauLogger   - INFO     -Yellow value changed from 68 to 67 at 2018-10-07 13:37:20.030563
+2018-10-07 13:37:40,010 - AqauLogger   - INFO     -Yellow value changed from 67 to 66 at 2018-10-07 13:37:40.010960
+2018-10-07 13:37:43,529 - AqauLogger   - DEBUG    -13:37:42 10/07/18 0
+2018-10-07 13:37:43,531 - AqauLogger   - DEBUG    -B:38, Y: 66         
+2018-10-07 13:38:00,089 - AqauLogger   - INFO     -Blue value changed from 38 to 37 at 2018-10-07 13:38:00.089525
+2018-10-07 13:38:00,090 - AqauLogger   - INFO     -Yellow value changed from 66 to 65 at 2018-10-07 13:38:00.089525
+2018-10-07 13:38:20,060 - AqauLogger   - INFO     -Yellow value changed from 65 to 64 at 2018-10-07 13:38:20.060832
+2018-10-07 13:38:40,033 - AqauLogger   - INFO     -Blue value changed from 37 to 36 at 2018-10-07 13:38:40.033304
+2018-10-07 13:38:40,035 - AqauLogger   - INFO     -Yellow value changed from 64 to 63 at 2018-10-07 13:38:40.033304
+2018-10-07 13:39:00,012 - AqauLogger   - INFO     -Yellow value changed from 63 to 62 at 2018-10-07 13:39:00.012418
+2018-10-07 13:39:20,084 - AqauLogger   - INFO     -Blue value changed from 36 to 35 at 2018-10-07 13:39:20.084015
+2018-10-07 13:39:20,085 - AqauLogger   - INFO     -Yellow value changed from 62 to 61 at 2018-10-07 13:39:20.084015
+2018-10-07 13:39:23,612 - AqauLogger   - DEBUG    -13:39:22 10/07/18 0
+2018-10-07 13:39:23,614 - AqauLogger   - DEBUG    -B:35, Y: 61         
+2018-10-07 13:39:40,052 - AqauLogger   - INFO     -Yellow value changed from 61 to 60 at 2018-10-07 13:39:40.052877
+2018-10-07 13:40:00,027 - AqauLogger   - INFO     -Blue value changed from 35 to 34 at 2018-10-07 13:40:00.027891
+2018-10-07 13:40:00,029 - AqauLogger   - INFO     -Yellow value changed from 60 to 59 at 2018-10-07 13:40:00.027891
+2018-10-07 13:40:20,008 - AqauLogger   - INFO     -Yellow value changed from 59 to 58 at 2018-10-07 13:40:20.008330
+2018-10-07 13:40:40,085 - AqauLogger   - INFO     -Blue value changed from 34 to 33 at 2018-10-07 13:40:40.085536
+2018-10-07 13:40:40,087 - AqauLogger   - INFO     -Yellow value changed from 58 to 57 at 2018-10-07 13:40:40.085536
+2018-10-07 13:41:00,064 - AqauLogger   - INFO     -Yellow value changed from 57 to 56 at 2018-10-07 13:41:00.064608
+2018-10-07 13:41:03,691 - AqauLogger   - DEBUG    -13:41:02 10/07/18 0
+2018-10-07 13:41:03,693 - AqauLogger   - DEBUG    -B:33, Y: 56         
+2018-10-07 13:41:20,039 - AqauLogger   - INFO     -Blue value changed from 33 to 32 at 2018-10-07 13:41:20.039253
+2018-10-07 13:41:20,041 - AqauLogger   - INFO     -Yellow value changed from 56 to 55 at 2018-10-07 13:41:20.039253
+2018-10-07 13:41:40,018 - AqauLogger   - INFO     -Yellow value changed from 55 to 54 at 2018-10-07 13:41:40.018475
+2018-10-07 13:42:00,094 - AqauLogger   - INFO     -Blue value changed from 32 to 31 at 2018-10-07 13:42:00.094607
+2018-10-07 13:42:00,096 - AqauLogger   - INFO     -Yellow value changed from 54 to 53 at 2018-10-07 13:42:00.094607
+2018-10-07 13:42:20,070 - AqauLogger   - INFO     -Yellow value changed from 53 to 52 at 2018-10-07 13:42:20.070126
+2018-10-07 13:42:40,042 - AqauLogger   - INFO     -Blue value changed from 31 to 30 at 2018-10-07 13:42:40.042432
+2018-10-07 13:42:40,044 - AqauLogger   - INFO     -Yellow value changed from 52 to 51 at 2018-10-07 13:42:40.042432
+2018-10-07 13:42:43,771 - AqauLogger   - DEBUG    -13:42:42 10/07/18 0
+2018-10-07 13:42:43,772 - AqauLogger   - DEBUG    -B:30, Y: 51         
+2018-10-07 13:43:00,018 - AqauLogger   - INFO     -Yellow value changed from 51 to 50 at 2018-10-07 13:43:00.018778
+2018-10-07 13:43:20,098 - AqauLogger   - INFO     -Blue value changed from 30 to 29 at 2018-10-07 13:43:20.098212
+2018-10-07 13:43:20,100 - AqauLogger   - INFO     -Yellow value changed from 50 to 49 at 2018-10-07 13:43:20.098212
+2018-10-07 13:43:40,073 - AqauLogger   - INFO     -Yellow value changed from 49 to 48 at 2018-10-07 13:43:40.073769
+2018-10-07 13:44:00,047 - AqauLogger   - INFO     -Blue value changed from 29 to 28 at 2018-10-07 13:44:00.047013
+2018-10-07 13:44:00,048 - AqauLogger   - INFO     -Yellow value changed from 48 to 47 at 2018-10-07 13:44:00.047013
+2018-10-07 13:44:20,022 - AqauLogger   - INFO     -Yellow value changed from 47 to 46 at 2018-10-07 13:44:20.022816
+2018-10-07 13:44:23,849 - AqauLogger   - DEBUG    -13:44:22 10/07/18 0
+2018-10-07 13:44:23,851 - AqauLogger   - DEBUG    -B:28, Y: 46         
+2018-10-07 13:44:40,096 - AqauLogger   - INFO     -Blue value changed from 28 to 27 at 2018-10-07 13:44:40.096109
+2018-10-07 13:44:40,098 - AqauLogger   - INFO     -Yellow value changed from 46 to 45 at 2018-10-07 13:44:40.096109
+2018-10-07 13:45:00,076 - AqauLogger   - INFO     -Yellow value changed from 45 to 44 at 2018-10-07 13:45:00.076168
+2018-10-07 13:45:20,051 - AqauLogger   - INFO     -Blue value changed from 27 to 26 at 2018-10-07 13:45:20.051005
+2018-10-07 13:45:20,052 - AqauLogger   - INFO     -Yellow value changed from 44 to 43 at 2018-10-07 13:45:20.051005
+2018-10-07 13:45:40,026 - AqauLogger   - INFO     -Yellow value changed from 43 to 42 at 2018-10-07 13:45:40.026016
+2018-10-07 13:46:00,000 - AqauLogger   - INFO     -Blue value changed from 26 to 25 at 2018-10-07 13:46:00.000928
+2018-10-07 13:46:00,003 - AqauLogger   - INFO     -Yellow value changed from 42 to 41 at 2018-10-07 13:46:00.000928
+2018-10-07 13:46:03,929 - AqauLogger   - DEBUG    -13:46:02 10/07/18 0
+2018-10-07 13:46:03,931 - AqauLogger   - DEBUG    -B:25, Y: 41         
+2018-10-07 13:46:20,082 - AqauLogger   - INFO     -Yellow value changed from 41 to 40 at 2018-10-07 13:46:20.082743
+2018-10-07 13:46:40,060 - AqauLogger   - INFO     -Blue value changed from 25 to 24 at 2018-10-07 13:46:40.060117
+2018-10-07 13:46:40,062 - AqauLogger   - INFO     -Yellow value changed from 40 to 39 at 2018-10-07 13:46:40.060117
+2018-10-07 13:47:00,044 - AqauLogger   - INFO     -Yellow value changed from 39 to 38 at 2018-10-07 13:47:00.044165
+2018-10-07 13:47:20,024 - AqauLogger   - INFO     -Blue value changed from 24 to 23 at 2018-10-07 13:47:20.024407
+2018-10-07 13:47:20,026 - AqauLogger   - INFO     -Yellow value changed from 38 to 37 at 2018-10-07 13:47:20.024407
+2018-10-07 13:47:40,002 - AqauLogger   - INFO     -Yellow value changed from 37 to 36 at 2018-10-07 13:47:40.002251
+2018-10-07 13:47:44,012 - AqauLogger   - DEBUG    -13:47:43 10/07/18 0
+2018-10-07 13:47:44,014 - AqauLogger   - DEBUG    -B:23, Y: 36         
+2018-10-07 13:48:00,081 - AqauLogger   - INFO     -Blue value changed from 23 to 22 at 2018-10-07 13:48:00.081642
+2018-10-07 13:48:00,083 - AqauLogger   - INFO     -Yellow value changed from 36 to 35 at 2018-10-07 13:48:00.081642
+2018-10-07 13:48:20,063 - AqauLogger   - INFO     -Yellow value changed from 35 to 34 at 2018-10-07 13:48:20.063418
+2018-10-07 13:48:40,033 - AqauLogger   - INFO     -Blue value changed from 22 to 21 at 2018-10-07 13:48:40.033679
+2018-10-07 13:48:40,035 - AqauLogger   - INFO     -Yellow value changed from 34 to 33 at 2018-10-07 13:48:40.033679
+2018-10-07 13:49:00,012 - AqauLogger   - INFO     -Yellow value changed from 33 to 32 at 2018-10-07 13:49:00.012903
+2018-10-07 13:49:20,084 - AqauLogger   - INFO     -Blue value changed from 21 to 20 at 2018-10-07 13:49:20.084079
+2018-10-07 13:49:20,086 - AqauLogger   - INFO     -Yellow value changed from 32 to 31 at 2018-10-07 13:49:20.084079
+2018-10-07 13:49:24,093 - AqauLogger   - DEBUG    -13:49:23 10/07/18 0
+2018-10-07 13:49:24,095 - AqauLogger   - DEBUG    -B:20, Y: 31         
+2018-10-07 13:49:40,062 - AqauLogger   - INFO     -Yellow value changed from 31 to 30 at 2018-10-07 13:49:40.062000
+2018-10-07 13:50:00,034 - AqauLogger   - INFO     -Blue value changed from 20 to 19 at 2018-10-07 13:50:00.034248
+2018-10-07 13:50:00,036 - AqauLogger   - INFO     -Yellow value changed from 30 to 29 at 2018-10-07 13:50:00.034248
+2018-10-07 13:50:20,018 - AqauLogger   - INFO     -Yellow value changed from 29 to 28 at 2018-10-07 13:50:20.018426
+2018-10-07 13:50:40,092 - AqauLogger   - INFO     -Blue value changed from 19 to 18 at 2018-10-07 13:50:40.092149
+2018-10-07 13:50:40,094 - AqauLogger   - INFO     -Yellow value changed from 28 to 27 at 2018-10-07 13:50:40.092149
+2018-10-07 13:51:00,065 - AqauLogger   - INFO     -Yellow value changed from 27 to 26 at 2018-10-07 13:51:00.065915
+2018-10-07 13:51:04,180 - AqauLogger   - DEBUG    -13:51:03 10/07/18 0
+2018-10-07 13:51:04,181 - AqauLogger   - DEBUG    -B:18, Y: 26         
+2018-10-07 13:51:20,039 - AqauLogger   - INFO     -Blue value changed from 18 to 17 at 2018-10-07 13:51:20.039371
+2018-10-07 13:51:20,041 - AqauLogger   - INFO     -Yellow value changed from 26 to 25 at 2018-10-07 13:51:20.039371
+2018-10-07 13:51:40,019 - AqauLogger   - INFO     -Yellow value changed from 25 to 24 at 2018-10-07 13:51:40.019654
+2018-10-07 13:52:00,097 - AqauLogger   - INFO     -Blue value changed from 17 to 16 at 2018-10-07 13:52:00.097436
+2018-10-07 13:52:00,099 - AqauLogger   - INFO     -Yellow value changed from 24 to 23 at 2018-10-07 13:52:00.097436
+2018-10-07 13:52:20,078 - AqauLogger   - INFO     -Yellow value changed from 23 to 22 at 2018-10-07 13:52:20.078424
+2018-10-07 13:52:40,053 - AqauLogger   - INFO     -Blue value changed from 16 to 15 at 2018-10-07 13:52:40.053877
+2018-10-07 13:52:40,055 - AqauLogger   - INFO     -Yellow value changed from 22 to 21 at 2018-10-07 13:52:40.053877
+2018-10-07 13:52:44,263 - AqauLogger   - DEBUG    -13:52:43 10/07/18 0
+2018-10-07 13:52:44,265 - AqauLogger   - DEBUG    -B:15, Y: 21         
+2018-10-07 13:53:00,039 - AqauLogger   - INFO     -Yellow value changed from 21 to 20 at 2018-10-07 13:53:00.039448
+2018-10-07 13:53:20,012 - AqauLogger   - INFO     -Blue value changed from 15 to 14 at 2018-10-07 13:53:20.012786
+2018-10-07 13:53:20,014 - AqauLogger   - INFO     -Yellow value changed from 20 to 19 at 2018-10-07 13:53:20.012786
+2018-10-07 13:53:40,089 - AqauLogger   - INFO     -Yellow value changed from 19 to 18 at 2018-10-07 13:53:40.089334
+2018-10-07 13:54:00,064 - AqauLogger   - INFO     -Blue value changed from 14 to 13 at 2018-10-07 13:54:00.064066
+2018-10-07 13:54:00,066 - AqauLogger   - INFO     -Yellow value changed from 18 to 17 at 2018-10-07 13:54:00.064066
+2018-10-07 13:54:20,044 - AqauLogger   - INFO     -Yellow value changed from 17 to 16 at 2018-10-07 13:54:20.044029
+2018-10-07 13:54:24,338 - AqauLogger   - DEBUG    -13:54:23 10/07/18 0
+2018-10-07 13:54:24,340 - AqauLogger   - DEBUG    -B:13, Y: 16         
+2018-10-07 13:54:40,014 - AqauLogger   - INFO     -Blue value changed from 13 to 12 at 2018-10-07 13:54:40.014908
+2018-10-07 13:54:40,015 - AqauLogger   - INFO     -Yellow value changed from 16 to 15 at 2018-10-07 13:54:40.014908
+2018-10-07 13:55:45,507 - AqauLogger   - INFO     -Blue value changed from 12 to 11 at 2018-10-07 13:55:45.507552
+2018-10-07 13:55:45,523 - AqauLogger   - INFO     -Yellow value changed from 15 to 12 at 2018-10-07 13:55:45.507552
+2018-10-07 13:56:00,004 - AqauLogger   - INFO     -Blue value changed from 11 to 10 at 2018-10-07 13:56:00.004287
+2018-10-07 13:56:00,005 - AqauLogger   - INFO     -Yellow value changed from 12 to 11 at 2018-10-07 13:56:00.004287
+2018-10-07 13:56:20,032 - AqauLogger   - INFO     -Yellow value changed from 11 to 10 at 2018-10-07 13:56:20.032204
+2018-10-07 13:56:40,058 - AqauLogger   - INFO     -Blue value changed from 10 to 9 at 2018-10-07 13:56:40.058866
+2018-10-07 13:56:40,059 - AqauLogger   - INFO     -Yellow value changed from 10 to 9 at 2018-10-07 13:56:40.058866
+2018-10-07 13:57:00,087 - AqauLogger   - INFO     -Yellow value changed from 9 to 8 at 2018-10-07 13:57:00.087142
+2018-10-07 13:57:04,584 - AqauLogger   - DEBUG    -13:57:03 10/07/18 0
+2018-10-07 13:57:04,584 - AqauLogger   - DEBUG    -B:9, Y: 8           
+2018-10-07 13:57:20,020 - AqauLogger   - INFO     -Blue value changed from 9 to 8 at 2018-10-07 13:57:20.020500
+2018-10-07 13:57:20,022 - AqauLogger   - INFO     -Yellow value changed from 8 to 7 at 2018-10-07 13:57:20.020500
+2018-10-07 13:57:40,099 - AqauLogger   - INFO     -Yellow value changed from 7 to 6 at 2018-10-07 13:57:40.099523
+2018-10-07 13:58:00,077 - AqauLogger   - INFO     -Blue value changed from 8 to 7 at 2018-10-07 13:58:00.077250
+2018-10-07 13:58:00,079 - AqauLogger   - INFO     -Yellow value changed from 6 to 5 at 2018-10-07 13:58:00.077250
+2018-10-07 13:58:20,056 - AqauLogger   - INFO     -Yellow value changed from 5 to 4 at 2018-10-07 13:58:20.056966
+2018-10-07 13:58:40,028 - AqauLogger   - INFO     -Blue value changed from 7 to 6 at 2018-10-07 13:58:40.028438
+2018-10-07 13:58:40,030 - AqauLogger   - INFO     -Yellow value changed from 4 to 3 at 2018-10-07 13:58:40.028438
+2018-10-07 13:58:44,662 - AqauLogger   - DEBUG    -13:58:43 10/07/18 0
+2018-10-07 13:58:44,664 - AqauLogger   - DEBUG    -B:6, Y: 3           
+2018-10-07 13:59:00,006 - AqauLogger   - INFO     -Yellow value changed from 3 to 2 at 2018-10-07 13:59:00.006384
+2018-10-07 13:59:20,080 - AqauLogger   - INFO     -Blue value changed from 6 to 5 at 2018-10-07 13:59:20.080294
+2018-10-07 13:59:20,082 - AqauLogger   - INFO     -Yellow value changed from 2 to 1 at 2018-10-07 13:59:20.080294
+2018-10-07 13:59:40,053 - AqauLogger   - INFO     -Yellow value changed from 1 to 0 at 2018-10-07 13:59:40.053292
+2018-10-07 14:00:24,744 - AqauLogger   - DEBUG    -14:00:23 10/07/18 0
+2018-10-07 14:00:24,746 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:02:04,822 - AqauLogger   - DEBUG    -14:02:03 10/07/18 0
+2018-10-07 14:02:04,824 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:03:44,900 - AqauLogger   - DEBUG    -14:03:43 10/07/18 0
+2018-10-07 14:03:44,902 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:05:24,987 - AqauLogger   - DEBUG    -14:05:23 10/07/18 0
+2018-10-07 14:05:24,989 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:07:05,071 - AqauLogger   - DEBUG    -14:07:04 10/07/18 0
+2018-10-07 14:07:05,073 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:08:45,154 - AqauLogger   - DEBUG    -14:08:44 10/07/18 0
+2018-10-07 14:08:45,155 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:10:25,234 - AqauLogger   - DEBUG    -14:10:24 10/07/18 0
+2018-10-07 14:10:25,236 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:12:05,313 - AqauLogger   - DEBUG    -14:12:04 10/07/18 0
+2018-10-07 14:12:05,315 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:13:45,391 - AqauLogger   - DEBUG    -14:13:44 10/07/18 0
+2018-10-07 14:13:45,393 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:15:25,471 - AqauLogger   - DEBUG    -14:15:24 10/07/18 0
+2018-10-07 14:15:25,473 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:17:05,551 - AqauLogger   - DEBUG    -14:17:04 10/07/18 0
+2018-10-07 14:17:05,553 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:18:45,632 - AqauLogger   - DEBUG    -14:18:44 10/07/18 0
+2018-10-07 14:18:45,633 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:20:25,716 - AqauLogger   - DEBUG    -14:20:24 10/07/18 0
+2018-10-07 14:20:25,717 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:22:05,790 - AqauLogger   - DEBUG    -14:22:04 10/07/18 0
+2018-10-07 14:22:05,792 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:23:45,871 - AqauLogger   - DEBUG    -14:23:44 10/07/18 0
+2018-10-07 14:23:45,873 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:25:25,950 - AqauLogger   - DEBUG    -14:25:24 10/07/18 0
+2018-10-07 14:25:25,952 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:28:06,974 - AqauLogger   - DEBUG    -14:28:05 10/07/18 0
+2018-10-07 14:28:06,975 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:29:47,050 - AqauLogger   - DEBUG    -14:29:46 10/07/18 0
+2018-10-07 14:29:47,052 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:31:27,128 - AqauLogger   - DEBUG    -14:31:26 10/07/18 0
+2018-10-07 14:31:27,130 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:33:07,215 - AqauLogger   - DEBUG    -14:33:06 10/07/18 0
+2018-10-07 14:33:07,217 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:34:47,299 - AqauLogger   - DEBUG    -14:34:46 10/07/18 0
+2018-10-07 14:34:47,301 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:36:27,378 - AqauLogger   - DEBUG    -14:36:26 10/07/18 0
+2018-10-07 14:36:27,380 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:38:07,462 - AqauLogger   - DEBUG    -14:38:06 10/07/18 0
+2018-10-07 14:38:07,464 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:39:47,549 - AqauLogger   - DEBUG    -14:39:46 10/07/18 0
+2018-10-07 14:39:47,551 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:41:27,629 - AqauLogger   - DEBUG    -14:41:26 10/07/18 0
+2018-10-07 14:41:27,631 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:43:07,711 - AqauLogger   - DEBUG    -14:43:06 10/07/18 0
+2018-10-07 14:43:07,712 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:44:47,793 - AqauLogger   - DEBUG    -14:44:46 10/07/18 0
+2018-10-07 14:44:47,794 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:46:27,876 - AqauLogger   - DEBUG    -14:46:26 10/07/18 0
+2018-10-07 14:46:27,878 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:48:07,954 - AqauLogger   - DEBUG    -14:48:06 10/07/18 0
+2018-10-07 14:48:07,956 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:49:48,035 - AqauLogger   - DEBUG    -14:49:47 10/07/18 0
+2018-10-07 14:49:48,036 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:51:28,110 - AqauLogger   - DEBUG    -14:51:27 10/07/18 0
+2018-10-07 14:51:28,112 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:53:08,195 - AqauLogger   - DEBUG    -14:53:07 10/07/18 0
+2018-10-07 14:53:08,197 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:54:48,277 - AqauLogger   - DEBUG    -14:54:47 10/07/18 0
+2018-10-07 14:54:48,279 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:56:28,359 - AqauLogger   - DEBUG    -14:56:27 10/07/18 0
+2018-10-07 14:56:28,361 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 14:59:09,522 - AqauLogger   - DEBUG    -14:59:08 10/07/18 0
+2018-10-07 14:59:09,523 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:00:49,594 - AqauLogger   - DEBUG    -15:00:48 10/07/18 0
+2018-10-07 15:00:49,595 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:02:29,670 - AqauLogger   - DEBUG    -15:02:28 10/07/18 0
+2018-10-07 15:02:29,672 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:04:09,748 - AqauLogger   - DEBUG    -15:04:08 10/07/18 0
+2018-10-07 15:04:09,749 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:05:49,827 - AqauLogger   - DEBUG    -15:05:48 10/07/18 0
+2018-10-07 15:05:49,828 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:07:29,910 - AqauLogger   - DEBUG    -15:07:28 10/07/18 0
+2018-10-07 15:07:29,911 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:09:09,994 - AqauLogger   - DEBUG    -15:09:08 10/07/18 0
+2018-10-07 15:09:09,996 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:10:50,077 - AqauLogger   - DEBUG    -15:10:49 10/07/18 0
+2018-10-07 15:10:50,079 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:12:30,159 - AqauLogger   - DEBUG    -15:12:29 10/07/18 0
+2018-10-07 15:12:30,161 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:14:10,241 - AqauLogger   - DEBUG    -15:14:09 10/07/18 0
+2018-10-07 15:14:10,243 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:15:50,324 - AqauLogger   - DEBUG    -15:15:49 10/07/18 0
+2018-10-07 15:15:50,325 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:17:30,405 - AqauLogger   - DEBUG    -15:17:29 10/07/18 0
+2018-10-07 15:17:30,407 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:19:10,488 - AqauLogger   - DEBUG    -15:19:09 10/07/18 0
+2018-10-07 15:19:10,489 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:20:50,567 - AqauLogger   - DEBUG    -15:20:49 10/07/18 0
+2018-10-07 15:20:50,569 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:22:30,650 - AqauLogger   - DEBUG    -15:22:29 10/07/18 0
+2018-10-07 15:22:30,651 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:24:10,731 - AqauLogger   - DEBUG    -15:24:09 10/07/18 0
+2018-10-07 15:24:10,733 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:25:50,812 - AqauLogger   - DEBUG    -15:25:49 10/07/18 0
+2018-10-07 15:25:50,814 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:27:30,891 - AqauLogger   - DEBUG    -15:27:29 10/07/18 0
+2018-10-07 15:27:30,893 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:29:10,971 - AqauLogger   - DEBUG    -15:29:09 10/07/18 0
+2018-10-07 15:29:10,971 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:31:52,197 - AqauLogger   - DEBUG    -15:31:51 10/07/18 0
+2018-10-07 15:31:52,199 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:33:32,286 - AqauLogger   - DEBUG    -15:33:31 10/07/18 0
+2018-10-07 15:33:32,288 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:35:12,367 - AqauLogger   - DEBUG    -15:35:11 10/07/18 0
+2018-10-07 15:35:12,369 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:36:52,445 - AqauLogger   - DEBUG    -15:36:51 10/07/18 0
+2018-10-07 15:36:52,447 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:38:32,531 - AqauLogger   - DEBUG    -15:38:31 10/07/18 0
+2018-10-07 15:38:32,533 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:40:12,606 - AqauLogger   - DEBUG    -15:40:11 10/07/18 0
+2018-10-07 15:40:12,607 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:41:52,682 - AqauLogger   - DEBUG    -15:41:51 10/07/18 0
+2018-10-07 15:41:52,682 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:43:32,766 - AqauLogger   - DEBUG    -15:43:31 10/07/18 0
+2018-10-07 15:43:32,768 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:45:12,845 - AqauLogger   - DEBUG    -15:45:11 10/07/18 0
+2018-10-07 15:45:12,847 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:46:52,926 - AqauLogger   - DEBUG    -15:46:51 10/07/18 0
+2018-10-07 15:46:52,927 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:48:33,003 - AqauLogger   - DEBUG    -15:48:32 10/07/18 0
+2018-10-07 15:48:33,004 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:50:13,083 - AqauLogger   - DEBUG    -15:50:12 10/07/18 0
+2018-10-07 15:50:13,085 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:51:53,167 - AqauLogger   - DEBUG    -15:51:52 10/07/18 0
+2018-10-07 15:51:53,168 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:53:33,250 - AqauLogger   - DEBUG    -15:53:32 10/07/18 0
+2018-10-07 15:53:33,252 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:55:13,331 - AqauLogger   - DEBUG    -15:55:12 10/07/18 0
+2018-10-07 15:55:13,333 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:56:53,410 - AqauLogger   - DEBUG    -15:56:52 10/07/18 0
+2018-10-07 15:56:53,412 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 15:58:33,490 - AqauLogger   - DEBUG    -15:58:32 10/07/18 0
+2018-10-07 15:58:33,491 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:00:13,577 - AqauLogger   - DEBUG    -16:00:12 10/07/18 0
+2018-10-07 16:00:13,579 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:02:54,632 - AqauLogger   - DEBUG    -16:02:53 10/07/18 0
+2018-10-07 16:02:54,633 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:04:34,697 - AqauLogger   - DEBUG    -16:04:33 10/07/18 0
+2018-10-07 16:04:34,699 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:06:14,773 - AqauLogger   - DEBUG    -16:06:13 10/07/18 0
+2018-10-07 16:06:14,775 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:07:54,850 - AqauLogger   - DEBUG    -16:07:53 10/07/18 0
+2018-10-07 16:07:54,852 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:09:34,936 - AqauLogger   - DEBUG    -16:09:33 10/07/18 0
+2018-10-07 16:09:34,938 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:11:15,017 - AqauLogger   - DEBUG    -16:11:14 10/07/18 0
+2018-10-07 16:11:15,019 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:12:55,101 - AqauLogger   - DEBUG    -16:12:54 10/07/18 0
+2018-10-07 16:12:55,103 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:14:35,183 - AqauLogger   - DEBUG    -16:14:34 10/07/18 0
+2018-10-07 16:14:35,184 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:16:15,263 - AqauLogger   - DEBUG    -16:16:14 10/07/18 0
+2018-10-07 16:16:15,265 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:17:55,353 - AqauLogger   - DEBUG    -16:17:54 10/07/18 0
+2018-10-07 16:17:55,355 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:19:35,433 - AqauLogger   - DEBUG    -16:19:34 10/07/18 0
+2018-10-07 16:19:35,435 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:21:15,514 - AqauLogger   - DEBUG    -16:21:14 10/07/18 0
+2018-10-07 16:21:15,516 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:22:55,598 - AqauLogger   - DEBUG    -16:22:54 10/07/18 0
+2018-10-07 16:22:55,600 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:24:35,672 - AqauLogger   - DEBUG    -16:24:34 10/07/18 0
+2018-10-07 16:24:35,674 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:26:15,750 - AqauLogger   - DEBUG    -16:26:14 10/07/18 0
+2018-10-07 16:26:15,752 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:27:55,829 - AqauLogger   - DEBUG    -16:27:54 10/07/18 0
+2018-10-07 16:27:55,830 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:29:35,909 - AqauLogger   - DEBUG    -16:29:34 10/07/18 0
+2018-10-07 16:29:35,910 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:31:15,987 - AqauLogger   - DEBUG    -16:31:14 10/07/18 0
+2018-10-07 16:31:15,989 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:33:56,930 - AqauLogger   - DEBUG    -16:33:55 10/07/18 0
+2018-10-07 16:33:56,931 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:35:37,000 - AqauLogger   - DEBUG    -16:35:36 10/07/18 0
+2018-10-07 16:35:37,002 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:37:17,082 - AqauLogger   - DEBUG    -16:37:16 10/07/18 0
+2018-10-07 16:37:17,083 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:38:57,164 - AqauLogger   - DEBUG    -16:38:56 10/07/18 0
+2018-10-07 16:38:57,166 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:40:37,244 - AqauLogger   - DEBUG    -16:40:36 10/07/18 0
+2018-10-07 16:40:37,245 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:42:17,329 - AqauLogger   - DEBUG    -16:42:16 10/07/18 0
+2018-10-07 16:42:17,331 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:43:57,409 - AqauLogger   - DEBUG    -16:43:56 10/07/18 0
+2018-10-07 16:43:57,411 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:45:37,490 - AqauLogger   - DEBUG    -16:45:36 10/07/18 0
+2018-10-07 16:45:37,492 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:47:17,568 - AqauLogger   - DEBUG    -16:47:16 10/07/18 0
+2018-10-07 16:47:17,569 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:48:57,651 - AqauLogger   - DEBUG    -16:48:56 10/07/18 0
+2018-10-07 16:48:57,651 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:50:37,732 - AqauLogger   - DEBUG    -16:50:36 10/07/18 0
+2018-10-07 16:50:37,734 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:52:17,810 - AqauLogger   - DEBUG    -16:52:16 10/07/18 0
+2018-10-07 16:52:17,811 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:53:57,893 - AqauLogger   - DEBUG    -16:53:56 10/07/18 0
+2018-10-07 16:53:57,894 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:55:37,972 - AqauLogger   - DEBUG    -16:55:36 10/07/18 0
+2018-10-07 16:55:37,974 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:57:18,047 - AqauLogger   - DEBUG    -16:57:17 10/07/18 0
+2018-10-07 16:57:18,049 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 16:58:58,124 - AqauLogger   - DEBUG    -16:58:57 10/07/18 0
+2018-10-07 16:58:58,125 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 17:00:38,202 - AqauLogger   - DEBUG    -17:00:37 10/07/18 0
+2018-10-07 17:00:38,204 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 17:02:18,284 - AqauLogger   - DEBUG    -17:02:17 10/07/18 0
+2018-10-07 17:02:18,285 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 17:04:59,507 - AqauLogger   - DEBUG    -17:04:58 10/07/18 0
+2018-10-07 17:04:59,508 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 17:06:39,584 - AqauLogger   - DEBUG    -17:06:38 10/07/18 0
+2018-10-07 17:06:39,586 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 17:08:19,662 - AqauLogger   - DEBUG    -17:08:18 10/07/18 0
+2018-10-07 17:08:19,664 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 17:09:59,744 - AqauLogger   - DEBUG    -17:09:58 10/07/18 0
+2018-10-07 17:09:59,745 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 17:11:39,828 - AqauLogger   - DEBUG    -17:11:38 10/07/18 0
+2018-10-07 17:11:39,829 - AqauLogger   - DEBUG    -B:5, Y: 0           
+2018-10-07 17:13:19,907 - AqauLogger   - DEBUG    -17:13:18 10/07/18 0
+2018-10-07 17:13:19,908 - AqauLogger   - DEBUG    -B:5, Y: 0           

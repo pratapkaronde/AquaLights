@@ -98,8 +98,8 @@ def threaded_pwm(settings):
     old_blue_val = 0
     old_yellow_val = 0
 
+    """ Enable GPIO if running on RaspberryPi """
     if IsRaspberryPi():
-        """ Determine if we are running on Raspberry Pi or not """
         import RPi.GPIO as GPIO
 
         GPIO.setmode(GPIO.BOARD)
@@ -155,12 +155,12 @@ def threaded_pwm(settings):
 
         if stop_thread:
             myLogger.debug ("Stopping PWM Thread")
-            channel_b.ChangeDutyCycle(100)
-            channel_y.ChangeDutyCycle(100)
+            channel_b.ChangeDutyCycle(100) # Shutdown blue light 
+            channel_y.ChangeDutyCycle(100) # Shutdown yellow light 
             GPIO.cleanup()
             return
 
-        time.sleep(1)
+        time.sleep(0.1)
 
 
 def threaded_lcd_update():

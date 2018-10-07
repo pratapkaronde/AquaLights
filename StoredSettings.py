@@ -90,6 +90,8 @@ class StoredSettings(object):
         #self.programList.append (eveningProgram)
 
         for section in config.sections():
+
+            self.myLogger.info("Reading section " + section)
             
             if section == self.YELLOW_SECTION_NAME:
                 # processing yellow settings
@@ -117,7 +119,7 @@ class StoredSettings(object):
                     start_time = config[section][self.START_TIME_NAME]
                     stop_time = config[section][self.STOP_TIME_NAME]
                     sunrise_duration = int(config[section][self.SUNRISE_DURATION_NAME])
-                    sunset_duration = (config[section][self.SUNSET_DURATION_NAME])
+                    sunset_duration = int(config[section][self.SUNSET_DURATION_NAME])
 
                     time_numbers = start_time.split(":")
                     start_hour = int(time_numbers[0])
