@@ -138,7 +138,7 @@ def threaded_pwm(settings):
                 yellow_val = y
 
         if old_blue_val != blue_val:
-            myLogger.info ("Blue value changed from " + str(old_blue_val) +
+            myLogger.debug("Blue value changed from " + str(old_blue_val) +
                   " to " + str(blue_val) + " at " + str(nowTime))
             old_blue_val = blue_val
             BLUE_VALUE = blue_val
@@ -146,7 +146,7 @@ def threaded_pwm(settings):
                 channel_b.ChangeDutyCycle(100 - BLUE_VALUE)
 
         if old_yellow_val != yellow_val:
-            myLogger.info("Yellow value changed from " + str(old_yellow_val) +
+            myLogger.debug("Yellow value changed from " + str(old_yellow_val) +
                   " to " + str(yellow_val) + " at " + str(nowTime))
             old_yellow_val = yellow_val
             YELLOW_VALUE = yellow_val
